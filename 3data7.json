@@ -1,0 +1,802 @@
+[
+  {
+    "algorithm": "Argumentation mining",
+    "years": [
+      "2013",
+      "2014",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "B 3",
+    "years": [
+      "2010",
+      "2014",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "BERT-based classifier",
+    "years": [
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "BLEU evaluation metric",
+    "years": [
+      "2012",
+      "2014",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "BLEU scores",
+    "years": [
+      "2010",
+      "2014",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "BLEURT",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "BOW",
+    "years": [
+      "2010",
+      "2016",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "BPE",
+    "years": [
+      "2018",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "BabelNet",
+    "years": [
+      "2017",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Back-Translation",
+    "years": [
+      "2020",
+      "2021",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Bag-of-Words",
+    "years": [
+      "2010",
+      "2021",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Bayesian framework",
+    "years": [
+      "1995",
+      "2005",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Bayesian network",
+    "years": [
+      "1995",
+      "2016",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Bayesian optimization",
+    "years": [
+      "2015",
+      "2016",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Belief Propagation",
+    "years": [
+      "2010",
+      "2011",
+      "2013"
+    ]
+  },
+  {
+    "algorithm": "Benchmarking",
+    "years": [
+      "2020",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Bert",
+    "years": [
+      "2020",
+      "2021",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Bi-LSTM",
+    "years": [
+      "2016",
+      "2017",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Bidirectional LSTM",
+    "years": [
+      "2016",
+      "2018",
+      "2019"
+    ]
+  },
+  {
+    "algorithm": "Binary Classification",
+    "years": [
+      "2014",
+      "2019",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "BioNLP",
+    "years": [
+      "2010",
+      "2011",
+      "2013"
+    ]
+  },
+  {
+    "algorithm": "Brown clusters",
+    "years": [
+      "2010",
+      "2014",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "CBOW",
+    "years": [
+      "2017",
+      "2018",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "CCGbank",
+    "years": [
+      "2009",
+      "2010",
+      "2014"
+    ]
+  },
+  {
+    "algorithm": "CEAF",
+    "years": [
+      "2010",
+      "2014",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "CKY algorithm",
+    "years": [
+      "1991",
+      "2006",
+      "2007"
+    ]
+  },
+  {
+    "algorithm": "CLIP",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "CNN-LSTM",
+    "years": [
+      "2017",
+      "2019",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "CNNs",
+    "years": [
+      "2015",
+      "2016",
+      "2019"
+    ]
+  },
+  {
+    "algorithm": "CYK algorithm",
+    "years": [
+      "2009",
+      "2015",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Classification",
+    "years": [
+      "2010",
+      "2014",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "Co-training",
+    "years": [
+      "2011",
+      "2018",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Combinatory Categorial Grammars",
+    "years": [
+      "1989",
+      "1995",
+      "1997"
+    ]
+  },
+  {
+    "algorithm": "ComplEx",
+    "years": [
+      "2018",
+      "2020",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Computer Vision",
+    "years": [
+      "2016",
+      "2018",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Conditional random fields",
+    "years": [
+      "2005",
+      "2007",
+      "2014"
+    ]
+  },
+  {
+    "algorithm": "Connectionist Temporal Classification (CTC)",
+    "years": [
+      "2017",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Contrastive Loss",
+    "years": [
+      "2021",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Convolutional Neural Networks (CNN)",
+    "years": [
+      "2016",
+      "2017",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Dependency parsers",
+    "years": [
+      "2009",
+      "2012",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "DialoGPT",
+    "years": [
+      "2020",
+      "2021",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Differential Privacy (DP)",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Dirichlet prior",
+    "years": [
+      "2008",
+      "2009",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Dirichlet priors",
+    "years": [
+      "2009",
+      "2010",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Discriminator",
+    "years": [
+      "2019",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Distillation",
+    "years": [
+      "2019",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Domain adaptation",
+    "years": [
+      "2013",
+      "2015",
+      "2019"
+    ]
+  },
+  {
+    "algorithm": "Dropout",
+    "years": [
+      "2017",
+      "2020",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "ELECTRA",
+    "years": [
+      "2021",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "ELMo",
+    "years": [
+      "2019",
+      "2020",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "Empirical analysis",
+    "years": [
+      "1984",
+      "2009",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Ensemble",
+    "years": [
+      "2017",
+      "2019",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Ensemble method",
+    "years": [
+      "2009",
+      "2010",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Expectation Maximization (EM) algorithm",
+    "years": [
+      "2009",
+      "2011",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "F 1",
+    "years": [
+      "2014",
+      "2021",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Fine-Tuning",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Finetuning",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "GPT2",
+    "years": [
+      "2021",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Gaussian Mixture Model",
+    "years": [
+      "2012",
+      "2014",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "Gaussian distribution",
+    "years": [
+      "2016",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Genetic Programming",
+    "years": [
+      "2008",
+      "2009",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "Gradient Boosting",
+    "years": [
+      "2011",
+      "2017",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Graph Convolutional Networks (GCNs)",
+    "years": [
+      "2020",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Graph Neural Networks (GNNs)",
+    "years": [
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Graph embeddings",
+    "years": [
+      "2019",
+      "2020",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Graphical model",
+    "years": [
+      "2010",
+      "2011",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "HMMs",
+    "years": [
+      "2005",
+      "2006",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "HOPE",
+    "years": [
+      "1983",
+      "1985",
+      "1986"
+    ]
+  },
+  {
+    "algorithm": "HPSG parser",
+    "years": [
+      "2006",
+      "2010",
+      "2012"
+    ]
+  },
+  {
+    "algorithm": "Head Grammars",
+    "years": [
+      "1986",
+      "1987",
+      "1989"
+    ]
+  },
+  {
+    "algorithm": "Heuristic Algorithm",
+    "years": [
+      "2006",
+      "2011",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "Hidden Markov model",
+    "years": [
+      "1997",
+      "2011",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "Hidden Markov model (HMM)",
+    "years": [
+      "2007",
+      "2008",
+      "2009"
+    ]
+  },
+  {
+    "algorithm": "HuBERT",
+    "years": [
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "IR",
+    "years": [
+      "1999",
+      "2018",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Imitation learning",
+    "years": [
+      "2016",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Influence Function",
+    "years": [
+      "2021",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Information Extraction (IE)",
+    "years": [
+      "2010",
+      "2020",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "Information Retrieval (IR)",
+    "years": [
+      "2006",
+      "2008",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Integer Linear Programming (ILP)",
+    "years": [
+      "2013",
+      "2016",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "Integer Programming",
+    "years": [
+      "2006",
+      "2010",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "Integrated Gradients",
+    "years": [
+      "2021",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Joint Training",
+    "years": [
+      "2016",
+      "2019",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Joint learning",
+    "years": [
+      "2016",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "KNN",
+    "years": [
+      "2005",
+      "2020",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Knowledge Graph",
+    "years": [
+      "2021",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "LR parsing",
+    "years": [
+      "1989",
+      "1991",
+      "1998"
+    ]
+  },
+  {
+    "algorithm": "LSTM-CRF",
+    "years": [
+      "2016",
+      "2020",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "LaBSE",
+    "years": [
+      "2021",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Label Propagation",
+    "years": [
+      "2012",
+      "2014",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "Language Models",
+    "years": [
+      "2008",
+      "2017",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Large language models",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Latent Semantic Indexing",
+    "years": [
+      "2008",
+      "2011",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "Latent Variable Model",
+    "years": [
+      "2011",
+      "2012",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "LayerNorm",
+    "years": [
+      "2021",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Lesk algorithm",
+    "years": [
+      "2014",
+      "2017",
+      "2019"
+    ]
+  },
+  {
+    "algorithm": "Levenshtein distance",
+    "years": [
+      "2007",
+      "2019",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "LexRank",
+    "years": [
+      "2006",
+      "2020",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Lexical Functional Grammar",
+    "years": [
+      "1984",
+      "1998",
+      "2007"
+    ]
+  },
+  {
+    "algorithm": "Linear programming",
+    "years": [
+      "2011",
+      "2012",
+      "2016"
+    ]
+  }
+]
