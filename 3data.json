@@ -1,0 +1,802 @@
+[
+  {
+    "algorithm": "in-context learning",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "incremental learning",
+    "years": [
+      "2010",
+      "2013",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "intent classification",
+    "years": [
+      "2018",
+      "2020",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "intersection",
+    "years": [
+      "1995",
+      "2016",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "intrinsic evaluation",
+    "years": [
+      "2016",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "joint training",
+    "years": [
+      "2019",
+      "2021",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "k-means clustering",
+    "years": [
+      "2013",
+      "2016",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "kNN",
+    "years": [
+      "2019",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "kNN-MT",
+    "years": [
+      "2021",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "keyphrase extraction",
+    "years": [
+      "2011",
+      "2012",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "knowledge graph",
+    "years": [
+      "2021",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "label propagation",
+    "years": [
+      "2011",
+      "2013",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "label smoothing",
+    "years": [
+      "2019",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "learning-to-rank",
+    "years": [
+      "2008",
+      "2014",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "lexical",
+    "years": [
+      "2011",
+      "2015",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "lexical semantics",
+    "years": [
+      "1994",
+      "1996",
+      "2010"
+    ]
+  },
+  {
+    "algorithm": "lexical-functional grammar",
+    "years": [
+      "1983",
+      "1985",
+      "1986"
+    ]
+  },
+  {
+    "algorithm": "lexico-syntactic patterns",
+    "years": [
+      "2009",
+      "2010",
+      "2014"
+    ]
+  },
+  {
+    "algorithm": "linguistic analysis",
+    "years": [
+      "1999",
+      "2014",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "link analysis",
+    "years": [
+      "2009",
+      "2013",
+      "2018"
+    ]
+  },
+  {
+    "algorithm": "machine learning methods",
+    "years": [
+      "2006",
+      "2011",
+      "2012"
+    ]
+  },
+  {
+    "algorithm": "machine translation (MT)",
+    "years": [
+      "2008",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "majority vote",
+    "years": [
+      "2010",
+      "2011",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "mask language modeling",
+    "years": [
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "masked language modeling",
+    "years": [
+      "2020",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "masked language models",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "masked language models (MLMs)",
+    "years": [
+      "2021",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "maximum entropy model",
+    "years": [
+      "1999",
+      "2006",
+      "2013"
+    ]
+  },
+  {
+    "algorithm": "maximum likelihood estimation",
+    "years": [
+      "2012",
+      "2016",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "minimum error rate training",
+    "years": [
+      "2009",
+      "2012",
+      "2014"
+    ]
+  },
+  {
+    "algorithm": "mixture model",
+    "years": [
+      "2005",
+      "2009",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "modified Kneser-Ney",
+    "years": [
+      "2006",
+      "2011",
+      "2013"
+    ]
+  },
+  {
+    "algorithm": "modular architecture",
+    "years": [
+      "1996",
+      "2010",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "monolingual corpora",
+    "years": [
+      "2011",
+      "2018",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "morpho-syntactic analysis",
+    "years": [
+      "1997",
+      "2007",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "morphology",
+    "years": [
+      "1985",
+      "1986",
+      "2011"
+    ]
+  },
+  {
+    "algorithm": "multilingual BERT",
+    "years": [
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "multilingual models",
+    "years": [
+      "2020",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "multimodal models",
+    "years": [
+      "2020",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "named entity extraction",
+    "years": [
+      "2015",
+      "2018",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "natural language generation",
+    "years": [
+      "1998",
+      "2015",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "neural language model",
+    "years": [
+      "2017",
+      "2020",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "neural machine translation (NMT)",
+    "years": [
+      "2016",
+      "2020",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "neural machine translation models",
+    "years": [
+      "2016",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "neural network architecture",
+    "years": [
+      "2007",
+      "2016",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "neural network model",
+    "years": [
+      "2015",
+      "2020",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "neural network models",
+    "years": [
+      "2016",
+      "2020",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "normalization",
+    "years": [
+      "2014",
+      "2016",
+      "2018"
+    ]
+  },
+  {
+    "algorithm": "online learning algorithm",
+    "years": [
+      "2008",
+      "2009",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "optimal transport",
+    "years": [
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "parameter-efficient tuning",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "part-of-speech tag sequences",
+    "years": [
+      "1998",
+      "2013",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "pattern matching",
+    "years": [
+      "1992",
+      "1996",
+      "1999"
+    ]
+  },
+  {
+    "algorithm": "pattern-based methods",
+    "years": [
+      "2007",
+      "2018",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "permutation",
+    "years": [
+      "1988",
+      "1998",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "phrase table",
+    "years": [
+      "2012",
+      "2016",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "phrase-based machine translation",
+    "years": [
+      "2011",
+      "2016",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "phrase-based statistical machine translation",
+    "years": [
+      "2006",
+      "2011",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "pipeline approach",
+    "years": [
+      "2011",
+      "2013",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "pointwise mutual information",
+    "years": [
+      "2012",
+      "2016",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "post-processing",
+    "years": [
+      "2010",
+      "2013",
+      "2019"
+    ]
+  },
+  {
+    "algorithm": "pre-trained language model",
+    "years": [
+      "2021",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "pre-trained models",
+    "years": [
+      "2016",
+      "2021",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "pre-trained word embeddings",
+    "years": [
+      "2018",
+      "2021",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "prompt engineering",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "prompt tuning",
+    "years": [
+      "2020",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "prompt-based learning",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "pruning",
+    "years": [
+      "2013",
+      "2016",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "quantization",
+    "years": [
+      "2021",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "random selection",
+    "years": [
+      "1994",
+      "2021",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "recurrent neural networks",
+    "years": [
+      "2013",
+      "2017",
+      "2018"
+    ]
+  },
+  {
+    "algorithm": "recursive neural network",
+    "years": [
+      "2013",
+      "2014",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "regularization",
+    "years": [
+      "2016",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "reinforcement learning (RL)",
+    "years": [
+      "2018",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "representation learning",
+    "years": [
+      "2014",
+      "2017",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "retrieval models",
+    "years": [
+      "2016",
+      "2020",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "rule-based approaches",
+    "years": [
+      "1984",
+      "2021",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "rule-based methods",
+    "years": [
+      "2013",
+      "2015",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "rule-based model",
+    "years": [
+      "2006",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "rule-based systems",
+    "years": [
+      "2010",
+      "2011",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "segmentation",
+    "years": [
+      "1998",
+      "2013",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "self-supervised",
+    "years": [
+      "2010",
+      "2021",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "self-training framework",
+    "years": [
+      "2013",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "semantic similarity measure",
+    "years": [
+      "2008",
+      "2009",
+      "2011"
+    ]
+  },
+  {
+    "algorithm": "sentence embeddings",
+    "years": [
+      "2018",
+      "2020",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "sequence tagging",
+    "years": [
+      "2018",
+      "2021",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "sequence-level knowledge distillation",
+    "years": [
+      "2020",
+      "2021",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "sequence-to-sequence architecture",
+    "years": [
+      "2018",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "sequence-to-sequence learning",
+    "years": [
+      "2017",
+      "2018",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "shallow parsing",
+    "years": [
+      "2007",
+      "2010",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "simple heuristics",
+    "years": [
+      "2005",
+      "2006",
+      "2012"
+    ]
+  },
+  {
+    "algorithm": "singular value decomposition",
+    "years": [
+      "2010",
+      "2012",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "skip-gram model",
+    "years": [
+      "2014",
+      "2015",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "smoothing",
+    "years": [
+      "2006",
+      "2007",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "spectral clustering",
+    "years": [
+      "2011",
+      "2013",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "speech synthesis",
+    "years": [
+      "2012",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "state-of-the-art methods",
+    "years": [
+      "2020",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "statistical approaches",
+    "years": [
+      "2014",
+      "2016",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "statistical classifier",
+    "years": [
+      "2007",
+      "2011",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "statistical parsing",
+    "years": [
+      "1999",
+      "2005",
+      "2023"
+    ]
+  }
+]
