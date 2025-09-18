@@ -1,0 +1,802 @@
+[
+  {
+    "algorithm": "Long Short-Term Memory",
+    "years": [
+      "1989",
+      "2017",
+      "2018"
+    ]
+  },
+  {
+    "algorithm": "Loopy belief propagation",
+    "years": [
+      "2014",
+      "2020",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "MDL",
+    "years": [
+      "2010",
+      "2013",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "MERT",
+    "years": [
+      "2012",
+      "2013",
+      "2014"
+    ]
+  },
+  {
+    "algorithm": "MUC",
+    "years": [
+      "2010",
+      "2014",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "Machine Reading Comprehension",
+    "years": [
+      "2020",
+      "2021",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Machine Translation (MT)",
+    "years": [
+      "2009",
+      "2019",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Machine translation",
+    "years": [
+      "2020",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "MaltParser",
+    "years": [
+      "2012",
+      "2016",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "MapReduce",
+    "years": [
+      "2008",
+      "2009",
+      "2014"
+    ]
+  },
+  {
+    "algorithm": "Markov Decision Processes",
+    "years": [
+      "2008",
+      "2011",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Markov random field",
+    "years": [
+      "2006",
+      "2008",
+      "2014"
+    ]
+  },
+  {
+    "algorithm": "Maximum Entropy Model",
+    "years": [
+      "2006",
+      "2007",
+      "2013"
+    ]
+  },
+  {
+    "algorithm": "Mean Average Precision",
+    "years": [
+      "2005",
+      "2006",
+      "2013"
+    ]
+  },
+  {
+    "algorithm": "Memory Networks",
+    "years": [
+      "2016",
+      "2017",
+      "2018"
+    ]
+  },
+  {
+    "algorithm": "Meta-learning",
+    "years": [
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Mixture-of-Experts",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Morphological analysis",
+    "years": [
+      "2011",
+      "2012",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Moses decoder",
+    "years": [
+      "2008",
+      "2009",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "Multi-Task Learning",
+    "years": [
+      "2015",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "NLI",
+    "years": [
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Natural Language Generation (NLG)",
+    "years": [
+      "2007",
+      "2016",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Natural Language Inference",
+    "years": [
+      "2018",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Natural Language Understanding (NLU)",
+    "years": [
+      "2020",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Natural language processing",
+    "years": [
+      "1998",
+      "2019",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "Negative Sampling",
+    "years": [
+      "2017",
+      "2020",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Neural Model",
+    "years": [
+      "2020",
+      "2021",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Neural Models",
+    "years": [
+      "2020",
+      "2021",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Neural Network Architecture",
+    "years": [
+      "2012",
+      "2016",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Neural approaches",
+    "years": [
+      "2017",
+      "2019",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Neural machine translation (NMT)",
+    "years": [
+      "2017",
+      "2018",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Neural models",
+    "years": [
+      "2017",
+      "2018",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Neural network models",
+    "years": [
+      "2016",
+      "2017",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "No specific algorithms are mentioned in this abstract.",
+    "years": [
+      "2010",
+      "2011",
+      "2018"
+    ]
+  },
+  {
+    "algorithm": "OT",
+    "years": [
+      "2010",
+      "2011",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Open Information Extraction",
+    "years": [
+      "2017",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Optimal Transport",
+    "years": [
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Optimization",
+    "years": [
+      "2015",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "PROLOG",
+    "years": [
+      "1984",
+      "1985",
+      "1991"
+    ]
+  },
+  {
+    "algorithm": "PageRank algorithm",
+    "years": [
+      "2007",
+      "2011",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Parsing",
+    "years": [
+      "2007",
+      "2012",
+      "2013"
+    ]
+  },
+  {
+    "algorithm": "Part-of-Speech Tagging",
+    "years": [
+      "2011",
+      "2014",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Pearson correlation",
+    "years": [
+      "2011",
+      "2015",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Perceptron",
+    "years": [
+      "2006",
+      "2007",
+      "2013"
+    ]
+  },
+  {
+    "algorithm": "Perplexity",
+    "years": [
+      "2006",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Phrase-based statistical machine translation",
+    "years": [
+      "2009",
+      "2012",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "Pointer Network",
+    "years": [
+      "2018",
+      "2020",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Pre-training",
+    "years": [
+      "2021",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Precision",
+    "years": [
+      "2008",
+      "2010",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Probabilistic model",
+    "years": [
+      "2006",
+      "2012",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "Probabilistic models",
+    "years": [
+      "1995",
+      "2010",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Probing",
+    "years": [
+      "2021",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Prompt Tuning",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Prompting",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Python",
+    "years": [
+      "2006",
+      "2020",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "QA",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Quasi Logical Form",
+    "years": [
+      "1990",
+      "1991",
+      "1992"
+    ]
+  },
+  {
+    "algorithm": "Question Generation (QG)",
+    "years": [
+      "2010",
+      "2011",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "REINFORCE",
+    "years": [
+      "2017",
+      "2020",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "ROUGE-L",
+    "years": [
+      "2012",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Random Forests",
+    "years": [
+      "2011",
+      "2014",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Random selection",
+    "years": [
+      "2009",
+      "2010",
+      "2011"
+    ]
+  },
+  {
+    "algorithm": "Ranking",
+    "years": [
+      "2006",
+      "2007",
+      "2014"
+    ]
+  },
+  {
+    "algorithm": "Recall",
+    "years": [
+      "2008",
+      "2010",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Recurrent Networks",
+    "years": [
+      "2019",
+      "2020",
+      "2025"
+    ]
+  },
+  {
+    "algorithm": "Recurrent Neural Networks (RNNs)",
+    "years": [
+      "2016",
+      "2017",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Recurrent neural network",
+    "years": [
+      "2012",
+      "2017",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Recursive neural network",
+    "years": [
+      "2015",
+      "2017",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Regression model",
+    "years": [
+      "2008",
+      "2010",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "Retrieval",
+    "years": [
+      "2011",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "RoBERTa-large",
+    "years": [
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "SARI",
+    "years": [
+      "2019",
+      "2021",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "SEQ2SEQ",
+    "years": [
+      "2017",
+      "2018",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "SHAP",
+    "years": [
+      "2021",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "SQuAD",
+    "years": [
+      "2017",
+      "2020",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "SVD",
+    "years": [
+      "2016",
+      "2017",
+      "2018"
+    ]
+  },
+  {
+    "algorithm": "Semi-Markov Conditional Random Fields",
+    "years": [
+      "2010",
+      "2016",
+      "2018"
+    ]
+  },
+  {
+    "algorithm": "Sequence-to-sequence learning",
+    "years": [
+      "2017",
+      "2020",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "Smatch",
+    "years": [
+      "2013",
+      "2016",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "Spearman correlation",
+    "years": [
+      "2013",
+      "2020",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Spectral clustering",
+    "years": [
+      "2006",
+      "2011",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "Statistical machine translation (SMT)",
+    "years": [
+      "2008",
+      "2012",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "Structural Causal Model",
+    "years": [
+      "2021",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Supervised machine learning",
+    "years": [
+      "2010",
+      "2014",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "Support Vector Regression",
+    "years": [
+      "2013",
+      "2016",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "Support vector machines",
+    "years": [
+      "2006",
+      "2010",
+      "2011"
+    ]
+  },
+  {
+    "algorithm": "Syntactic Parsing",
+    "years": [
+      "2009",
+      "2011",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "Syntax-based SMT",
+    "years": [
+      "2006",
+      "2007",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "Text analysis",
+    "years": [
+      "1985",
+      "2012",
+      "2014"
+    ]
+  },
+  {
+    "algorithm": "TextCNN",
+    "years": [
+      "2019",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Topic Modeling",
+    "years": [
+      "2009",
+      "2016",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Transformer decoder",
+    "years": [
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Transformer-based architectures",
+    "years": [
+      "2020",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Tree Kernels",
+    "years": [
+      "2013",
+      "2017",
+      "2018"
+    ]
+  },
+  {
+    "algorithm": "Unsupervised approach",
+    "years": [
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Unsupervised methods",
+    "years": [
+      "2005",
+      "2009",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "Variational Autoencoders (VAEs)",
+    "years": [
+      "2018",
+      "2020",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Variational Bayes",
+    "years": [
+      "2008",
+      "2010",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "VerbNet",
+    "years": [
+      "2007",
+      "2009",
+      "2011"
+    ]
+  },
+  {
+    "algorithm": "Viterbi EM",
+    "years": [
+      "2010",
+      "2013",
+      "2016"
+    ]
+  }
+]
