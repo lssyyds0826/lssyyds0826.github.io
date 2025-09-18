@@ -1,0 +1,1070 @@
+[
+  {
+    "algorithm": "LFG",
+    "years": [
+      "1984",
+      "1990",
+      "1997",
+      "2006",
+      "2007",
+      "2013"
+    ]
+  },
+  {
+    "algorithm": "Logistic Regression",
+    "years": [
+      "2008",
+      "2013",
+      "2017",
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "METEOR",
+    "years": [
+      "2008",
+      "2011",
+      "2014",
+      "2018",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "MT",
+    "years": [
+      "1998",
+      "2006",
+      "2017",
+      "2018",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Multi-task learning",
+    "years": [
+      "2017",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Named entity recognition",
+    "years": [
+      "2006",
+      "2011",
+      "2016",
+      "2020",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Natural Language Generation",
+    "years": [
+      "2008",
+      "2009",
+      "2011",
+      "2012",
+      "2016",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Neural machine translation",
+    "years": [
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "PropBank",
+    "years": [
+      "2005",
+      "2007",
+      "2008",
+      "2009",
+      "2011",
+      "2015"
+    ]
+  },
+  {
+    "algorithm": "Recurrent Neural Network",
+    "years": [
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Regression",
+    "years": [
+      "2008",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Self-Attention",
+    "years": [
+      "2018",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Semantic Role Labeling",
+    "years": [
+      "1995",
+      "2010",
+      "2011",
+      "2020",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Semantic Role Labeling (SRL)",
+    "years": [
+      "2005",
+      "2010",
+      "2013",
+      "2018",
+      "2020",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Statistical machine translation",
+    "years": [
+      "2006",
+      "2009",
+      "2011",
+      "2013",
+      "2014",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "Topic modeling",
+    "years": [
+      "2012",
+      "2014",
+      "2018",
+      "2019",
+      "2020",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Transformer architecture",
+    "years": [
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "UIMA",
+    "years": [
+      "2012",
+      "2013",
+      "2014",
+      "2016",
+      "2017",
+      "2018"
+    ]
+  },
+  {
+    "algorithm": "Viterbi algorithm",
+    "years": [
+      "1996",
+      "1998",
+      "2006",
+      "2009",
+      "2010",
+      "2014"
+    ]
+  },
+  {
+    "algorithm": "Word Embedding",
+    "years": [
+      "2015",
+      "2016",
+      "2017",
+      "2019",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Word embeddings",
+    "years": [
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Word2Vec",
+    "years": [
+      "2016",
+      "2017",
+      "2018",
+      "2020",
+      "2021",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "automatic evaluation",
+    "years": [
+      "2008",
+      "2016",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "binary classification",
+    "years": [
+      "2013",
+      "2014",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "classifiers",
+    "years": [
+      "2008",
+      "2012",
+      "2017",
+      "2020",
+      "2021",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "contrastive learning",
+    "years": [
+      "2015",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "deep neural networks",
+    "years": [
+      "2016",
+      "2017",
+      "2018",
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "distributional semantics",
+    "years": [
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "embedding",
+    "years": [
+      "1998",
+      "2011",
+      "2016",
+      "2020",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "encoder-decoder",
+    "years": [
+      "2016",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "encoder-decoder architecture",
+    "years": [
+      "2017",
+      "2019",
+      "2020",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "encoder-decoder model",
+    "years": [
+      "2017",
+      "2018",
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "evaluation",
+    "years": [
+      "2011",
+      "2014",
+      "2015",
+      "2021",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "filtering",
+    "years": [
+      "2010",
+      "2011",
+      "2016",
+      "2019",
+      "2020",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "generation",
+    "years": [
+      "1987",
+      "1988",
+      "2011",
+      "2021",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "generative model",
+    "years": [
+      "2012",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "information retrieval",
+    "years": [
+      "2006",
+      "2009",
+      "2010",
+      "2016",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "language modeling",
+    "years": [
+      "2005",
+      "2009",
+      "2018",
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "lexical analysis",
+    "years": [
+      "1998",
+      "2007",
+      "2011",
+      "2013",
+      "2015",
+      "2019"
+    ]
+  },
+  {
+    "algorithm": "logistic regression",
+    "years": [
+      "2007",
+      "2008",
+      "2009",
+      "2014",
+      "2017",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "machine learning models",
+    "years": [
+      "2007",
+      "2015",
+      "2020",
+      "2021",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "machine learning techniques",
+    "years": [
+      "2006",
+      "2007",
+      "2009",
+      "2011",
+      "2016",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "machine translation systems",
+    "years": [
+      "2008",
+      "2010",
+      "2012",
+      "2018",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "manual evaluation",
+    "years": [
+      "2008",
+      "2013",
+      "2015",
+      "2019",
+      "2021",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "meta-learning",
+    "years": [
+      "2012",
+      "2015",
+      "2018",
+      "2020",
+      "2021",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "multitask learning",
+    "years": [
+      "2008",
+      "2015",
+      "2019",
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "n-gram models",
+    "years": [
+      "1998",
+      "2008",
+      "2009",
+      "2010",
+      "2015",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "natural language inference",
+    "years": [
+      "2016",
+      "2017",
+      "2018",
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "paraphrasing",
+    "years": [
+      "2005",
+      "2019",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "phrase-based SMT",
+    "years": [
+      "2006",
+      "2008",
+      "2010",
+      "2012",
+      "2013",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "re-ranking",
+    "years": [
+      "2009",
+      "2011",
+      "2015",
+      "2020",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "regression model",
+    "years": [
+      "2008",
+      "2010",
+      "2014",
+      "2017",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "regular expressions",
+    "years": [
+      "2010",
+      "2011",
+      "2015",
+      "2018",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "reordering",
+    "years": [
+      "2005",
+      "2011",
+      "2013",
+      "2019",
+      "2020",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "semantic analysis",
+    "years": [
+      "1984",
+      "2008",
+      "2010",
+      "2011",
+      "2017",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "semantic role labeling",
+    "years": [
+      "2010",
+      "2013",
+      "2014",
+      "2015",
+      "2018",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "seq2seq",
+    "years": [
+      "2018",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "statistical model",
+    "years": [
+      "1991",
+      "1992",
+      "1994",
+      "1996",
+      "2008",
+      "2009"
+    ]
+  },
+  {
+    "algorithm": "supervised machine learning",
+    "years": [
+      "2010",
+      "2011",
+      "2013",
+      "2014",
+      "2016",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "topic model",
+    "years": [
+      "2008",
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ]
+  },
+  {
+    "algorithm": "topic modeling",
+    "years": [
+      "2012",
+      "2013",
+      "2016",
+      "2018",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "transformer",
+    "years": [
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "transition system",
+    "years": [
+      "2009",
+      "2010",
+      "2016",
+      "2017",
+      "2020",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "unsupervised method",
+    "years": [
+      "2007",
+      "2008",
+      "2010",
+      "2013",
+      "2014",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "word alignment",
+    "years": [
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2015",
+      "2016"
+    ]
+  },
+  {
+    "algorithm": "word alignments",
+    "years": [
+      "1999",
+      "2008",
+      "2013",
+      "2014",
+      "2016",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "word segmentation",
+    "years": [
+      "2006",
+      "2014",
+      "2015",
+      "2016",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "word sense disambiguation",
+    "years": [
+      "1992",
+      "2008",
+      "2010",
+      "2011",
+      "2017",
+      "2019"
+    ]
+  },
+  {
+    "algorithm": "Abstract Meaning Representation (AMR)",
+    "years": [
+      "2015",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Adversarial training",
+    "years": [
+      "2018",
+      "2020",
+      "2021",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Amazon Mechanical Turk",
+    "years": [
+      "2010",
+      "2011",
+      "2015",
+      "2016",
+      "2019"
+    ]
+  },
+  {
+    "algorithm": "Attention",
+    "years": [
+      "2016",
+      "2017",
+      "2020",
+      "2021",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Automatic Speech Recognition (ASR)",
+    "years": [
+      "2008",
+      "2010",
+      "2011",
+      "2016",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "BART",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "BERTScore",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "BLEU score",
+    "years": [
+      "2008",
+      "2011",
+      "2012",
+      "2018",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "BM25",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Back-translation",
+    "years": [
+      "2015",
+      "2018",
+      "2019",
+      "2020",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Bayesian",
+    "years": [
+      "2007",
+      "2013",
+      "2017",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Conditional Random Field (CRF)",
+    "years": [
+      "2006",
+      "2008",
+      "2012",
+      "2015",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Convolutional Neural Networks",
+    "years": [
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2020"
+    ]
+  },
+  {
+    "algorithm": "Correlation analysis",
+    "years": [
+      "2012",
+      "2016",
+      "2020",
+      "2021",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Cosine Similarity",
+    "years": [
+      "2010",
+      "2016",
+      "2017",
+      "2019",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Curriculum Learning",
+    "years": [
+      "2015",
+      "2020",
+      "2021",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "DCG",
+    "years": [
+      "1984",
+      "1985",
+      "1988",
+      "1995",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Decision Tree",
+    "years": [
+      "2006",
+      "2011",
+      "2012",
+      "2020",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "Dependency parser",
+    "years": [
+      "2006",
+      "2009",
+      "2012",
+      "2015",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "Expectation Maximization",
+    "years": [
+      "2006",
+      "2010",
+      "2017",
+      "2022",
+      "2023"
+    ]
+  },
+  {
+    "algorithm": "F-measure",
+    "years": [
+      "2008",
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ]
+  },
+  {
+    "algorithm": "GPT-2",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "GRU",
+    "years": [
+      "2016",
+      "2017",
+      "2018",
+      "2020",
+      "2021"
+    ]
+  },
+  {
+    "algorithm": "Generative Model",
+    "years": [
+      "1997",
+      "2009",
+      "2010",
+      "2017",
+      "2022"
+    ]
+  },
+  {
+    "algorithm": "Generative models",
+    "years": [
+      "2008",
+      "2013",
+      "2016",
+      "2022",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Graph Convolutional Networks",
+    "years": [
+      "2018",
+      "2020",
+      "2021",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Graph Neural Network",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Graph Neural Networks",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Hidden Markov Models",
+    "years": [
+      "2006",
+      "2009",
+      "2013",
+      "2016",
+      "2017"
+    ]
+  },
+  {
+    "algorithm": "Kneser-Ney",
+    "years": [
+      "2009",
+      "2010",
+      "2011",
+      "2013",
+      "2014"
+    ]
+  },
+  {
+    "algorithm": "Knowledge Distillation",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  {
+    "algorithm": "Knowledge Distillation (KD)",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  }
+]
