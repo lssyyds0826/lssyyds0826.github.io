@@ -1,0 +1,4714 @@
+{
+    "counties": [
+        "Computational Social Science and Cultural Analytics",
+        "Dialogue and Interactive Systems",
+        "Discourse and Pragmatics",
+        "Ethics and NLP",
+        "Generation",
+        "Information Extraction",
+        "Information Retrieval and Text Mining",
+        "Interpretability and Analysis of Models in NLP",
+        "Language Diversity",
+        "Language Grounding to Vision, Robotics and Beyond",
+        "Large Language Models",
+        "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+        "Machine Learning for NLP",
+        "Machine Translation",
+        "Multilingualism and Cross-Lingual NLP",
+        "NLP Applications",
+        "Phonology, Morphology and Word Segmentation",
+        "Question Answering",
+        "Semantics: Lexical",
+        "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+        "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+        "Speech and Multimodality",
+        "Summarization",
+        "Syntax: Tagging, Chunking and Parsing"
+    ],
+    "timeline": [
+        1983,
+        1984,
+        1985,
+        1986,
+        1987,
+        1988,
+        1989,
+        1990,
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+    ],
+    "series": [
+        [
+            [
+                0.013514,
+                0,
+                1.0,
+                "Computational Social Science and Cultural Analytics",
+                1983
+            ],
+            [
+                0.001361,
+                0,
+                1.0,
+                "Dialogue and Interactive Systems",
+                1983
+            ],
+            [
+                0.002813,
+                0,
+                4.0,
+                "Generation",
+                1983
+            ],
+            [
+                0.000449,
+                0,
+                1.0,
+                "Information Extraction",
+                1983
+            ],
+            [
+                0.011194,
+                0,
+                3.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1983
+            ],
+            [
+                0.002095,
+                0,
+                3.0,
+                "Machine Translation",
+                1983
+            ],
+            [
+                0.004283,
+                0,
+                2.0,
+                "Semantics: Lexical",
+                1983
+            ],
+            [
+                0.002928,
+                0,
+                2.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1983
+            ],
+            [
+                0.00274,
+                0,
+                1.0,
+                "Summarization",
+                1983
+            ],
+            [
+                0.005429,
+                0,
+                5.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1983
+            ]
+        ],
+        [
+            [
+                0.067568,
+                4.0,
+                5.0,
+                "Computational Social Science and Cultural Analytics",
+                1984
+            ],
+            [
+                0.014966,
+                10.0,
+                11.0,
+                "Dialogue and Interactive Systems",
+                1984
+            ],
+            [
+                0.028708,
+                0,
+                6.0,
+                "Discourse and Pragmatics",
+                1984
+            ],
+            [
+                0.007032,
+                1.5,
+                10.0,
+                "Generation",
+                1984
+            ],
+            [
+                0.002247,
+                4.0,
+                5.0,
+                "Information Extraction",
+                1984
+            ],
+            [
+                0.007143,
+                0,
+                4.0,
+                "Information Retrieval and Text Mining",
+                1984
+            ],
+            [
+                0.018657,
+                0.6667,
+                5.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1984
+            ],
+            [
+                0.009777,
+                3.6667,
+                14.0,
+                "Machine Translation",
+                1984
+            ],
+            [
+                0.011236,
+                0,
+                1.0,
+                "NLP Applications",
+                1984
+            ],
+            [
+                0.014815,
+                0,
+                4.0,
+                "Phonology, Morphology and Word Segmentation",
+                1984
+            ],
+            [
+                0.011792,
+                0,
+                5.0,
+                "Question Answering",
+                1984
+            ],
+            [
+                0.014989,
+                2.5,
+                7.0,
+                "Semantics: Lexical",
+                1984
+            ],
+            [
+                0.011713,
+                3.0,
+                8.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1984
+            ],
+            [
+                0.016598,
+                0,
+                4.0,
+                "Speech and Multimodality",
+                1984
+            ],
+            [
+                0.026059,
+                3.8,
+                24.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1984
+            ]
+        ],
+        [
+            [
+                0.004082,
+                -0.7273,
+                3.0,
+                "Dialogue and Interactive Systems",
+                1985
+            ],
+            [
+                0.028708,
+                0.0,
+                6.0,
+                "Discourse and Pragmatics",
+                1985
+            ],
+            [
+                0.003516,
+                -0.5,
+                5.0,
+                "Generation",
+                1985
+            ],
+            [
+                0.000899,
+                -0.6,
+                2.0,
+                "Information Extraction",
+                1985
+            ],
+            [
+                0.004219,
+                0,
+                1.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                1985
+            ],
+            [
+                0.029851,
+                0.6,
+                8.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1985
+            ],
+            [
+                0.002793,
+                -0.7143,
+                4.0,
+                "Machine Translation",
+                1985
+            ],
+            [
+                0.011111,
+                -0.25,
+                3.0,
+                "Phonology, Morphology and Word Segmentation",
+                1985
+            ],
+            [
+                0.002358,
+                -0.8,
+                1.0,
+                "Question Answering",
+                1985
+            ],
+            [
+                0.014989,
+                0.0,
+                7.0,
+                "Semantics: Lexical",
+                1985
+            ],
+            [
+                0.002928,
+                -0.75,
+                2.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1985
+            ],
+            [
+                0.00274,
+                0.0,
+                1.0,
+                "Summarization",
+                1985
+            ],
+            [
+                0.02063,
+                -0.2083,
+                19.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1985
+            ]
+        ],
+        [
+            [
+                0.001361,
+                -0.6667,
+                1.0,
+                "Dialogue and Interactive Systems",
+                1986
+            ],
+            [
+                0.014354,
+                -0.5,
+                3.0,
+                "Discourse and Pragmatics",
+                1986
+            ],
+            [
+                0.001798,
+                1.0,
+                4.0,
+                "Information Extraction",
+                1986
+            ],
+            [
+                0.001786,
+                -0.75,
+                1.0,
+                "Information Retrieval and Text Mining",
+                1986
+            ],
+            [
+                0.026119,
+                -0.125,
+                7.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1986
+            ],
+            [
+                0.002095,
+                -0.25,
+                3.0,
+                "Machine Translation",
+                1986
+            ],
+            [
+                0.007407,
+                -0.3333,
+                2.0,
+                "Phonology, Morphology and Word Segmentation",
+                1986
+            ],
+            [
+                0.002358,
+                0.0,
+                1.0,
+                "Question Answering",
+                1986
+            ],
+            [
+                0.010707,
+                -0.2857,
+                5.0,
+                "Semantics: Lexical",
+                1986
+            ],
+            [
+                0.002928,
+                0.0,
+                2.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1986
+            ],
+            [
+                0.011944,
+                -0.4211,
+                11.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1986
+            ]
+        ],
+        [
+            [
+                0.005442,
+                3.0,
+                4.0,
+                "Dialogue and Interactive Systems",
+                1987
+            ],
+            [
+                0.019139,
+                0.3333,
+                4.0,
+                "Discourse and Pragmatics",
+                1987
+            ],
+            [
+                0.000703,
+                -0.8,
+                1.0,
+                "Generation",
+                1987
+            ],
+            [
+                0.000899,
+                -0.5,
+                2.0,
+                "Information Extraction",
+                1987
+            ],
+            [
+                0.001786,
+                0.0,
+                1.0,
+                "Information Retrieval and Text Mining",
+                1987
+            ],
+            [
+                0.014925,
+                -0.4286,
+                4.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1987
+            ],
+            [
+                0.011111,
+                0.5,
+                3.0,
+                "Phonology, Morphology and Word Segmentation",
+                1987
+            ],
+            [
+                0.004283,
+                -0.6,
+                2.0,
+                "Semantics: Lexical",
+                1987
+            ],
+            [
+                0.004392,
+                0.5,
+                3.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1987
+            ],
+            [
+                0.010858,
+                -0.0909,
+                10.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1987
+            ]
+        ],
+        [
+            [
+                0.004082,
+                -0.25,
+                3.0,
+                "Dialogue and Interactive Systems",
+                1988
+            ],
+            [
+                0.019139,
+                0.0,
+                4.0,
+                "Discourse and Pragmatics",
+                1988
+            ],
+            [
+                0.00211,
+                2.0,
+                3.0,
+                "Generation",
+                1988
+            ],
+            [
+                0.001348,
+                0.5,
+                3.0,
+                "Information Extraction",
+                1988
+            ],
+            [
+                0.026119,
+                0.75,
+                7.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1988
+            ],
+            [
+                0.000698,
+                -0.6667,
+                1.0,
+                "Machine Translation",
+                1988
+            ],
+            [
+                0.007407,
+                -0.3333,
+                2.0,
+                "Phonology, Morphology and Word Segmentation",
+                1988
+            ],
+            [
+                0.008565,
+                1.0,
+                4.0,
+                "Semantics: Lexical",
+                1988
+            ],
+            [
+                0.002928,
+                -0.3333,
+                2.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1988
+            ],
+            [
+                0.005429,
+                -0.5,
+                5.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1988
+            ]
+        ],
+        [
+            [
+                0.001361,
+                -0.6667,
+                1.0,
+                "Dialogue and Interactive Systems",
+                1989
+            ],
+            [
+                0.019139,
+                0.0,
+                4.0,
+                "Discourse and Pragmatics",
+                1989
+            ],
+            [
+                0.00211,
+                0.0,
+                3.0,
+                "Generation",
+                1989
+            ],
+            [
+                0.000449,
+                -0.6667,
+                1.0,
+                "Information Extraction",
+                1989
+            ],
+            [
+                0.026119,
+                0.0,
+                7.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1989
+            ],
+            [
+                0.000698,
+                0.0,
+                1.0,
+                "Machine Translation",
+                1989
+            ],
+            [
+                0.003704,
+                -0.5,
+                1.0,
+                "Phonology, Morphology and Word Segmentation",
+                1989
+            ],
+            [
+                0.002358,
+                0.0,
+                1.0,
+                "Question Answering",
+                1989
+            ],
+            [
+                0.006424,
+                -0.25,
+                3.0,
+                "Semantics: Lexical",
+                1989
+            ],
+            [
+                0.007321,
+                1.5,
+                5.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1989
+            ],
+            [
+                0.0076,
+                0.4,
+                7.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1989
+            ]
+        ],
+        [
+            [
+                0.002721,
+                1.0,
+                2.0,
+                "Dialogue and Interactive Systems",
+                1990
+            ],
+            [
+                0.023923,
+                0.25,
+                5.0,
+                "Discourse and Pragmatics",
+                1990
+            ],
+            [
+                0.00211,
+                0.0,
+                3.0,
+                "Generation",
+                1990
+            ],
+            [
+                0.000899,
+                1.0,
+                2.0,
+                "Information Extraction",
+                1990
+            ],
+            [
+                0.026119,
+                0.0,
+                7.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1990
+            ],
+            [
+                0.000698,
+                0.0,
+                1.0,
+                "Machine Translation",
+                1990
+            ],
+            [
+                0.004283,
+                -0.3333,
+                2.0,
+                "Semantics: Lexical",
+                1990
+            ],
+            [
+                0.010249,
+                0.4,
+                7.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1990
+            ],
+            [
+                0.004149,
+                -0.75,
+                1.0,
+                "Speech and Multimodality",
+                1990
+            ],
+            [
+                0.009772,
+                0.2857,
+                9.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1990
+            ]
+        ],
+        [
+            [
+                0.005442,
+                1.0,
+                4.0,
+                "Dialogue and Interactive Systems",
+                1991
+            ],
+            [
+                0.019139,
+                -0.2,
+                4.0,
+                "Discourse and Pragmatics",
+                1991
+            ],
+            [
+                0.003516,
+                0.6667,
+                5.0,
+                "Generation",
+                1991
+            ],
+            [
+                0.000449,
+                -0.5,
+                1.0,
+                "Information Extraction",
+                1991
+            ],
+            [
+                0.004219,
+                0.0,
+                1.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                1991
+            ],
+            [
+                0.022388,
+                -0.1429,
+                6.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1991
+            ],
+            [
+                0.005587,
+                7.0,
+                8.0,
+                "Machine Translation",
+                1991
+            ],
+            [
+                0.007407,
+                1.0,
+                2.0,
+                "Phonology, Morphology and Word Segmentation",
+                1991
+            ],
+            [
+                0.010707,
+                1.5,
+                5.0,
+                "Semantics: Lexical",
+                1991
+            ],
+            [
+                0.004392,
+                -0.5714,
+                3.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1991
+            ],
+            [
+                0.008299,
+                1.0,
+                2.0,
+                "Speech and Multimodality",
+                1991
+            ],
+            [
+                0.016287,
+                0.6667,
+                15.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1991
+            ]
+        ],
+        [
+            [
+                0.013514,
+                -0.8,
+                1.0,
+                "Computational Social Science and Cultural Analytics",
+                1992
+            ],
+            [
+                0.004082,
+                -0.25,
+                3.0,
+                "Dialogue and Interactive Systems",
+                1992
+            ],
+            [
+                0.023923,
+                0.25,
+                5.0,
+                "Discourse and Pragmatics",
+                1992
+            ],
+            [
+                0.001406,
+                -0.6,
+                2.0,
+                "Generation",
+                1992
+            ],
+            [
+                0.001348,
+                2.0,
+                3.0,
+                "Information Extraction",
+                1992
+            ],
+            [
+                0.003571,
+                1.0,
+                2.0,
+                "Information Retrieval and Text Mining",
+                1992
+            ],
+            [
+                0.004219,
+                0.0,
+                1.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                1992
+            ],
+            [
+                0.026119,
+                0.1667,
+                7.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1992
+            ],
+            [
+                0.002095,
+                -0.625,
+                3.0,
+                "Machine Translation",
+                1992
+            ],
+            [
+                0.008565,
+                -0.2,
+                4.0,
+                "Semantics: Lexical",
+                1992
+            ],
+            [
+                0.010249,
+                1.3333,
+                7.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1992
+            ],
+            [
+                0.004149,
+                -0.5,
+                1.0,
+                "Speech and Multimodality",
+                1992
+            ],
+            [
+                0.016287,
+                0.0,
+                15.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1992
+            ]
+        ],
+        [
+            [
+                0.013514,
+                0.0,
+                1.0,
+                "Computational Social Science and Cultural Analytics",
+                1993
+            ],
+            [
+                0.002721,
+                -0.3333,
+                2.0,
+                "Dialogue and Interactive Systems",
+                1993
+            ],
+            [
+                0.009569,
+                -0.6,
+                2.0,
+                "Discourse and Pragmatics",
+                1993
+            ],
+            [
+                0.00211,
+                0.5,
+                3.0,
+                "Generation",
+                1993
+            ],
+            [
+                0.002697,
+                1.0,
+                6.0,
+                "Information Extraction",
+                1993
+            ],
+            [
+                0.001786,
+                -0.5,
+                1.0,
+                "Information Retrieval and Text Mining",
+                1993
+            ],
+            [
+                0.004219,
+                0.0,
+                1.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                1993
+            ],
+            [
+                0.018657,
+                -0.2857,
+                5.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1993
+            ],
+            [
+                0.002793,
+                0.3333,
+                4.0,
+                "Machine Translation",
+                1993
+            ],
+            [
+                0.007407,
+                0.0,
+                2.0,
+                "Phonology, Morphology and Word Segmentation",
+                1993
+            ],
+            [
+                0.002141,
+                -0.75,
+                1.0,
+                "Semantics: Lexical",
+                1993
+            ],
+            [
+                0.005857,
+                -0.4286,
+                4.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1993
+            ],
+            [
+                0.004149,
+                0.0,
+                1.0,
+                "Speech and Multimodality",
+                1993
+            ],
+            [
+                0.011944,
+                -0.2667,
+                11.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1993
+            ]
+        ],
+        [
+            [
+                0.013514,
+                0.0,
+                1.0,
+                "Computational Social Science and Cultural Analytics",
+                1994
+            ],
+            [
+                0.006803,
+                1.5,
+                5.0,
+                "Dialogue and Interactive Systems",
+                1994
+            ],
+            [
+                0.033493,
+                2.5,
+                7.0,
+                "Discourse and Pragmatics",
+                1994
+            ],
+            [
+                0.001406,
+                -0.3333,
+                2.0,
+                "Generation",
+                1994
+            ],
+            [
+                0.002247,
+                -0.1667,
+                5.0,
+                "Information Extraction",
+                1994
+            ],
+            [
+                0.004219,
+                0.0,
+                1.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                1994
+            ],
+            [
+                0.014925,
+                -0.2,
+                4.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1994
+            ],
+            [
+                0.002793,
+                0.0,
+                4.0,
+                "Machine Translation",
+                1994
+            ],
+            [
+                0.007407,
+                0.0,
+                2.0,
+                "Phonology, Morphology and Word Segmentation",
+                1994
+            ],
+            [
+                0.002141,
+                0.0,
+                1.0,
+                "Semantics: Lexical",
+                1994
+            ],
+            [
+                0.005857,
+                0.0,
+                4.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1994
+            ],
+            [
+                0.015201,
+                0.2727,
+                14.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1994
+            ]
+        ],
+        [
+            [
+                0.006803,
+                0.0,
+                5.0,
+                "Dialogue and Interactive Systems",
+                1995
+            ],
+            [
+                0.019139,
+                -0.4286,
+                4.0,
+                "Discourse and Pragmatics",
+                1995
+            ],
+            [
+                0.002813,
+                1.0,
+                4.0,
+                "Generation",
+                1995
+            ],
+            [
+                0.002697,
+                0.2,
+                6.0,
+                "Information Extraction",
+                1995
+            ],
+            [
+                0.004219,
+                0.0,
+                1.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                1995
+            ],
+            [
+                0.033582,
+                1.25,
+                9.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1995
+            ],
+            [
+                0.002375,
+                0,
+                1.0,
+                "Machine Learning for NLP",
+                1995
+            ],
+            [
+                0.001397,
+                -0.5,
+                2.0,
+                "Machine Translation",
+                1995
+            ],
+            [
+                0.007407,
+                0.0,
+                2.0,
+                "Phonology, Morphology and Word Segmentation",
+                1995
+            ],
+            [
+                0.019272,
+                8.0,
+                9.0,
+                "Semantics: Lexical",
+                1995
+            ],
+            [
+                0.002928,
+                -0.5,
+                2.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1995
+            ],
+            [
+                0.00274,
+                0.0,
+                1.0,
+                "Summarization",
+                1995
+            ],
+            [
+                0.010858,
+                -0.2857,
+                10.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1995
+            ]
+        ],
+        [
+            [
+                0.013514,
+                0.0,
+                1.0,
+                "Computational Social Science and Cultural Analytics",
+                1996
+            ],
+            [
+                0.004082,
+                -0.4,
+                3.0,
+                "Dialogue and Interactive Systems",
+                1996
+            ],
+            [
+                0.028708,
+                0.5,
+                6.0,
+                "Discourse and Pragmatics",
+                1996
+            ],
+            [
+                0.00211,
+                -0.25,
+                3.0,
+                "Generation",
+                1996
+            ],
+            [
+                0.002247,
+                -0.1667,
+                5.0,
+                "Information Extraction",
+                1996
+            ],
+            [
+                0.018657,
+                -0.4444,
+                5.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1996
+            ],
+            [
+                0.002375,
+                0.0,
+                1.0,
+                "Machine Learning for NLP",
+                1996
+            ],
+            [
+                0.002793,
+                1.0,
+                4.0,
+                "Machine Translation",
+                1996
+            ],
+            [
+                0.011111,
+                0.5,
+                3.0,
+                "Phonology, Morphology and Word Segmentation",
+                1996
+            ],
+            [
+                0.012848,
+                -0.3333,
+                6.0,
+                "Semantics: Lexical",
+                1996
+            ],
+            [
+                0.004392,
+                0.5,
+                3.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1996
+            ],
+            [
+                0.00274,
+                0.0,
+                1.0,
+                "Summarization",
+                1996
+            ],
+            [
+                0.016287,
+                0.5,
+                15.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1996
+            ]
+        ],
+        [
+            [
+                0.013514,
+                0.0,
+                1.0,
+                "Computational Social Science and Cultural Analytics",
+                1997
+            ],
+            [
+                0.005442,
+                0.3333,
+                4.0,
+                "Dialogue and Interactive Systems",
+                1997
+            ],
+            [
+                0.023923,
+                -0.1667,
+                5.0,
+                "Discourse and Pragmatics",
+                1997
+            ],
+            [
+                0.005626,
+                1.6667,
+                8.0,
+                "Generation",
+                1997
+            ],
+            [
+                0.004045,
+                0.8,
+                9.0,
+                "Information Extraction",
+                1997
+            ],
+            [
+                0.001786,
+                0.0,
+                1.0,
+                "Information Retrieval and Text Mining",
+                1997
+            ],
+            [
+                0.004219,
+                0.0,
+                1.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                1997
+            ],
+            [
+                0.026119,
+                0.4,
+                7.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1997
+            ],
+            [
+                0.009501,
+                3.0,
+                4.0,
+                "Machine Learning for NLP",
+                1997
+            ],
+            [
+                0.00419,
+                0.5,
+                6.0,
+                "Machine Translation",
+                1997
+            ],
+            [
+                0.011111,
+                0.0,
+                3.0,
+                "Phonology, Morphology and Word Segmentation",
+                1997
+            ],
+            [
+                0.008565,
+                -0.3333,
+                4.0,
+                "Semantics: Lexical",
+                1997
+            ],
+            [
+                0.008785,
+                1.0,
+                6.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1997
+            ],
+            [
+                0.004149,
+                0.0,
+                1.0,
+                "Speech and Multimodality",
+                1997
+            ],
+            [
+                0.013029,
+                -0.2,
+                12.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1997
+            ]
+        ],
+        [
+            [
+                0.020408,
+                2.75,
+                15.0,
+                "Dialogue and Interactive Systems",
+                1998
+            ],
+            [
+                0.047847,
+                1.0,
+                10.0,
+                "Discourse and Pragmatics",
+                1998
+            ],
+            [
+                0.010549,
+                0.875,
+                15.0,
+                "Generation",
+                1998
+            ],
+            [
+                0.014382,
+                2.5556,
+                32.0,
+                "Information Extraction",
+                1998
+            ],
+            [
+                0.023214,
+                12.0,
+                13.0,
+                "Information Retrieval and Text Mining",
+                1998
+            ],
+            [
+                0.019802,
+                0,
+                2.0,
+                "Language Diversity",
+                1998
+            ],
+            [
+                0.004219,
+                0.0,
+                1.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                1998
+            ],
+            [
+                0.052239,
+                1.0,
+                14.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1998
+            ],
+            [
+                0.014252,
+                0.5,
+                6.0,
+                "Machine Learning for NLP",
+                1998
+            ],
+            [
+                0.020251,
+                3.8333,
+                29.0,
+                "Machine Translation",
+                1998
+            ],
+            [
+                0.011236,
+                0.0,
+                1.0,
+                "NLP Applications",
+                1998
+            ],
+            [
+                0.044444,
+                3.0,
+                12.0,
+                "Phonology, Morphology and Word Segmentation",
+                1998
+            ],
+            [
+                0.029979,
+                2.5,
+                14.0,
+                "Semantics: Lexical",
+                1998
+            ],
+            [
+                0.007321,
+                -0.1667,
+                5.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1998
+            ],
+            [
+                0.033195,
+                7.0,
+                8.0,
+                "Speech and Multimodality",
+                1998
+            ],
+            [
+                0.016438,
+                5.0,
+                6.0,
+                "Summarization",
+                1998
+            ],
+            [
+                0.053203,
+                3.0833,
+                49.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1998
+            ]
+        ],
+        [
+            [
+                0.008163,
+                -0.6,
+                6.0,
+                "Dialogue and Interactive Systems",
+                1999
+            ],
+            [
+                0.019139,
+                -0.6,
+                4.0,
+                "Discourse and Pragmatics",
+                1999
+            ],
+            [
+                0.002813,
+                -0.7333,
+                4.0,
+                "Generation",
+                1999
+            ],
+            [
+                0.004944,
+                -0.6562,
+                11.0,
+                "Information Extraction",
+                1999
+            ],
+            [
+                0.010714,
+                -0.5385,
+                6.0,
+                "Information Retrieval and Text Mining",
+                1999
+            ],
+            [
+                0.029851,
+                -0.4286,
+                8.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                1999
+            ],
+            [
+                0.007126,
+                -0.5,
+                3.0,
+                "Machine Learning for NLP",
+                1999
+            ],
+            [
+                0.002095,
+                -0.8966,
+                3.0,
+                "Machine Translation",
+                1999
+            ],
+            [
+                0.011111,
+                -0.75,
+                3.0,
+                "Phonology, Morphology and Word Segmentation",
+                1999
+            ],
+            [
+                0.002358,
+                0.0,
+                1.0,
+                "Question Answering",
+                1999
+            ],
+            [
+                0.006424,
+                -0.7857,
+                3.0,
+                "Semantics: Lexical",
+                1999
+            ],
+            [
+                0.007321,
+                0.0,
+                5.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                1999
+            ],
+            [
+                0.012448,
+                -0.625,
+                3.0,
+                "Speech and Multimodality",
+                1999
+            ],
+            [
+                0.008219,
+                -0.5,
+                3.0,
+                "Summarization",
+                1999
+            ],
+            [
+                0.017372,
+                -0.6735,
+                16.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                1999
+            ]
+        ],
+        [
+            [
+                0.010884,
+                0.3333,
+                8.0,
+                "Dialogue and Interactive Systems",
+                2005
+            ],
+            [
+                0.014354,
+                -0.25,
+                3.0,
+                "Discourse and Pragmatics",
+                2005
+            ],
+            [
+                0.002813,
+                0.0,
+                4.0,
+                "Generation",
+                2005
+            ],
+            [
+                0.008539,
+                0.7273,
+                19.0,
+                "Information Extraction",
+                2005
+            ],
+            [
+                0.0125,
+                0.1667,
+                7.0,
+                "Information Retrieval and Text Mining",
+                2005
+            ],
+            [
+                0.003731,
+                -0.875,
+                1.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2005
+            ],
+            [
+                0.014252,
+                1.0,
+                6.0,
+                "Machine Learning for NLP",
+                2005
+            ],
+            [
+                0.010475,
+                4.0,
+                15.0,
+                "Machine Translation",
+                2005
+            ],
+            [
+                0.005952,
+                0,
+                1.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2005
+            ],
+            [
+                0.007407,
+                -0.3333,
+                2.0,
+                "Phonology, Morphology and Word Segmentation",
+                2005
+            ],
+            [
+                0.002358,
+                0.0,
+                1.0,
+                "Question Answering",
+                2005
+            ],
+            [
+                0.021413,
+                2.3333,
+                10.0,
+                "Semantics: Lexical",
+                2005
+            ],
+            [
+                0.005857,
+                -0.2,
+                4.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2005
+            ],
+            [
+                0.002587,
+                0,
+                2.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2005
+            ],
+            [
+                0.012448,
+                0.0,
+                3.0,
+                "Speech and Multimodality",
+                2005
+            ],
+            [
+                0.013699,
+                0.6667,
+                5.0,
+                "Summarization",
+                2005
+            ],
+            [
+                0.017372,
+                0.0,
+                16.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2005
+            ]
+        ],
+        [
+            [
+                0.013514,
+                0.0,
+                1.0,
+                "Computational Social Science and Cultural Analytics",
+                2006
+            ],
+            [
+                0.016327,
+                0.5,
+                12.0,
+                "Dialogue and Interactive Systems",
+                2006
+            ],
+            [
+                0.009569,
+                -0.3333,
+                2.0,
+                "Discourse and Pragmatics",
+                2006
+            ],
+            [
+                0.010549,
+                2.75,
+                15.0,
+                "Generation",
+                2006
+            ],
+            [
+                0.040449,
+                3.7368,
+                90.0,
+                "Information Extraction",
+                2006
+            ],
+            [
+                0.055357,
+                3.4286,
+                31.0,
+                "Information Retrieval and Text Mining",
+                2006
+            ],
+            [
+                0.019802,
+                0.0,
+                2.0,
+                "Language Diversity",
+                2006
+            ],
+            [
+                0.041045,
+                10.0,
+                11.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2006
+            ],
+            [
+                0.038005,
+                1.6667,
+                16.0,
+                "Machine Learning for NLP",
+                2006
+            ],
+            [
+                0.026536,
+                1.5333,
+                38.0,
+                "Machine Translation",
+                2006
+            ],
+            [
+                0.011905,
+                1.0,
+                2.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2006
+            ],
+            [
+                0.022472,
+                1.0,
+                2.0,
+                "NLP Applications",
+                2006
+            ],
+            [
+                0.040741,
+                4.5,
+                11.0,
+                "Phonology, Morphology and Word Segmentation",
+                2006
+            ],
+            [
+                0.028302,
+                11.0,
+                12.0,
+                "Question Answering",
+                2006
+            ],
+            [
+                0.049251,
+                1.3,
+                23.0,
+                "Semantics: Lexical",
+                2006
+            ],
+            [
+                0.026354,
+                3.5,
+                18.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2006
+            ],
+            [
+                0.005175,
+                1.0,
+                4.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2006
+            ],
+            [
+                0.041494,
+                2.3333,
+                10.0,
+                "Speech and Multimodality",
+                2006
+            ],
+            [
+                0.019178,
+                0.4,
+                7.0,
+                "Summarization",
+                2006
+            ],
+            [
+                0.057546,
+                2.3125,
+                53.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2006
+            ]
+        ],
+        [
+            [
+                0.014966,
+                -0.0833,
+                11.0,
+                "Dialogue and Interactive Systems",
+                2007
+            ],
+            [
+                0.019139,
+                1.0,
+                4.0,
+                "Discourse and Pragmatics",
+                2007
+            ],
+            [
+                0.004219,
+                -0.6,
+                6.0,
+                "Generation",
+                2007
+            ],
+            [
+                0.019326,
+                -0.5222,
+                43.0,
+                "Information Extraction",
+                2007
+            ],
+            [
+                0.016071,
+                -0.7097,
+                9.0,
+                "Information Retrieval and Text Mining",
+                2007
+            ],
+            [
+                0.004219,
+                0.0,
+                1.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2007
+            ],
+            [
+                0.001087,
+                0,
+                1.0,
+                "Large Language Models",
+                2007
+            ],
+            [
+                0.022388,
+                -0.4545,
+                6.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2007
+            ],
+            [
+                0.023753,
+                -0.375,
+                10.0,
+                "Machine Learning for NLP",
+                2007
+            ],
+            [
+                0.02514,
+                -0.0526,
+                36.0,
+                "Machine Translation",
+                2007
+            ],
+            [
+                0.011905,
+                0.0,
+                2.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2007
+            ],
+            [
+                0.02963,
+                -0.2727,
+                8.0,
+                "Phonology, Morphology and Word Segmentation",
+                2007
+            ],
+            [
+                0.009434,
+                -0.6667,
+                4.0,
+                "Question Answering",
+                2007
+            ],
+            [
+                0.025696,
+                -0.4783,
+                12.0,
+                "Semantics: Lexical",
+                2007
+            ],
+            [
+                0.033675,
+                0.2778,
+                23.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2007
+            ],
+            [
+                0.009056,
+                0.75,
+                7.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2007
+            ],
+            [
+                0.020747,
+                -0.5,
+                5.0,
+                "Speech and Multimodality",
+                2007
+            ],
+            [
+                0.016438,
+                -0.1429,
+                6.0,
+                "Summarization",
+                2007
+            ],
+            [
+                0.043431,
+                -0.2453,
+                40.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2007
+            ]
+        ],
+        [
+            [
+                0.013514,
+                0.0,
+                1.0,
+                "Computational Social Science and Cultural Analytics",
+                2008
+            ],
+            [
+                0.020408,
+                0.3636,
+                15.0,
+                "Dialogue and Interactive Systems",
+                2008
+            ],
+            [
+                0.033493,
+                0.75,
+                7.0,
+                "Discourse and Pragmatics",
+                2008
+            ],
+            [
+                0.009845,
+                1.3333,
+                14.0,
+                "Generation",
+                2008
+            ],
+            [
+                0.020225,
+                0.0465,
+                45.0,
+                "Information Extraction",
+                2008
+            ],
+            [
+                0.028571,
+                0.7778,
+                16.0,
+                "Information Retrieval and Text Mining",
+                2008
+            ],
+            [
+                0.004219,
+                0.0,
+                1.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2008
+            ],
+            [
+                0.001087,
+                0.0,
+                1.0,
+                "Large Language Models",
+                2008
+            ],
+            [
+                0.007463,
+                -0.6667,
+                2.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2008
+            ],
+            [
+                0.023753,
+                0.0,
+                10.0,
+                "Machine Learning for NLP",
+                2008
+            ],
+            [
+                0.051676,
+                1.0556,
+                74.0,
+                "Machine Translation",
+                2008
+            ],
+            [
+                0.037037,
+                0.25,
+                10.0,
+                "Phonology, Morphology and Word Segmentation",
+                2008
+            ],
+            [
+                0.016509,
+                0.75,
+                7.0,
+                "Question Answering",
+                2008
+            ],
+            [
+                0.014989,
+                -0.4167,
+                7.0,
+                "Semantics: Lexical",
+                2008
+            ],
+            [
+                0.016105,
+                -0.5217,
+                11.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2008
+            ],
+            [
+                0.009056,
+                0.0,
+                7.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2008
+            ],
+            [
+                0.037344,
+                0.8,
+                9.0,
+                "Speech and Multimodality",
+                2008
+            ],
+            [
+                0.030137,
+                0.8333,
+                11.0,
+                "Summarization",
+                2008
+            ],
+            [
+                0.034745,
+                -0.2,
+                32.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2008
+            ]
+        ],
+        [
+            [
+                0.016327,
+                -0.2,
+                12.0,
+                "Dialogue and Interactive Systems",
+                2009
+            ],
+            [
+                0.023923,
+                -0.2857,
+                5.0,
+                "Discourse and Pragmatics",
+                2009
+            ],
+            [
+                0.011955,
+                0.2143,
+                17.0,
+                "Generation",
+                2009
+            ],
+            [
+                0.027865,
+                0.3778,
+                62.0,
+                "Information Extraction",
+                2009
+            ],
+            [
+                0.048214,
+                0.6875,
+                27.0,
+                "Information Retrieval and Text Mining",
+                2009
+            ],
+            [
+                0.009901,
+                -0.5,
+                1.0,
+                "Language Diversity",
+                2009
+            ],
+            [
+                0.004219,
+                0.0,
+                1.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2009
+            ],
+            [
+                0.002174,
+                1.0,
+                2.0,
+                "Large Language Models",
+                2009
+            ],
+            [
+                0.014925,
+                1.0,
+                4.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2009
+            ],
+            [
+                0.019002,
+                -0.2,
+                8.0,
+                "Machine Learning for NLP",
+                2009
+            ],
+            [
+                0.043296,
+                -0.1622,
+                62.0,
+                "Machine Translation",
+                2009
+            ],
+            [
+                0.005952,
+                -0.5,
+                1.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2009
+            ],
+            [
+                0.022472,
+                0.0,
+                2.0,
+                "NLP Applications",
+                2009
+            ],
+            [
+                0.037037,
+                0.0,
+                10.0,
+                "Phonology, Morphology and Word Segmentation",
+                2009
+            ],
+            [
+                0.021226,
+                0.2857,
+                9.0,
+                "Question Answering",
+                2009
+            ],
+            [
+                0.034261,
+                1.2857,
+                16.0,
+                "Semantics: Lexical",
+                2009
+            ],
+            [
+                0.026354,
+                0.6364,
+                18.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2009
+            ],
+            [
+                0.028461,
+                2.1429,
+                22.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2009
+            ],
+            [
+                0.008299,
+                -0.7778,
+                2.0,
+                "Speech and Multimodality",
+                2009
+            ],
+            [
+                0.052055,
+                0.7273,
+                19.0,
+                "Summarization",
+                2009
+            ],
+            [
+                0.04886,
+                0.4062,
+                45.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2009
+            ]
+        ],
+        [
+            [
+                0.031293,
+                0.9167,
+                23.0,
+                "Dialogue and Interactive Systems",
+                2010
+            ],
+            [
+                0.052632,
+                1.2,
+                11.0,
+                "Discourse and Pragmatics",
+                2010
+            ],
+            [
+                0.020394,
+                0.7059,
+                29.0,
+                "Generation",
+                2010
+            ],
+            [
+                0.074607,
+                1.6774,
+                166.0,
+                "Information Extraction",
+                2010
+            ],
+            [
+                0.046429,
+                -0.037,
+                26.0,
+                "Information Retrieval and Text Mining",
+                2010
+            ],
+            [
+                0.039604,
+                3.0,
+                4.0,
+                "Language Diversity",
+                2010
+            ],
+            [
+                0.029536,
+                6.0,
+                7.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2010
+            ],
+            [
+                0.00163,
+                -0.25,
+                1.5,
+                "Large Language Models",
+                2010
+            ],
+            [
+                0.141791,
+                8.5,
+                38.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2010
+            ],
+            [
+                0.061758,
+                2.25,
+                26.0,
+                "Machine Learning for NLP",
+                2010
+            ],
+            [
+                0.052374,
+                0.2097,
+                75.0,
+                "Machine Translation",
+                2010
+            ],
+            [
+                0.047619,
+                7.0,
+                8.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2010
+            ],
+            [
+                0.022472,
+                0.0,
+                2.0,
+                "NLP Applications",
+                2010
+            ],
+            [
+                0.088889,
+                1.4,
+                24.0,
+                "Phonology, Morphology and Word Segmentation",
+                2010
+            ],
+            [
+                0.009434,
+                -0.5556,
+                4.0,
+                "Question Answering",
+                2010
+            ],
+            [
+                0.074946,
+                1.1875,
+                35.0,
+                "Semantics: Lexical",
+                2010
+            ],
+            [
+                0.058565,
+                1.2222,
+                40.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2010
+            ],
+            [
+                0.060802,
+                1.1364,
+                47.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2010
+            ],
+            [
+                0.029046,
+                2.5,
+                7.0,
+                "Speech and Multimodality",
+                2010
+            ],
+            [
+                0.079452,
+                0.5263,
+                29.0,
+                "Summarization",
+                2010
+            ],
+            [
+                0.091205,
+                0.8667,
+                84.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2010
+            ]
+        ],
+        [
+            [
+                0.027027,
+                1.0,
+                2.0,
+                "Computational Social Science and Cultural Analytics",
+                2011
+            ],
+            [
+                0.034014,
+                0.087,
+                25.0,
+                "Dialogue and Interactive Systems",
+                2011
+            ],
+            [
+                0.019139,
+                -0.6364,
+                4.0,
+                "Discourse and Pragmatics",
+                2011
+            ],
+            [
+                0.026723,
+                0.3103,
+                38.0,
+                "Generation",
+                2011
+            ],
+            [
+                0.079101,
+                0.0602,
+                176.0,
+                "Information Extraction",
+                2011
+            ],
+            [
+                0.080357,
+                0.7308,
+                45.0,
+                "Information Retrieval and Text Mining",
+                2011
+            ],
+            [
+                0.059406,
+                0.5,
+                6.0,
+                "Language Diversity",
+                2011
+            ],
+            [
+                0.008439,
+                -0.7143,
+                2.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2011
+            ],
+            [
+                0.001087,
+                -0.3333,
+                1.0,
+                "Large Language Models",
+                2011
+            ],
+            [
+                0.048507,
+                -0.6579,
+                13.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2011
+            ],
+            [
+                0.054632,
+                -0.1154,
+                23.0,
+                "Machine Learning for NLP",
+                2011
+            ],
+            [
+                0.074721,
+                0.4267,
+                107.0,
+                "Machine Translation",
+                2011
+            ],
+            [
+                0.029762,
+                -0.375,
+                5.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2011
+            ],
+            [
+                0.067416,
+                2.0,
+                6.0,
+                "NLP Applications",
+                2011
+            ],
+            [
+                0.062963,
+                -0.2917,
+                17.0,
+                "Phonology, Morphology and Word Segmentation",
+                2011
+            ],
+            [
+                0.014151,
+                0.5,
+                6.0,
+                "Question Answering",
+                2011
+            ],
+            [
+                0.038544,
+                -0.4857,
+                18.0,
+                "Semantics: Lexical",
+                2011
+            ],
+            [
+                0.030747,
+                -0.475,
+                21.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2011
+            ],
+            [
+                0.059508,
+                -0.0213,
+                46.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2011
+            ],
+            [
+                0.078838,
+                1.7143,
+                19.0,
+                "Speech and Multimodality",
+                2011
+            ],
+            [
+                0.065753,
+                -0.1724,
+                24.0,
+                "Summarization",
+                2011
+            ],
+            [
+                0.064061,
+                -0.2976,
+                59.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2011
+            ]
+        ],
+        [
+            [
+                0.081081,
+                2.0,
+                6.0,
+                "Computational Social Science and Cultural Analytics",
+                2012
+            ],
+            [
+                0.013605,
+                -0.6,
+                10.0,
+                "Dialogue and Interactive Systems",
+                2012
+            ],
+            [
+                0.038278,
+                1.0,
+                8.0,
+                "Discourse and Pragmatics",
+                2012
+            ],
+            [
+                0.016878,
+                -0.3684,
+                24.0,
+                "Generation",
+                2012
+            ],
+            [
+                0.027416,
+                -0.6534,
+                61.0,
+                "Information Extraction",
+                2012
+            ],
+            [
+                0.0375,
+                -0.5333,
+                21.0,
+                "Information Retrieval and Text Mining",
+                2012
+            ],
+            [
+                0.039604,
+                -0.3333,
+                4.0,
+                "Language Diversity",
+                2012
+            ],
+            [
+                0.012658,
+                0.5,
+                3.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2012
+            ],
+            [
+                0.001087,
+                0.0,
+                1.0,
+                "Large Language Models",
+                2012
+            ],
+            [
+                0.037313,
+                -0.2308,
+                10.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2012
+            ],
+            [
+                0.028504,
+                -0.4783,
+                12.0,
+                "Machine Learning for NLP",
+                2012
+            ],
+            [
+                0.050279,
+                -0.3271,
+                72.0,
+                "Machine Translation",
+                2012
+            ],
+            [
+                0.011905,
+                -0.6,
+                2.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2012
+            ],
+            [
+                0.044944,
+                -0.3333,
+                4.0,
+                "NLP Applications",
+                2012
+            ],
+            [
+                0.02963,
+                -0.5294,
+                8.0,
+                "Phonology, Morphology and Word Segmentation",
+                2012
+            ],
+            [
+                0.004717,
+                -0.6667,
+                2.0,
+                "Question Answering",
+                2012
+            ],
+            [
+                0.012848,
+                -0.6667,
+                6.0,
+                "Semantics: Lexical",
+                2012
+            ],
+            [
+                0.016105,
+                -0.4762,
+                11.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2012
+            ],
+            [
+                0.016818,
+                -0.7174,
+                13.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2012
+            ],
+            [
+                0.037344,
+                -0.5263,
+                9.0,
+                "Speech and Multimodality",
+                2012
+            ],
+            [
+                0.016438,
+                -0.75,
+                6.0,
+                "Summarization",
+                2012
+            ],
+            [
+                0.02823,
+                -0.5593,
+                26.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2012
+            ]
+        ],
+        [
+            [
+                0.027027,
+                -0.6667,
+                2.0,
+                "Computational Social Science and Cultural Analytics",
+                2013
+            ],
+            [
+                0.014966,
+                0.1,
+                11.0,
+                "Dialogue and Interactive Systems",
+                2013
+            ],
+            [
+                0.043062,
+                0.125,
+                9.0,
+                "Discourse and Pragmatics",
+                2013
+            ],
+            [
+                0.017581,
+                0.0417,
+                25.0,
+                "Generation",
+                2013
+            ],
+            [
+                0.043146,
+                0.5738,
+                96.0,
+                "Information Extraction",
+                2013
+            ],
+            [
+                0.046429,
+                0.2381,
+                26.0,
+                "Information Retrieval and Text Mining",
+                2013
+            ],
+            [
+                0.006803,
+                0,
+                1.0,
+                "Interpretability and Analysis of Models in NLP",
+                2013
+            ],
+            [
+                0.059406,
+                0.5,
+                6.0,
+                "Language Diversity",
+                2013
+            ],
+            [
+                0.016878,
+                0.3333,
+                4.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2013
+            ],
+            [
+                0.00163,
+                0.5,
+                1.5,
+                "Large Language Models",
+                2013
+            ],
+            [
+                0.044776,
+                0.2,
+                12.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2013
+            ],
+            [
+                0.04038,
+                0.4167,
+                17.0,
+                "Machine Learning for NLP",
+                2013
+            ],
+            [
+                0.050978,
+                0.0139,
+                73.0,
+                "Machine Translation",
+                2013
+            ],
+            [
+                0.02381,
+                1.0,
+                4.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2013
+            ],
+            [
+                0.011236,
+                -0.75,
+                1.0,
+                "NLP Applications",
+                2013
+            ],
+            [
+                0.048148,
+                0.625,
+                13.0,
+                "Phonology, Morphology and Word Segmentation",
+                2013
+            ],
+            [
+                0.021226,
+                3.5,
+                9.0,
+                "Question Answering",
+                2013
+            ],
+            [
+                0.062099,
+                3.8333,
+                29.0,
+                "Semantics: Lexical",
+                2013
+            ],
+            [
+                0.033675,
+                1.0909,
+                23.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2013
+            ],
+            [
+                0.050453,
+                2.0,
+                39.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2013
+            ],
+            [
+                0.016598,
+                -0.5556,
+                4.0,
+                "Speech and Multimodality",
+                2013
+            ],
+            [
+                0.032877,
+                1.0,
+                12.0,
+                "Summarization",
+                2013
+            ],
+            [
+                0.049946,
+                0.7692,
+                46.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2013
+            ]
+        ],
+        [
+            [
+                0.081081,
+                2.0,
+                6.0,
+                "Computational Social Science and Cultural Analytics",
+                2014
+            ],
+            [
+                0.008163,
+                -0.4545,
+                6.0,
+                "Dialogue and Interactive Systems",
+                2014
+            ],
+            [
+                0.028708,
+                -0.3333,
+                6.0,
+                "Discourse and Pragmatics",
+                2014
+            ],
+            [
+                0.014065,
+                -0.2,
+                20.0,
+                "Generation",
+                2014
+            ],
+            [
+                0.044494,
+                0.0312,
+                99.0,
+                "Information Extraction",
+                2014
+            ],
+            [
+                0.039286,
+                -0.1538,
+                22.0,
+                "Information Retrieval and Text Mining",
+                2014
+            ],
+            [
+                0.049505,
+                -0.1667,
+                5.0,
+                "Language Diversity",
+                2014
+            ],
+            [
+                0.025316,
+                0.5,
+                6.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2014
+            ],
+            [
+                0.002174,
+                0.3333,
+                2.0,
+                "Large Language Models",
+                2014
+            ],
+            [
+                0.026119,
+                -0.4167,
+                7.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2014
+            ],
+            [
+                0.04038,
+                0.0,
+                17.0,
+                "Machine Learning for NLP",
+                2014
+            ],
+            [
+                0.027933,
+                -0.4521,
+                40.0,
+                "Machine Translation",
+                2014
+            ],
+            [
+                0.035714,
+                0.5,
+                6.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2014
+            ],
+            [
+                0.044944,
+                3.0,
+                4.0,
+                "NLP Applications",
+                2014
+            ],
+            [
+                0.040741,
+                -0.1538,
+                11.0,
+                "Phonology, Morphology and Word Segmentation",
+                2014
+            ],
+            [
+                0.009434,
+                -0.5556,
+                4.0,
+                "Question Answering",
+                2014
+            ],
+            [
+                0.068522,
+                0.1034,
+                32.0,
+                "Semantics: Lexical",
+                2014
+            ],
+            [
+                0.029283,
+                -0.1304,
+                20.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2014
+            ],
+            [
+                0.051746,
+                0.0256,
+                40.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2014
+            ],
+            [
+                0.041494,
+                1.5,
+                10.0,
+                "Speech and Multimodality",
+                2014
+            ],
+            [
+                0.021918,
+                -0.3333,
+                8.0,
+                "Summarization",
+                2014
+            ],
+            [
+                0.035831,
+                -0.2826,
+                33.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2014
+            ]
+        ],
+        [
+            [
+                0.013514,
+                -0.8333,
+                1.0,
+                "Computational Social Science and Cultural Analytics",
+                2015
+            ],
+            [
+                0.023129,
+                1.8333,
+                17.0,
+                "Dialogue and Interactive Systems",
+                2015
+            ],
+            [
+                0.052632,
+                0.8333,
+                11.0,
+                "Discourse and Pragmatics",
+                2015
+            ],
+            [
+                0.031646,
+                1.25,
+                45.0,
+                "Generation",
+                2015
+            ],
+            [
+                0.046742,
+                0.0505,
+                104.0,
+                "Information Extraction",
+                2015
+            ],
+            [
+                0.042857,
+                0.0909,
+                24.0,
+                "Information Retrieval and Text Mining",
+                2015
+            ],
+            [
+                0.006803,
+                0.0,
+                1.0,
+                "Interpretability and Analysis of Models in NLP",
+                2015
+            ],
+            [
+                0.039604,
+                -0.2,
+                4.0,
+                "Language Diversity",
+                2015
+            ],
+            [
+                0.042194,
+                0.6667,
+                10.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2015
+            ],
+            [
+                0.001087,
+                -0.5,
+                1.0,
+                "Large Language Models",
+                2015
+            ],
+            [
+                0.011194,
+                -0.5714,
+                3.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2015
+            ],
+            [
+                0.042755,
+                0.0588,
+                18.0,
+                "Machine Learning for NLP",
+                2015
+            ],
+            [
+                0.030028,
+                0.075,
+                43.0,
+                "Machine Translation",
+                2015
+            ],
+            [
+                0.029762,
+                -0.1667,
+                5.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2015
+            ],
+            [
+                0.022472,
+                -0.5,
+                2.0,
+                "NLP Applications",
+                2015
+            ],
+            [
+                0.040741,
+                0.0,
+                11.0,
+                "Phonology, Morphology and Word Segmentation",
+                2015
+            ],
+            [
+                0.03066,
+                2.25,
+                13.0,
+                "Question Answering",
+                2015
+            ],
+            [
+                0.068522,
+                0.0,
+                32.0,
+                "Semantics: Lexical",
+                2015
+            ],
+            [
+                0.04246,
+                0.45,
+                29.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2015
+            ],
+            [
+                0.051746,
+                0.0,
+                40.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2015
+            ],
+            [
+                0.016598,
+                -0.6,
+                4.0,
+                "Speech and Multimodality",
+                2015
+            ],
+            [
+                0.038356,
+                0.75,
+                14.0,
+                "Summarization",
+                2015
+            ],
+            [
+                0.04886,
+                0.3636,
+                45.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2015
+            ]
+        ],
+        [
+            [
+                0.067568,
+                4.0,
+                5.0,
+                "Computational Social Science and Cultural Analytics",
+                2016
+            ],
+            [
+                0.028571,
+                0.2353,
+                21.0,
+                "Dialogue and Interactive Systems",
+                2016
+            ],
+            [
+                0.028708,
+                -0.4545,
+                6.0,
+                "Discourse and Pragmatics",
+                2016
+            ],
+            [
+                0.013333,
+                0,
+                1.0,
+                "Ethics and NLP",
+                2016
+            ],
+            [
+                0.02602,
+                -0.1778,
+                37.0,
+                "Generation",
+                2016
+            ],
+            [
+                0.057079,
+                0.2212,
+                127.0,
+                "Information Extraction",
+                2016
+            ],
+            [
+                0.060714,
+                0.4167,
+                34.0,
+                "Information Retrieval and Text Mining",
+                2016
+            ],
+            [
+                0.006803,
+                0.0,
+                1.0,
+                "Interpretability and Analysis of Models in NLP",
+                2016
+            ],
+            [
+                0.079208,
+                1.0,
+                8.0,
+                "Language Diversity",
+                2016
+            ],
+            [
+                0.059072,
+                0.4,
+                14.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2016
+            ],
+            [
+                0.001087,
+                0.0,
+                1.0,
+                "Large Language Models",
+                2016
+            ],
+            [
+                0.048507,
+                3.3333,
+                13.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2016
+            ],
+            [
+                0.059382,
+                0.3889,
+                25.0,
+                "Machine Learning for NLP",
+                2016
+            ],
+            [
+                0.083799,
+                1.7907,
+                120.0,
+                "Machine Translation",
+                2016
+            ],
+            [
+                0.059524,
+                1.0,
+                10.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2016
+            ],
+            [
+                0.05618,
+                1.5,
+                5.0,
+                "NLP Applications",
+                2016
+            ],
+            [
+                0.122222,
+                2.0,
+                33.0,
+                "Phonology, Morphology and Word Segmentation",
+                2016
+            ],
+            [
+                0.049528,
+                0.6154,
+                21.0,
+                "Question Answering",
+                2016
+            ],
+            [
+                0.09636,
+                0.4062,
+                45.0,
+                "Semantics: Lexical",
+                2016
+            ],
+            [
+                0.054173,
+                0.2759,
+                37.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2016
+            ],
+            [
+                0.045278,
+                -0.125,
+                35.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2016
+            ],
+            [
+                0.024896,
+                0.5,
+                6.0,
+                "Speech and Multimodality",
+                2016
+            ],
+            [
+                0.041096,
+                0.0714,
+                15.0,
+                "Summarization",
+                2016
+            ],
+            [
+                0.04886,
+                0.0,
+                45.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2016
+            ]
+        ],
+        [
+            [
+                0.040541,
+                -0.4,
+                3.0,
+                "Computational Social Science and Cultural Analytics",
+                2017
+            ],
+            [
+                0.051701,
+                0.8095,
+                38.0,
+                "Dialogue and Interactive Systems",
+                2017
+            ],
+            [
+                0.047847,
+                0.6667,
+                10.0,
+                "Discourse and Pragmatics",
+                2017
+            ],
+            [
+                0.030942,
+                0.1892,
+                44.0,
+                "Generation",
+                2017
+            ],
+            [
+                0.050787,
+                -0.1102,
+                113.0,
+                "Information Extraction",
+                2017
+            ],
+            [
+                0.041071,
+                -0.3235,
+                23.0,
+                "Information Retrieval and Text Mining",
+                2017
+            ],
+            [
+                0.039604,
+                -0.5,
+                4.0,
+                "Language Diversity",
+                2017
+            ],
+            [
+                0.059072,
+                0.0,
+                14.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2017
+            ],
+            [
+                0.002174,
+                1.0,
+                2.0,
+                "Large Language Models",
+                2017
+            ],
+            [
+                0.038005,
+                -0.36,
+                16.0,
+                "Machine Learning for NLP",
+                2017
+            ],
+            [
+                0.02514,
+                -0.7,
+                36.0,
+                "Machine Translation",
+                2017
+            ],
+            [
+                0.077381,
+                0.3,
+                13.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2017
+            ],
+            [
+                0.044944,
+                -0.2,
+                4.0,
+                "NLP Applications",
+                2017
+            ],
+            [
+                0.044444,
+                -0.6364,
+                12.0,
+                "Phonology, Morphology and Word Segmentation",
+                2017
+            ],
+            [
+                0.084906,
+                0.7143,
+                36.0,
+                "Question Answering",
+                2017
+            ],
+            [
+                0.044968,
+                -0.5333,
+                21.0,
+                "Semantics: Lexical",
+                2017
+            ],
+            [
+                0.09224,
+                0.7027,
+                63.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2017
+            ],
+            [
+                0.125485,
+                1.7714,
+                97.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2017
+            ],
+            [
+                0.033195,
+                0.3333,
+                8.0,
+                "Speech and Multimodality",
+                2017
+            ],
+            [
+                0.027397,
+                -0.3333,
+                10.0,
+                "Summarization",
+                2017
+            ],
+            [
+                0.021716,
+                -0.5556,
+                20.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2017
+            ]
+        ],
+        [
+            [
+                0.013514,
+                -0.6667,
+                1.0,
+                "Computational Social Science and Cultural Analytics",
+                2018
+            ],
+            [
+                0.039456,
+                -0.2368,
+                29.0,
+                "Dialogue and Interactive Systems",
+                2018
+            ],
+            [
+                0.019139,
+                -0.6,
+                4.0,
+                "Discourse and Pragmatics",
+                2018
+            ],
+            [
+                0.04571,
+                0.4773,
+                65.0,
+                "Generation",
+                2018
+            ],
+            [
+                0.035506,
+                -0.3009,
+                79.0,
+                "Information Extraction",
+                2018
+            ],
+            [
+                0.028571,
+                -0.3043,
+                16.0,
+                "Information Retrieval and Text Mining",
+                2018
+            ],
+            [
+                0.020408,
+                2.0,
+                3.0,
+                "Interpretability and Analysis of Models in NLP",
+                2018
+            ],
+            [
+                0.029703,
+                -0.25,
+                3.0,
+                "Language Diversity",
+                2018
+            ],
+            [
+                0.042194,
+                -0.2857,
+                10.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2018
+            ],
+            [
+                0.002174,
+                0.0,
+                2.0,
+                "Large Language Models",
+                2018
+            ],
+            [
+                0.052257,
+                0.375,
+                22.0,
+                "Machine Learning for NLP",
+                2018
+            ],
+            [
+                0.037011,
+                0.4722,
+                53.0,
+                "Machine Translation",
+                2018
+            ],
+            [
+                0.035714,
+                -0.5385,
+                6.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2018
+            ],
+            [
+                0.022472,
+                -0.5,
+                2.0,
+                "NLP Applications",
+                2018
+            ],
+            [
+                0.007407,
+                -0.8333,
+                2.0,
+                "Phonology, Morphology and Word Segmentation",
+                2018
+            ],
+            [
+                0.054245,
+                -0.3611,
+                23.0,
+                "Question Answering",
+                2018
+            ],
+            [
+                0.038544,
+                -0.1429,
+                18.0,
+                "Semantics: Lexical",
+                2018
+            ],
+            [
+                0.058565,
+                -0.3651,
+                40.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2018
+            ],
+            [
+                0.029754,
+                -0.7629,
+                23.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2018
+            ],
+            [
+                0.016598,
+                -0.5,
+                4.0,
+                "Speech and Multimodality",
+                2018
+            ],
+            [
+                0.035616,
+                0.3,
+                13.0,
+                "Summarization",
+                2018
+            ],
+            [
+                0.022801,
+                0.05,
+                21.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2018
+            ]
+        ],
+        [
+            [
+                0.013514,
+                0.0,
+                1.0,
+                "Computational Social Science and Cultural Analytics",
+                2019
+            ],
+            [
+                0.013605,
+                -0.6552,
+                10.0,
+                "Dialogue and Interactive Systems",
+                2019
+            ],
+            [
+                0.023923,
+                0.25,
+                5.0,
+                "Discourse and Pragmatics",
+                2019
+            ],
+            [
+                0.010549,
+                -0.7692,
+                15.0,
+                "Generation",
+                2019
+            ],
+            [
+                0.01618,
+                -0.5443,
+                36.0,
+                "Information Extraction",
+                2019
+            ],
+            [
+                0.014286,
+                -0.5,
+                8.0,
+                "Information Retrieval and Text Mining",
+                2019
+            ],
+            [
+                0.013605,
+                -0.3333,
+                2.0,
+                "Interpretability and Analysis of Models in NLP",
+                2019
+            ],
+            [
+                0.019802,
+                -0.3333,
+                2.0,
+                "Language Diversity",
+                2019
+            ],
+            [
+                0.004219,
+                -0.9,
+                1.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2019
+            ],
+            [
+                0.016304,
+                6.5,
+                15.0,
+                "Large Language Models",
+                2019
+            ],
+            [
+                0.014925,
+                -0.6923,
+                4.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2019
+            ],
+            [
+                0.019002,
+                -0.6364,
+                8.0,
+                "Machine Learning for NLP",
+                2019
+            ],
+            [
+                0.074721,
+                1.0189,
+                107.0,
+                "Machine Translation",
+                2019
+            ],
+            [
+                0.005952,
+                -0.8333,
+                1.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2019
+            ],
+            [
+                0.067416,
+                2.0,
+                6.0,
+                "NLP Applications",
+                2019
+            ],
+            [
+                0.014815,
+                1.0,
+                4.0,
+                "Phonology, Morphology and Word Segmentation",
+                2019
+            ],
+            [
+                0.009434,
+                -0.8261,
+                4.0,
+                "Question Answering",
+                2019
+            ],
+            [
+                0.019272,
+                -0.5,
+                9.0,
+                "Semantics: Lexical",
+                2019
+            ],
+            [
+                0.014641,
+                -0.75,
+                10.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2019
+            ],
+            [
+                0.018111,
+                -0.3913,
+                14.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2019
+            ],
+            [
+                0.008299,
+                -0.5,
+                2.0,
+                "Speech and Multimodality",
+                2019
+            ],
+            [
+                0.008219,
+                -0.7692,
+                3.0,
+                "Summarization",
+                2019
+            ],
+            [
+                0.013029,
+                -0.4286,
+                12.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2019
+            ]
+        ],
+        [
+            [
+                0.135135,
+                9.0,
+                10.0,
+                "Computational Social Science and Cultural Analytics",
+                2020
+            ],
+            [
+                0.142857,
+                9.5,
+                105.0,
+                "Dialogue and Interactive Systems",
+                2020
+            ],
+            [
+                0.028708,
+                0.2,
+                6.0,
+                "Discourse and Pragmatics",
+                2020
+            ],
+            [
+                0.133333,
+                9.0,
+                10.0,
+                "Ethics and NLP",
+                2020
+            ],
+            [
+                0.100563,
+                8.5333,
+                143.0,
+                "Generation",
+                2020
+            ],
+            [
+                0.073258,
+                3.5278,
+                163.0,
+                "Information Extraction",
+                2020
+            ],
+            [
+                0.053571,
+                2.75,
+                30.0,
+                "Information Retrieval and Text Mining",
+                2020
+            ],
+            [
+                0.251701,
+                17.5,
+                37.0,
+                "Interpretability and Analysis of Models in NLP",
+                2020
+            ],
+            [
+                0.059406,
+                2.0,
+                6.0,
+                "Language Diversity",
+                2020
+            ],
+            [
+                0.092827,
+                21.0,
+                22.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2020
+            ],
+            [
+                0.029348,
+                0.8,
+                27.0,
+                "Large Language Models",
+                2020
+            ],
+            [
+                0.018657,
+                0.25,
+                5.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2020
+            ],
+            [
+                0.095012,
+                4.0,
+                40.0,
+                "Machine Learning for NLP",
+                2020
+            ],
+            [
+                0.087291,
+                0.1682,
+                125.0,
+                "Machine Translation",
+                2020
+            ],
+            [
+                0.113095,
+                18.0,
+                19.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2020
+            ],
+            [
+                0.078652,
+                0.1667,
+                7.0,
+                "NLP Applications",
+                2020
+            ],
+            [
+                0.059259,
+                3.0,
+                16.0,
+                "Phonology, Morphology and Word Segmentation",
+                2020
+            ],
+            [
+                0.122642,
+                12.0,
+                52.0,
+                "Question Answering",
+                2020
+            ],
+            [
+                0.051392,
+                1.6667,
+                24.0,
+                "Semantics: Lexical",
+                2020
+            ],
+            [
+                0.093704,
+                5.4,
+                64.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2020
+            ],
+            [
+                0.090556,
+                4.0,
+                70.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2020
+            ],
+            [
+                0.103734,
+                11.5,
+                25.0,
+                "Speech and Multimodality",
+                2020
+            ],
+            [
+                0.10137,
+                11.3333,
+                37.0,
+                "Summarization",
+                2020
+            ],
+            [
+                0.039088,
+                2.0,
+                36.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2020
+            ]
+        ],
+        [
+            [
+                0.081081,
+                -0.4,
+                6.0,
+                "Computational Social Science and Cultural Analytics",
+                2021
+            ],
+            [
+                0.097959,
+                -0.3143,
+                72.0,
+                "Dialogue and Interactive Systems",
+                2021
+            ],
+            [
+                0.033493,
+                0.1667,
+                7.0,
+                "Discourse and Pragmatics",
+                2021
+            ],
+            [
+                0.12,
+                -0.1,
+                9.0,
+                "Ethics and NLP",
+                2021
+            ],
+            [
+                0.086498,
+                -0.1399,
+                123.0,
+                "Generation",
+                2021
+            ],
+            [
+                0.052135,
+                -0.2883,
+                116.0,
+                "Information Extraction",
+                2021
+            ],
+            [
+                0.042857,
+                -0.2,
+                24.0,
+                "Information Retrieval and Text Mining",
+                2021
+            ],
+            [
+                0.170068,
+                -0.3243,
+                25.0,
+                "Interpretability and Analysis of Models in NLP",
+                2021
+            ],
+            [
+                0.089109,
+                0.5,
+                9.0,
+                "Language Diversity",
+                2021
+            ],
+            [
+                0.080169,
+                -0.1364,
+                19.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2021
+            ],
+            [
+                0.03587,
+                0.2222,
+                33.0,
+                "Large Language Models",
+                2021
+            ],
+            [
+                0.022388,
+                0.2,
+                6.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2021
+            ],
+            [
+                0.07601,
+                -0.2,
+                32.0,
+                "Machine Learning for NLP",
+                2021
+            ],
+            [
+                0.057961,
+                -0.336,
+                83.0,
+                "Machine Translation",
+                2021
+            ],
+            [
+                0.083333,
+                -0.2632,
+                14.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2021
+            ],
+            [
+                0.044944,
+                -0.4286,
+                4.0,
+                "NLP Applications",
+                2021
+            ],
+            [
+                0.044444,
+                -0.25,
+                12.0,
+                "Phonology, Morphology and Word Segmentation",
+                2021
+            ],
+            [
+                0.096698,
+                -0.2115,
+                41.0,
+                "Question Answering",
+                2021
+            ],
+            [
+                0.034261,
+                -0.3333,
+                16.0,
+                "Semantics: Lexical",
+                2021
+            ],
+            [
+                0.058565,
+                -0.375,
+                40.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2021
+            ],
+            [
+                0.059508,
+                -0.3429,
+                46.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2021
+            ],
+            [
+                0.078838,
+                -0.24,
+                19.0,
+                "Speech and Multimodality",
+                2021
+            ],
+            [
+                0.087671,
+                -0.1351,
+                32.0,
+                "Summarization",
+                2021
+            ],
+            [
+                0.026059,
+                -0.3333,
+                24.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2021
+            ]
+        ],
+        [
+            [
+                0.013514,
+                -0.8333,
+                1.0,
+                "Computational Social Science and Cultural Analytics",
+                2022
+            ],
+            [
+                0.051701,
+                -0.4722,
+                38.0,
+                "Dialogue and Interactive Systems",
+                2022
+            ],
+            [
+                0.038278,
+                0.1429,
+                8.0,
+                "Discourse and Pragmatics",
+                2022
+            ],
+            [
+                0.093333,
+                -0.2222,
+                7.0,
+                "Ethics and NLP",
+                2022
+            ],
+            [
+                0.07173,
+                -0.1707,
+                102.0,
+                "Generation",
+                2022
+            ],
+            [
+                0.030562,
+                -0.4138,
+                68.0,
+                "Information Extraction",
+                2022
+            ],
+            [
+                0.030357,
+                -0.2917,
+                17.0,
+                "Information Retrieval and Text Mining",
+                2022
+            ],
+            [
+                0.081633,
+                -0.52,
+                12.0,
+                "Interpretability and Analysis of Models in NLP",
+                2022
+            ],
+            [
+                0.118812,
+                0.3333,
+                12.0,
+                "Language Diversity",
+                2022
+            ],
+            [
+                0.067511,
+                -0.1579,
+                16.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2022
+            ],
+            [
+                0.042391,
+                0.1818,
+                39.0,
+                "Large Language Models",
+                2022
+            ],
+            [
+                0.026119,
+                0.1667,
+                7.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2022
+            ],
+            [
+                0.057007,
+                -0.25,
+                24.0,
+                "Machine Learning for NLP",
+                2022
+            ],
+            [
+                0.027933,
+                -0.5181,
+                40.0,
+                "Machine Translation",
+                2022
+            ],
+            [
+                0.053571,
+                -0.3571,
+                9.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2022
+            ],
+            [
+                0.011236,
+                -0.75,
+                1.0,
+                "NLP Applications",
+                2022
+            ],
+            [
+                0.025926,
+                -0.4167,
+                7.0,
+                "Phonology, Morphology and Word Segmentation",
+                2022
+            ],
+            [
+                0.068396,
+                -0.2927,
+                29.0,
+                "Question Answering",
+                2022
+            ],
+            [
+                0.014989,
+                -0.5625,
+                7.0,
+                "Semantics: Lexical",
+                2022
+            ],
+            [
+                0.021962,
+                -0.625,
+                15.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2022
+            ],
+            [
+                0.028461,
+                -0.5217,
+                22.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2022
+            ],
+            [
+                0.053942,
+                -0.3158,
+                13.0,
+                "Speech and Multimodality",
+                2022
+            ],
+            [
+                0.071233,
+                -0.1875,
+                26.0,
+                "Summarization",
+                2022
+            ],
+            [
+                0.013029,
+                -0.5,
+                12.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2022
+            ]
+        ],
+        [
+            [
+                0.148649,
+                10.0,
+                11.0,
+                "Computational Social Science and Cultural Analytics",
+                2023
+            ],
+            [
+                0.146939,
+                1.8421,
+                108.0,
+                "Dialogue and Interactive Systems",
+                2023
+            ],
+            [
+                0.028708,
+                -0.25,
+                6.0,
+                "Discourse and Pragmatics",
+                2023
+            ],
+            [
+                0.28,
+                2.0,
+                21.0,
+                "Ethics and NLP",
+                2023
+            ],
+            [
+                0.160338,
+                1.2353,
+                228.0,
+                "Generation",
+                2023
+            ],
+            [
+                0.119551,
+                2.9118,
+                266.0,
+                "Information Extraction",
+                2023
+            ],
+            [
+                0.091071,
+                2.0,
+                51.0,
+                "Information Retrieval and Text Mining",
+                2023
+            ],
+            [
+                0.210884,
+                1.5833,
+                31.0,
+                "Interpretability and Analysis of Models in NLP",
+                2023
+            ],
+            [
+                0.089109,
+                -0.25,
+                9.0,
+                "Language Diversity",
+                2023
+            ],
+            [
+                0.164557,
+                1.4375,
+                39.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2023
+            ],
+            [
+                0.141304,
+                2.3333,
+                130.0,
+                "Large Language Models",
+                2023
+            ],
+            [
+                0.026119,
+                0.0,
+                7.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2023
+            ],
+            [
+                0.085511,
+                0.5,
+                36.0,
+                "Machine Learning for NLP",
+                2023
+            ],
+            [
+                0.044693,
+                0.6,
+                64.0,
+                "Machine Translation",
+                2023
+            ],
+            [
+                0.267857,
+                4.0,
+                45.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2023
+            ],
+            [
+                0.235955,
+                20.0,
+                21.0,
+                "NLP Applications",
+                2023
+            ],
+            [
+                0.044444,
+                0.7143,
+                12.0,
+                "Phonology, Morphology and Word Segmentation",
+                2023
+            ],
+            [
+                0.15566,
+                1.2759,
+                66.0,
+                "Question Answering",
+                2023
+            ],
+            [
+                0.029979,
+                1.0,
+                14.0,
+                "Semantics: Lexical",
+                2023
+            ],
+            [
+                0.140556,
+                5.4,
+                96.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2023
+            ],
+            [
+                0.178525,
+                5.2727,
+                138.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2023
+            ],
+            [
+                0.103734,
+                0.9231,
+                25.0,
+                "Speech and Multimodality",
+                2023
+            ],
+            [
+                0.093151,
+                0.3077,
+                34.0,
+                "Summarization",
+                2023
+            ],
+            [
+                0.014115,
+                0.0833,
+                13.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2023
+            ]
+        ],
+        [
+            [
+                0.081081,
+                -0.4545,
+                6.0,
+                "Computational Social Science and Cultural Analytics",
+                2024
+            ],
+            [
+                0.12381,
+                -0.1574,
+                91.0,
+                "Dialogue and Interactive Systems",
+                2024
+            ],
+            [
+                0.038278,
+                0.3333,
+                8.0,
+                "Discourse and Pragmatics",
+                2024
+            ],
+            [
+                0.36,
+                0.2857,
+                27.0,
+                "Ethics and NLP",
+                2024
+            ],
+            [
+                0.248242,
+                0.5482,
+                353.0,
+                "Generation",
+                2024
+            ],
+            [
+                0.088989,
+                -0.2556,
+                198.0,
+                "Information Extraction",
+                2024
+            ],
+            [
+                0.132143,
+                0.451,
+                74.0,
+                "Information Retrieval and Text Mining",
+                2024
+            ],
+            [
+                0.231293,
+                0.0968,
+                34.0,
+                "Interpretability and Analysis of Models in NLP",
+                2024
+            ],
+            [
+                0.138614,
+                0.5556,
+                14.0,
+                "Language Diversity",
+                2024
+            ],
+            [
+                0.248945,
+                0.5128,
+                59.0,
+                "Language Grounding to Vision, Robotics and Beyond",
+                2024
+            ],
+            [
+                0.716304,
+                4.0692,
+                659.0,
+                "Large Language Models",
+                2024
+            ],
+            [
+                0.022388,
+                -0.1429,
+                6.0,
+                "Linguistic Theories, Cognitive Modeling and Psycholinguistics",
+                2024
+            ],
+            [
+                0.095012,
+                0.1111,
+                40.0,
+                "Machine Learning for NLP",
+                2024
+            ],
+            [
+                0.055168,
+                0.2344,
+                79.0,
+                "Machine Translation",
+                2024
+            ],
+            [
+                0.089286,
+                -0.6667,
+                15.0,
+                "Multilingualism and Cross-Lingual NLP",
+                2024
+            ],
+            [
+                0.157303,
+                -0.3333,
+                14.0,
+                "NLP Applications",
+                2024
+            ],
+            [
+                0.011111,
+                -0.75,
+                3.0,
+                "Phonology, Morphology and Word Segmentation",
+                2024
+            ],
+            [
+                0.169811,
+                0.0909,
+                72.0,
+                "Question Answering",
+                2024
+            ],
+            [
+                0.029979,
+                0.0,
+                14.0,
+                "Semantics: Lexical",
+                2024
+            ],
+            [
+                0.043924,
+                -0.6875,
+                30.0,
+                "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas",
+                2024
+            ],
+            [
+                0.078913,
+                -0.558,
+                61.0,
+                "Sentiment Analysis, Stylistic Analysis and Argument Mining",
+                2024
+            ],
+            [
+                0.149378,
+                0.44,
+                36.0,
+                "Speech and Multimodality",
+                2024
+            ],
+            [
+                0.112329,
+                0.2059,
+                41.0,
+                "Summarization",
+                2024
+            ],
+            [
+                0.013029,
+                -0.0769,
+                12.0,
+                "Syntax: Tagging, Chunking and Parsing",
+                2024
+            ]
+        ]
+    ]
+}
