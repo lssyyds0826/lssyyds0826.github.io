@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP模型/算法年度总出现次数热力图</title>
+    <!-- 引入外部资源 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .chart-container {
+                height: 90vh;
+                min-height: 800px;
+            }
+            .page-container {
+                padding: 1rem;
+                max-width: 1800px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="page-container">
+        <!-- 标题区域 -->
+        <header class="py-6 text-center">
+            <h1 class="text-2xl md:text-3xl font-bold text-blue-600 mb-2">
+                NLP领域模型/算法年度热度热力图
+            </h1>
+            <p class="text-gray-600">展示各模型在不同年份的总出现次数 | 鼠标悬停查看详情</p>
+        </header>
+
+        <!-- 图表容器 -->
+        <div class="bg-white rounded-lg shadow-lg p-4 md:p-6">
+            <div id="heatmap" class="chart-container w-full"></div>
+        </div>
+
+        <!-- 控制按钮 -->
+        <div class="flex justify-center gap-4 mt-4 mb-6">
+            <button id="zoom-in" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
+                <i class="fa fa-search-plus mr-1"></i>放大
+            </button>
+            <button id="zoom-out" class="bg-white border border-blue-600 text-blue-600 px-4 py-2 rounded-md hover:bg-blue-50 transition-colors">
+                <i class="fa fa-search-minus mr-1"></i>缩小
+            </button>
+            <button id="reset-view" class="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-50 transition-colors">
+                <i class="fa fa-refresh mr-1"></i>重置视图
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始化图表
+            var myChart = echarts.init(document.getElementById('heatmap'));
+            
+            // 1. 模型和年份列表（完整数据）
+            var models = [
+                "BERT", "Transform", "BLEU", "fine-tuni", "GPT-4", "RoBERTa", 
+                "NLP", "LSTM", "machine l", "Large Lan", "LLMs", "SVM", 
+                "multi-tas", "WordNet", "Named Ent", "contrasti", "machine t", 
+                "Reinforce", "Neural Ma", "CNN", "Fine-tuni", "word embe", "Machine T", 
+                "classifie", "supervise", "RNN", "sentiment", "Neural Ne", "dependenc"
+            ];
+            
+            var years = [
+                "1984", "1985", "1989", "1992", "1994", "1995", "1996", "1997", "1998", "1999", 
+                "2000", "2003", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", 
+                "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", 
+                "2023", "2024"
+            ];
+            
+            // 2. 构建热力图数据：[模型索引, 年份索引, 总出现次数]
+            var heatmapData = [];
+            
+            // 模型-总次数映射（完整数据）
+            var modelTotal = {
+                "BERT": 329, "Transform": 207, "BLEU": 119, "fine-tuni": 96, "GPT-4": 92, "RoBERTa": 81,
+                "NLP": 74, "LSTM": 71, "machine l": 62, "Large Lan": 57, "LLMs": 55, "SVM": 53,
+                "multi-tas": 52, "WordNet": 51, "Named Ent": 51, "contrasti": 48, "machine t": 46,
+                "Reinforce": 46, "Neural Ma": 44, "CNN": 44, "Fine-tuni": 43, "word embe": 43, "Machine T": 43,
+                "classifie": 42, "supervise": 40, "RNN": 39, "sentiment": 38, "Neural Ne": 38, "dependenc": 37
+            };
+            
+            // 模型-涉及年份列表映射（完整数据）
+            var modelYearList = {
+                "BERT": ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+                "Transform": ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+                "BLEU": ["2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+                "fine-tuni": ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+                "GPT-4": ["2023", "2024"],
+                "RoBERTa": ["2020", "2021", "2022", "2023", "2024"],
+                "NLP": ["1985", "1994", "1998", "1999", "2006", "2008", "2010", "2011", "2012", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+                "LSTM": ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+                "machine l": ["1995", "1996", "1998", "1999", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2023", "2024"],
+                "Large Lan": ["2023", "2024"],
+                "LLMs": ["2023", "2024"],
+                "SVM": ["2005", "2006", "2007", "2008", "2009", "2010", "2011", "2014", "2016", "2017", "2018", "2020", "2023", "2024"],
+                "multi-tas": ["2011", "2013", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+                "WordNet": ["1995", "1997", "1998", "1999", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2024"],
+                "Named Ent": ["1985", "2006", "2007", "2010", "2011", "2012", "2013", "2014", "2016", "2017", "2018", "2020", "2021", "2022", "2023", "2024"],
+                "contrasti": ["2015", "2020", "2021", "2022", "2023", "2024"],
+                "machine t": ["1989", "1998", "2005", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+                "Reinforce": ["2006", "2007", "2010", "2011", "2014", "2017", "2018", "2020", "2021", "2022", "2023", "2024"],
+                "Neural Ma": ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+                "CNN": ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2023", "2024"],
+                "Fine-tuni": ["2019", "2020", "2021", "2022", "2023", "2024"],
+                "word embe": ["2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2023", "2024"],
+                "Machine T": ["1984", "1985", "1998", "2007", "2008", "2010", "2011", "2013", "2016", "2017", "2018", "2019", "2020", "2022", "2023", "2024"],
+                "classifie": ["2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2019", "2020", "2022", "2023", "2024"],
+                "supervise": ["2006", "2009", "2010", "2011", "2012", "2014", "2016", "2017", "2018", "2020", "2021", "2022", "2023", "2024"],
+                "RNN": ["2003", "2005", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+                "sentiment": ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+                "Neural Ne": ["1992", "2015", "2016", "2017", "2018", "2020", "2021", "2023", "2024"],
+                "dependenc": ["2005", "2007", "2008", "2009", "2010", "2013", "2014", "2015", "2016", "2017", "2018", "2020", "2021", "2022", "2023"]
+            };
+
+            // 生成热力图数据（使用总出现次数）
+            models.forEach((model, modelIdx) => {
+                const yearList = modelYearList[model];
+                const totalCount = modelTotal[model];
+
+                yearList.forEach(year => {
+                    const yearIdx = years.indexOf(year);
+                    if (yearIdx !== -1) {
+                        heatmapData.push([modelIdx, yearIdx, totalCount]);
+                    }
+                });
+            });
+
+            // 3. 图表配置
+            var option = {
+                title: {
+                    text: 'NLP领域模型/算法年度总出现次数分布',
+                    left: 'center',
+                    textStyle: { 
+                        fontSize: 22,
+                        fontWeight: 'bold' 
+                    }
+                },
+                
+                // 提示框配置
+                tooltip: {
+                    trigger: 'item',
+                    formatter: function(params) {
+                        return `
+                            <div style="padding: 10px; background: #fff; border-radius: 6px; box-shadow: 0 3px 8px rgba(0,0,0,0.2);">
+                                <p style="margin: 0 0 5px; font-weight: bold; font-size: 14px;">${models[params.value[0]]}</p>
+                                <p style="margin: 0 0 5px; font-size: 13px;">年份：${years[params.value[1]]}</p>
+                                <p style="margin: 0; font-size: 13px;">总出现次数：${params.value[2]}</p>
+                            </div>
+                        `;
+                    },
+                    axisPointer: { 
+                        type: 'shadow',
+                        shadowStyle: {
+                            color: 'rgba(0, 0, 0, 0.1)',
+                            width: 'auto'
+                        }
+                    },
+                    transitionDuration: 0.3
+                },
+                
+                // 网格配置
+                grid: {
+                    left: '10%',
+                    right: '15%',
+                    bottom: '15%',
+                    top: '10%',
+                    containLabel: true
+                },
+                
+                // X轴配置（年份）
+                xAxis: {
+                    type: 'category',
+                    data: years,
+                    axisLabel: {
+                        rotate: 45,
+                        interval: 0,
+                        fontSize: 12,
+                        color: '#333'
+                    },
+                    axisLine: { lineStyle: { width: 2, color: '#ccc' } },
+                    axisTick: { show: true, length: 6 }
+                },
+                
+                // Y轴配置（模型）
+                yAxis: {
+                    type: 'category',
+                    data: models,
+                    axisLabel: {
+                        fontSize: 12,
+                        color: '#333',
+                        padding: [0, 10, 0, 0]
+                    },
+                    axisLine: { lineStyle: { width: 2, color: '#ccc' } },
+                    axisTick: { show: true, length: 6 }
+                },
+                
+                // 视觉映射（颜色配置）
+                visualMap: {
+                    min: 0,
+                    max: 350, // 匹配最大值329
+                    calculable: true,
+                    orient: 'vertical',
+                    right: '5%',
+                    top: 'center',
+                    inRange: {
+                        // 增强颜色对比度
+                        color: [
+                            '#003366', '#0066cc', '#3399ff', '#66ccff', '#99ddff', 
+                            '#ccffff', '#ffeecc', '#ffcc99', '#ff9966', '#ff6633', '#cc3300'
+                        ]
+                    },
+                    text: ['高次数', '低次数'],
+                    textStyle: { fontSize: 14, color: '#333' },
+                    borderWidth: 2,
+                    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                    padding: 10
+                },
+                
+                // 热力图系列配置
+                series: [{
+                    type: 'heatmap',
+                    data: heatmapData,
+                    label: {
+                        show: false  // 不显示数字，保持清晰
+                    },
+                    itemStyle: {
+                        borderWidth: 2,  // 加粗方格边框，界限分明
+                        borderColor: '#ffffff', // 白色边框增强对比度
+                        borderRadius: 0
+                    },
+                    emphasis: {
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowColor: 'rgba(0, 0, 0, 0.3)',
+                            borderColor: '#333'
+                        }
+                    },
+                    symbolSize: [40, 30]
+                }]
+            };
+
+            // 渲染图表
+            myChart.setOption(option);
+            
+            // 窗口大小变化时重新调整
+            window.addEventListener('resize', function() {
+                myChart.resize();
+            });
+            
+            // 缩放控制功能
+            let currentZoom = 1;
+            const zoomStep = 0.1;
+            const maxZoom = 1.5;
+            const minZoom = 0.8;
+            
+            document.getElementById('zoom-in').addEventListener('click', function() {
+                if (currentZoom < maxZoom) {
+                    currentZoom += zoomStep;
+                    myChart.resize({
+                        width: document.getElementById('heatmap').clientWidth * currentZoom,
+                        height: document.getElementById('heatmap').clientHeight * currentZoom
+                    });
+                }
+            });
+            
+            document.getElementById('zoom-out').addEventListener('click', function() {
+                if (currentZoom > minZoom) {
+                    currentZoom -= zoomStep;
+                    myChart.resize({
+                        width: document.getElementById('heatmap').clientWidth * currentZoom,
+                        height: document.getElementById('heatmap').clientHeight * currentZoom
+                    });
+                }
+            });
+            
+            document.getElementById('reset-view').addEventListener('click', function() {
+                currentZoom = 1;
+                myChart.resize();
+            });
+        });
+    </script>
+</body>
+</html>
