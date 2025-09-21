@@ -2,59 +2,55 @@
 <html lang="en" style="height: 100%">
 <head>
   <meta charset="utf-8">
-  <title>NLP领域算法实体分布可视化（基于ACL论文）</title>
+  <title>NLP领域算法实体分布（基于ACL论文）</title>
 </head>
 <body style="height: 100%; margin: 0; padding: 0;">
-  <!-- 标题区域：主标题+补充说明 -->
-  <div style="text-align: center; padding: 20px 0;">
+  <!-- 标题区域：主标题+副标题，居中对齐 -->
+  <div style="text-align: center; padding: 20px 0; box-sizing: border-box;">
     <h1 style="margin: 0; font-family: monospace; font-weight: bold; font-size: 24px;">自然语言处理Top10领域对应高频算法实体</h1>
-    <p style="margin: 10px 0 0; font-family: monospace; font-size: 18px; color: #333;">——以顶会ACL会议论文为例</p>
+    <h2 style="margin: 10px 0 0; font-family: monospace; font-size: 18px; color: #444; font-weight: normal;">——以顶会ACL会议论文为例</h2>
   </div>
-  <!-- 图表容器：适配标题高度调整 -->
-  <div id="container" style="height: calc(100% - 100px); width: 100%; display: flex; align-items: flex-start; justify-content: center;"></div>
+  <!-- 图表容器：适配标题高度，避免重叠 -->
+  <div id="container" style="height: calc(100% - 110px); width: 100%; display: flex; align-items: flex-start; justify-content: center; box-sizing: border-box;"></div>
 
-  <!-- ECharts 依赖 -->
+  <!-- 引入ECharts（使用CDN，无需本地文件） -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
 
   <script type="text/javascript">
-    // 初始化图表实例
     var dom = document.getElementById('container');
     var myChart = echarts.init(dom, null, {
       renderer: 'canvas',
-      useDirtyRect: false // 禁用脏矩形渲染，确保兼容性
+      useDirtyRect: false // 保证浏览器兼容性
     });
     var app = {};
 
-    // 图表配置项
     var option;
 
     option = {
-      // 提示框配置：鼠标悬浮时显示详细信息
       tooltip: {
         trigger: 'item',
-        formatter: '{a} <br/>{b}: {c} ({d}%)' // 格式：系列名 + 名称：数量（占比）
+        formatter: '{a} <br/>{b}: {c} ({d}%)' // 鼠标悬浮时显示：系列名、名称、频次、占比
       },
-      // 系列配置：双层环形图（外层算法实体，内层研究领域）
       series: [
+        // 内层饼图：NLP Top10研究领域
         {
           name: '研究领域',
           type: 'pie',
-          selectedMode: 'single', // 支持单选领域
+          selectedMode: 'single', // 支持单击选中单个领域
           radius: [0, '25%'], // 内层饼图半径（环形内径、外径）
-          center: ['50%', '45%'], // 图表中心位置（水平、垂直）
+          center: ['50%', '45%'], // 图表居中显示
           avoidLabelOverlap: true,
           label: {
             show: true,
             position: 'outside',
             fontSize: 18,
-            formatter: '{b}' // 仅显示领域名称
+            formatter: '{b}' // 仅显示领域名称（中英文）
           },
           labelLine: {
             show: true,
             length: 50, // 标签线第一段长度
             length2: 40 // 标签线第二段长度
           },
-          // 内层：NLP Top10研究领域数据（含中英文名称、颜色、文献数量）
           data: [
             { value: 2106, name: 'Information Extraction' + "\n" + "信息抽取", itemStyle: { color: '#ff994d' } },
             { value: 1349, name: 'Machine Translation' + "\n" + "机器翻译", itemStyle: { color: '#b6d634' } },
@@ -68,6 +64,7 @@
             { value: 451, name: 'Semantics: Lexical' + "\n" + "语义：词汇", selected: true, itemStyle: { color: '#0ca8df' } }
           ]
         },
+        // 外层饼图：各领域高频算法实体
         {
           name: '算法实体-频次',
           type: 'pie',
@@ -85,7 +82,6 @@
             fontSize: 12,
             formatter: '{b}' // 仅显示算法实体名称
           },
-          // 外层：各领域高频算法实体数据（颜色与对应领域一致）
           data: [
             // 信息抽取领域（橙色：#ff994d）
             { value: 42, name: 'BERT', itemStyle: { color: '#ff994d' } },
@@ -207,7 +203,7 @@
       myChart.setOption(option);
     }
 
-    // 监听窗口 resize 事件，自动适配图表大小
+    // 窗口 resize 时自动调整图表大小
     window.addEventListener('resize', function() {
       myChart.resize();
     });
