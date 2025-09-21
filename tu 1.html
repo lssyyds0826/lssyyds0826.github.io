@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+  <title>Large Language Models Top20算法实体年度占比图</title>
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    // 1. 替换为文档中的Top20算法实体年度数据（20行×5列，对应2020-2024）
+    const rawData = [
+      [0, 0, 0, 0, 3, 71],    // 算法1
+      [0, 0, 0, 0, 0, 67],    // 算法2
+      [0, 8, 11, 13, 8, 6],    // 算法3
+      [0, 1, 1, 1, 7, 23],    // 算法4
+      [0, 0, 0, 0, 7, 18],    // 算法5
+      [0, 5, 2, 3, 3, 8],     // 算法6
+      [0, 0, 0, 0, 2, 16],    // 算法7
+      [0, 0, 0, 0, 0, 16],    // 算法8
+      [0, 0, 0, 0, 2, 13],    // 算法9
+      [0, 0, 1, 1, 8, 4],     // 算法10
+      [0, 0, 0, 0, 2, 10],    // 算法11
+      [0, 0, 1, 2, 1, 8],     // 算法12
+      [0, 0, 0, 0, 4, 7],     // 算法13
+      [0, 2, 3, 2, 4, 3],     // 算法14
+      [0, 0, 0, 0, 0, 9],     // 算法15
+      [0, 0, 1, 2, 3, 4],     // 算法16
+      [0, 2, 1, 0, 4, 2],     // 算法17
+      [0, 0, 0, 0, 3, 5],     // 算法18
+      [0, 0, 0, 0, 0, 8],     // 算法19
+      [0, 0, 0, 0, 3, 5]      // 算法20
+    ];
+
+    // 2. 计算每年的总出现次数（用于算占比）
+    const totalData = [];
+    for (let i = 0; i < rawData[0].length; ++i) {
+      let sum = 0;
+      for (let j = 0; j < rawData.length; ++j) {
+        sum += rawData[j][i];
+      }
+      totalData.push(sum);
+    }
+
+    // 3. 图表布局配置
+    const grid = {
+      left: 80,    // 左留空（适配y轴）
+      right: 200,  // 右留空（适配垂直图例）
+      top: 50,
+      bottom: 50
+    };
+
+    // 4. 生成20个算法实体的series（可替换为实际算法名）
+    const seriesNames = [
+      "LLMs",
+      "GPT-4",
+      "BERT",
+      "fine-tuning",
+      "in-context learning",
+      "Transformer",
+      "Chain-of-Thought",
+      "LoRA",
+      "GPT-3.5",
+      "GPT-3",
+      "ChatGPT",
+      "GPT",
+      "finetuning",
+      "Transformers",
+      "instruction tuning",
+      "T5",
+      "RoBERTa",
+      "chain-of-thought prompting",
+      "DPO",
+      "In-context learning"
+    ];
+
+
+    // 扩展20种颜色（避免重复，涵盖多色调）
+    const color = [
+      '#5070dd', '#b6d634', '#505372', '#ff994d', '#0ca8df',
+      '#a23b72', '#f18f01', '#c73e1d', '#2e86ab', '#f24236',
+      '#8e44ad', '#16a085', '#f39c12', '#d35400', '#27ae60',
+      '#e74c3c', '#3498db', '#9b59b6', '#1abc9c', '#e67e22'
+    ];
+
+    // 5. 构建series数据（堆叠柱状图+占比标签）
+    const series = seriesNames.map((name, sid) => {
+      return {
+        name,
+        type: 'bar',
+        stack: 'total',    // 堆叠模式
+        barWidth: '50%',   // 柱子宽度
+        label: {
+          show: true,
+          fontSize: 8,      // 标签字体缩小（避免重叠）
+          formatter: (params) => {
+            // 显示占比（保留1位小数）
+            const ratio = totalData[params.dataIndex] <= 0 ? 0 : params.value;
+            return ratio > 0 ? `${(ratio*100).toFixed(1)}%` : '';
+          }
+        },
+        data: rawData[sid].map((d, did) =>
+          // 计算当前算法占当年总次数的比例
+          totalData[did] <= 0 ? 0 : d / totalData[did]
+        )
+      };
+    });
+
+    // 6. 相邻年份的多边形连接（保留原逻辑，适配5个年份）
+    const elements = [];
+    const categoryWidth = (myChart.getWidth() - grid.left - grid.right) / rawData[0].length;
+    const barPadding = categoryWidth * 0.25; // 柱子内边距
+    for (let j = 1, jlen = rawData[0].length; j < jlen; ++j) {
+      const leftX = grid.left + categoryWidth * j - barPadding;
+      const rightX = leftX + barPadding * 2;
+      let leftY = grid.top + (myChart.getHeight() - grid.top - grid.bottom);
+      let rightY = leftY;
+      for (let i = 0, len = series.length; i < len; ++i) {
+        // 计算左右柱子高度（基于占比）
+        const leftRatio = totalData[j-1] <= 0 ? 0 : rawData[i][j-1] / totalData[j-1];
+        const rightRatio = totalData[j] <= 0 ? 0 : rawData[i][j] / totalData[j];
+        const leftBarHeight = leftRatio * (myChart.getHeight() - grid.top - grid.bottom);
+        const rightBarHeight = rightRatio * (myChart.getHeight() - grid.top - grid.bottom);
+        
+        // 绘制多边形连接
+        elements.push({
+          type: 'polygon',
+          shape: {
+            points: [
+              [leftX, leftY],
+              [leftX, leftY - leftBarHeight],
+              [rightX, rightY - rightBarHeight],
+              [rightX, rightY],
+              [leftX, leftY]
+            ]
+          },
+          style: {
+            fill: color[i],
+            opacity: 0.2
+          }
+        });
+        leftY -= leftBarHeight;
+        rightY -= rightBarHeight;
+      }
+    }
+
+    // 7. 最终图表配置
+    option = {
+      title: {
+        text: 'Large Language Models(大语言模型)领域算法实体分布演化',  // 标题内容
+        left: 'center',                // 水平居中
+        top: 10,                       // 距离顶部10px（避免与网格重叠）
+        textStyle: {
+          fontSize: 18,                // 字体大小
+          fontWeight: 'bold',          // 字体加粗
+          color: '#333'                // 字体颜色（深灰色，醒目不刺眼）
+        }
+      },
+      color: color,
+      legend: {
+        data: seriesNames,
+        orient: 'vertical',    // 垂直图例
+        left: 'right',         // 图例居右
+        top: 'middle',         // 图例垂直居中
+        textStyle: { fontSize: 10 }, // 图例字体缩小
+        selectedMode: true      // 支持点击筛选算法
+      },
+      grid: grid,
+      yAxis: {
+        type: 'value',
+        axisLabel: {
+          formatter: '{value}%' // y轴显示百分比
+        },
+        max: 1,                // y轴最大值为1（对应100%）
+        splitLine: { show: true }
+      },
+      xAxis: {
+        type: 'category',
+        data: ['1983', '2020', '2021', '2022', '2023', '2024'], // x轴改为年份
+        axisLabel: { fontSize: 12 }
+      },
+      series: series,
+      graphic: { elements: elements }, // 多边形连接元素
+      tooltip: {
+        formatter: (params) => {
+          //  tooltip显示详细信息：算法名+年份+次数+占比
+          const year = params.axisValue;
+          const count = rawData[params.seriesIndex][params.dataIndex];
+          const ratio = (params.value * 100).toFixed(1);
+          return `${params.seriesName}<br/>${year}: ${count}次 (${ratio}%)`;
+        }
+      }
+    };
+
+    // 8. 渲染图表
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    // 适配窗口 resize
+    window.addEventListener('resize', () => {
+      myChart.resize();
+      // 重新计算多边形位置（避免窗口变化后错位）
+      myChart.setOption({ graphic: { elements: elements } });
+    });
+  </script>
+</body>
+</html>

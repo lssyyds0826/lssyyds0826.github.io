@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+  <title>Generation Top20算法实体年度占比图</title>
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    // 1. 替换为 y.txt 中的数据（20行×16列，对应20个实体+2009-2024）
+    const rawData = [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,3,34],  // 实体1
+      [0,0,0,0,0,0,0,0,0,0,0,1,2,4,30],   // 实体2
+      [0,0,0,0,0,0,0,0,0,1,14,7,3,9,6],   // 实体3
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,3,30],   // 实体4
+      [0,0,3,2,0,5,0,2,2,1,2,2,3,3,1],    // 实体5
+      [0,0,0,0,0,0,0,0,0,1,11,6,5,4,2],   // 实体6
+      [0,0,0,0,0,0,0,0,1,0,0,2,4,7,7],    // 实体7
+      [0,0,0,0,0,0,0,0,0,0,0,1,1,2,13],   // 实体8
+      [0,1,0,0,0,0,0,0,1,1,2,2,3,1,7],    // 实体9
+      [0,0,0,0,0,0,0,0,0,0,1,3,2,4,8],    // 实体10
+      [0,0,0,0,0,6,2,0,4,0,2,1,0,0,1],    // 实体11
+      [0,0,0,0,0,0,0,0,0,0,3,2,3,6,2],    // 实体12
+      [0,0,0,0,0,2,1,6,2,0,2,1,0,0,0],    // 实体13
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,3,9],    // 实体14
+      [0,0,0,0,0,0,0,1,0,0,2,1,0,4,4],    // 实体15
+      [0,0,0,0,0,0,1,1,2,0,2,3,2,2,1],    // 实体16
+      [0,0,0,0,1,0,0,1,1,0,0,1,0,1,6],    // 实体17
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,1,9],    // 实体18
+      [0,0,0,0,0,0,0,0,0,0,0,1,2,8,0],    // 实体19
+      [0,0,0,0,0,0,0,2,3,0,2,3,1,1,0]     // 实体20
+    ];
+
+    // 2. 计算每年的总出现次数（用于计算占比）
+    const totalData = [];
+    for (let i = 0; i < rawData[0].length; ++i) {
+      let sum = 0;
+      for (let j = 0; j < rawData.length; ++j) sum += rawData[j][i];
+      totalData.push(sum);
+    }
+
+    // 3. 图表布局（加宽右侧留空适配20个实体的垂直图例）
+    const grid = {
+      left: 80,    // 左留空（y轴）
+      right: 220,  // 右留空（图例）
+      top: 60,     // 上留空（标题）
+      bottom: 60   // 下留空（x轴年份）
+    };
+
+    // 4. 实体名称（可替换为实际名称，顺序与rawData对应）
+    const  seriesNames = [
+    'LLMs',
+    'Large Language Models',
+    'BERT',
+    'GPT-4',
+    'BLEU',
+    'Transformer',
+    'contrastive learning',
+    'large language models',
+    'reinforcement learning',
+    'fine-tuning',
+    'RNN',
+    'GPT-2',
+    'LSTM',
+    'ChatGPT',
+    'language models',
+    'sequence-to-sequence models',
+    'Reinforcement Learning',
+    'GPT-3.5',
+    'GPT-3',
+    'encoder-decoder'
+
+    ];
+
+    // 5. 20种不重复颜色（适配所有实体）
+    const color = [
+      '#5070dd', '#b6d634', '#505372', '#ff994d', '#0ca8df',
+      '#a23b72', '#f18f01', '#c73e1d', '#2e86ab', '#f24236',
+      '#8e44ad', '#16a085', '#f39c12', '#d35400', '#27ae60',
+      '#e74c3c', '#3498db', '#9b59b6', '#1abc9c', '#e67e22'
+    ];
+
+    // 6. 构建堆叠柱状图系列
+    const series = seriesNames.map((name, sid) => ({
+      name,
+      type: 'bar',
+      stack: 'total',    // 堆叠模式（显示占比）
+      barWidth: '45%',   // 柱子宽度（适配16个年份）
+      label: {
+        show: true,
+        fontSize: 7,      // 缩小标签字体避免重叠
+        color: '#333',
+        formatter: (params) => {
+          // 仅显示占比>0的标签（保留1位小数）
+          const ratio = totalData[params.dataIndex] <= 0 ? 0 : params.value;
+          return ratio > 0.02 ? `${(ratio*100).toFixed(1)}%` : '';
+        }
+      },
+      data: rawData[sid].map((d, did) => 
+        totalData[did] <= 0 ? 0 : d / totalData[did]
+      )
+    }));
+
+    // 7. 相邻年份的多边形连接（展示趋势变化）
+    const elements = [];
+    const categoryWidth = (myChart.getWidth() - grid.left - grid.right) / rawData[0].length;
+    const barPadding = categoryWidth * 0.275; // 柱子内边距
+    for (let j = 1; j < rawData[0].length; ++j) {
+      const leftX = grid.left + categoryWidth * j - barPadding;
+      const rightX = leftX + barPadding * 2;
+      let leftY = grid.top + (myChart.getHeight() - grid.top - grid.bottom);
+      let rightY = leftY;
+      
+      for (let i = 0; i < series.length; ++i) {
+        // 计算左右柱子高度（基于占比）
+        const leftRatio = totalData[j-1] <= 0 ? 0 : rawData[i][j-1] / totalData[j-1];
+        const rightRatio = totalData[j] <= 0 ? 0 : rawData[i][j] / totalData[j];
+        const leftBarHeight = leftRatio * (myChart.getHeight() - grid.top - grid.bottom);
+        const rightBarHeight = rightRatio * (myChart.getHeight() - grid.top - grid.bottom);
+
+        // 绘制半透明连接多边形
+        elements.push({
+          type: 'polygon',
+          shape: {
+            points: [
+              [leftX, leftY],
+              [leftX, leftY - leftBarHeight],
+              [rightX, rightY - rightBarHeight],
+              [rightX, rightY],
+              [leftX, leftY]
+            ]
+          },
+          style: { fill: color[i], opacity: 0.2 }
+        });
+        leftY -= leftBarHeight;
+        rightY -= rightBarHeight;
+      }
+    }
+
+    // 8. 最终图表配置
+    option = {
+      // 总标题
+      title: {
+        text: ' Generation(语言生成)领域算法实体分布演化',
+        left: 'center',
+        top: 20,
+        textStyle: { fontSize: 18, fontWeight: 'bold', color: '#222' }
+      },
+      color: color,
+      // 图例（垂直居右）
+      legend: {
+        data: seriesNames,
+        orient: 'vertical',
+        left: 'right',
+        top: 'middle',
+        textStyle: { fontSize: 9, width: 180, overflow: 'breakAll' },
+        selectedMode: true // 支持点击筛选实体
+      },
+      grid: grid,
+      // Y轴（百分比）
+      yAxis: {
+        type: 'value',
+        max: 1,
+        axisLabel: { formatter: '{value}%' },
+        splitLine: { lineStyle: { type: 'dashed', color: '#eee' } }
+      },
+      // X轴（年份）
+      xAxis: {
+        type: 'category',
+        data: ['1983', '2009','2011','2012','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024'],
+        axisLabel: { 
+          fontSize: 10,
+          rotate: 30 // 年份旋转避免重叠
+        }
+      },
+      series: series,
+      graphic: { elements: elements },
+      // 悬停提示（显示实体、年份、次数、占比）
+      tooltip: {
+        formatter: (params) => {
+          const year = params.axisValue;
+          const count = rawData[params.seriesIndex][params.dataIndex];
+          const ratio = (params.value * 100).toFixed(1);
+          return `${params.seriesName}<br/>${year}：${count}次 (${ratio}%)`;
+        }
+      }
+    };
+
+    // 渲染图表
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    // 窗口 resize 适配
+    window.addEventListener('resize', () => {
+      myChart.resize();
+      myChart.setOption({ graphic: { elements: elements } });
+    });
+  </script>
+</body>
+</html>
