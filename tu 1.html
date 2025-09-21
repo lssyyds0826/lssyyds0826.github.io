@@ -157,7 +157,7 @@
 
     // 7. 最终图表配置
     option = {
-      title: {
+      title: [{
         text: 'Large Language Models(大语言模型)领域算法实体分布演化',  // 标题内容
         left: 'center',                // 水平居中
         top: 10,                       // 距离顶部10px（避免与网格重叠）
@@ -166,7 +166,17 @@
           fontWeight: 'bold',          // 字体加粗
           color: '#333'                // 字体颜色（深灰色，醒目不刺眼）
         }
-      },
+      },{
+        text: '鼠标悬停查看信息',  // 标题内容
+        left: 'right',                // 水平居中
+        top: 10,                       // 距离顶部10px（避免与网格重叠）
+        textStyle: {
+          fontSize: 12,                // 字体大小
+          fontWeight: 'bold',          // 字体加粗
+          color: '#333'                // 字体颜色（深灰色，醒目不刺眼）
+        }
+      }
+             ],
       color: color,
       legend: {
         data: seriesNames,
