@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body style="height: 100%; margin: 0">
+  <h2 style="text-align:center; margin-top:20px; font-family:monospace; font-weight:bold;">
+    自然语言处理各子领域Top15算法实体交叉分布情况——以顶会ACL会议论文为例</h2>
+  <div id="container" style="height: calc(100% - 48px);"></div>
+
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="echarts.min.js"></script>
+
+
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+    myChart.showLoading();
+    $.getJSON('source_target.json', function (graph) {
+      myChart.hideLoading();
+      graph.nodes.forEach(function (node) {
+        node.label = {
+          show: true
+        };
+      });
+      option = {
+        title: {
+          text: '',
+          subtext: 'Circular layout',
+          top: 'bottom',
+          left: 'right'
+        },
+        tooltip: {},
+        legend: [
+          {
+            data: graph.categories.map(function (a) {
+              return a.name;
+            }),
+            top: 400,
+            right: 20,
+            orient: 'vertical',
+            type: 'scroll',
+            itemWidth: 25,
+            itemHeight: 18,
+            width: 120,
+            height: 'auto',
+            align: 'left',
+            icon: 'rect',
+            formatter: function (name) { return name; },
+            // 分两列
+            // ECharts legend 没有直接 columns 属性，但可以用 grid 或自定义样式实现
+            // 这里用 pageSize 近似分列
+            pageSize: Math.ceil(graph.categories.length / 2)
+          }
+        ],
+        animationDurationUpdate: 1500,
+        animationEasingUpdate: 'quinticInOut',
+        series: [
+          {
+            name: '算法实体',
+            type: 'graph',
+            layout: 'circular',
+            circular: {
+              rotateLabel: true
+            },
+            data: graph.nodes,
+            links: graph.links,
+            categories: graph.categories,
+            roam: true,
+            label: {
+              position: 'right',
+              formatter: '{b}'
+            },
+            lineStyle: {
+              color: 'source',
+              curveness: 0.4
+            }
+          }
+        ]
+      };
+      myChart.setOption(option);
+    });
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+
+</html>

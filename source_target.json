@@ -1,0 +1,1840 @@
+{
+    "nodes": [
+        {
+            "id": 0,
+            "name": "BERT",
+            "symbolSize": 42,
+            "x": 0,
+            "y": 0,
+            "value": 42,
+            "category": 0
+        },
+        {
+            "id": 1,
+            "name": "Named Entity Recognition",
+            "symbolSize": 34,
+            "x": 0,
+            "y": 0,
+            "value": 34,
+            "category": 0
+        },
+        {
+            "id": 2,
+            "name": "machine learning",
+            "symbolSize": 30,
+            "x": 0,
+            "y": 0,
+            "value": 30,
+            "category": 0
+        },
+        {
+            "id": 3,
+            "name": "named entity recognition",
+            "symbolSize": 26,
+            "x": 0,
+            "y": 0,
+            "value": 26,
+            "category": 0
+        },
+        {
+            "id": 4,
+            "name": "clustering",
+            "symbolSize": 22,
+            "x": 0,
+            "y": 0,
+            "value": 22,
+            "category": 0
+        },
+        {
+            "id": 5,
+            "name": "CRF",
+            "symbolSize": 19,
+            "x": 0,
+            "y": 0,
+            "value": 19,
+            "category": 0
+        },
+        {
+            "id": 6,
+            "name": "Large Language Models",
+            "symbolSize": 18,
+            "x": 0,
+            "y": 0,
+            "value": 18,
+            "category": 0
+        },
+        {
+            "id": 7,
+            "name": "distant supervision",
+            "symbolSize": 17,
+            "x": 0,
+            "y": 0,
+            "value": 17,
+            "category": 0
+        },
+        {
+            "id": 8,
+            "name": "classifier",
+            "symbolSize": 16,
+            "x": 0,
+            "y": 0,
+            "value": 16,
+            "category": 0
+        },
+        {
+            "id": 9,
+            "name": "word embeddings",
+            "symbolSize": 16,
+            "x": 0,
+            "y": 0,
+            "value": 16,
+            "category": 0
+        },
+        {
+            "id": 10,
+            "name": "RoBERTa",
+            "symbolSize": 15,
+            "x": 0,
+            "y": 0,
+            "value": 15,
+            "category": 0
+        },
+        {
+            "id": 11,
+            "name": "SVM",
+            "symbolSize": 13,
+            "x": 0,
+            "y": 0,
+            "value": 13,
+            "category": 0
+        },
+        {
+            "id": 12,
+            "name": "multi-task learning",
+            "symbolSize": 13,
+            "x": 0,
+            "y": 0,
+            "value": 13,
+            "category": 0
+        },
+        {
+            "id": 13,
+            "name": "neural network",
+            "symbolSize": 13,
+            "x": 0,
+            "y": 0,
+            "value": 13,
+            "category": 0
+        },
+        {
+            "id": 14,
+            "name": "Conditional Random Fields",
+            "symbolSize": 13,
+            "x": 0,
+            "y": 0,
+            "value": 13,
+            "category": 0
+        },
+        {
+            "id": 15,
+            "name": "BLEU",
+            "symbolSize": 121,
+            "x": 0,
+            "y": 0,
+            "value": 121,
+            "category": 1
+        },
+        {
+            "id": 16,
+            "name": "Transformer",
+            "symbolSize": 62,
+            "x": 0,
+            "y": 0,
+            "value": 62,
+            "category": 1
+        },
+        {
+            "id": 17,
+            "name": "Neural Machine Translation",
+            "symbolSize": 59,
+            "x": 0,
+            "y": 0,
+            "value": 59,
+            "category": 1
+        },
+        {
+            "id": 18,
+            "name": "statistical machine translation",
+            "symbolSize": 54,
+            "x": 0,
+            "y": 0,
+            "value": 54,
+            "category": 1
+        },
+        {
+            "id": 19,
+            "name": "BLEU score",
+            "symbolSize": 46,
+            "x": 0,
+            "y": 0,
+            "value": 46,
+            "category": 1
+        },
+        {
+            "id": 20,
+            "name": "SMT",
+            "symbolSize": 40,
+            "x": 0,
+            "y": 0,
+            "value": 40,
+            "category": 1
+        },
+        {
+            "id": 21,
+            "name": "neural machine translation",
+            "symbolSize": 36,
+            "x": 0,
+            "y": 0,
+            "value": 36,
+            "category": 1
+        },
+        {
+            "id": 22,
+            "name": "Statistical Machine Translation",
+            "symbolSize": 31,
+            "x": 0,
+            "y": 0,
+            "value": 31,
+            "category": 1
+        },
+        {
+            "id": 23,
+            "name": "NMT",
+            "symbolSize": 30,
+            "x": 0,
+            "y": 0,
+            "value": 30,
+            "category": 1
+        },
+        {
+            "id": 24,
+            "name": "machine translation",
+            "symbolSize": 25,
+            "x": 0,
+            "y": 0,
+            "value": 25,
+            "category": 1
+        },
+        {
+            "id": 25,
+            "name": "BLEU scores",
+            "symbolSize": 22,
+            "x": 0,
+            "y": 0,
+            "value": 22,
+            "category": 1
+        },
+        {
+            "id": 26,
+            "name": "TER",
+            "symbolSize": 22,
+            "x": 0,
+            "y": 0,
+            "value": 22,
+            "category": 1
+        },
+        {
+            "id": 27,
+            "name": "back-translation",
+            "symbolSize": 20,
+            "x": 0,
+            "y": 0,
+            "value": 20,
+            "category": 1
+        },
+        {
+            "id": 28,
+            "name": "Moses",
+            "symbolSize": 16,
+            "x": 0,
+            "y": 0,
+            "value": 16,
+            "category": 1
+        },
+        {
+            "id": 29,
+            "name": "knowledge distillation",
+            "symbolSize": 13,
+            "x": 0,
+            "y": 0,
+            "value": 13,
+            "category": 1
+        },
+        {
+            "id": 30,
+            "name": "LLMs",
+            "symbolSize": 37,
+            "x": 0,
+            "y": 0,
+            "value": 37,
+            "category": 2
+        },
+        {
+            "id": 31,
+            "name": "Large Language Models",
+            "symbolSize": 36,
+            "x": 0,
+            "y": 0,
+            "value": 36,
+            "category": 2
+        },
+        {
+            "id": 32,
+            "name": "BERT",
+            "symbolSize": 33,
+            "x": 0,
+            "y": 0,
+            "value": 33,
+            "category": 2
+        },
+        {
+            "id": 33,
+            "name": "GPT-4",
+            "symbolSize": 33,
+            "x": 0,
+            "y": 0,
+            "value": 33,
+            "category": 2
+        },
+        {
+            "id": 34,
+            "name": "BLEU",
+            "symbolSize": 25,
+            "x": 0,
+            "y": 0,
+            "value": 25,
+            "category": 2
+        },
+        {
+            "id": 35,
+            "name": "Transformer",
+            "symbolSize": 23,
+            "x": 0,
+            "y": 0,
+            "value": 23,
+            "category": 2
+        },
+        {
+            "id": 36,
+            "name": "contrastive learning",
+            "symbolSize": 19,
+            "x": 0,
+            "y": 0,
+            "value": 19,
+            "category": 2
+        },
+        {
+            "id": 37,
+            "name": "large language models",
+            "symbolSize": 16,
+            "x": 0,
+            "y": 0,
+            "value": 16,
+            "category": 2
+        },
+        {
+            "id": 38,
+            "name": "reinforcement learning",
+            "symbolSize": 16,
+            "x": 0,
+            "y": 0,
+            "value": 16,
+            "category": 2
+        },
+        {
+            "id": 39,
+            "name": "fine-tuning",
+            "symbolSize": 15,
+            "x": 0,
+            "y": 0,
+            "value": 15,
+            "category": 2
+        },
+        {
+            "id": 40,
+            "name": "RNN",
+            "symbolSize": 15,
+            "x": 0,
+            "y": 0,
+            "value": 15,
+            "category": 2
+        },
+        {
+            "id": 41,
+            "name": "GPT-2",
+            "symbolSize": 14,
+            "x": 0,
+            "y": 0,
+            "value": 14,
+            "category": 2
+        },
+        {
+            "id": 42,
+            "name": "LSTM",
+            "symbolSize": 13,
+            "x": 0,
+            "y": 0,
+            "value": 13,
+            "category": 2
+        },
+        {
+            "id": 43,
+            "name": "ChatGPT",
+            "symbolSize": 11,
+            "x": 0,
+            "y": 0,
+            "value": 11,
+            "category": 2
+        },
+        {
+            "id": 44,
+            "name": "language models",
+            "symbolSize": 11,
+            "x": 0,
+            "y": 0,
+            "value": 11,
+            "category": 2
+        },
+        {
+            "id": 45,
+            "name": "dependency parsing",
+            "symbolSize": 39,
+            "x": 0,
+            "y": 0,
+            "value": 39,
+            "category": 3
+        },
+        {
+            "id": 46,
+            "name": "parser",
+            "symbolSize": 15,
+            "x": 0,
+            "y": 0,
+            "value": 15,
+            "category": 3
+        },
+        {
+            "id": 47,
+            "name": "part-of-speech tagging",
+            "symbolSize": 13,
+            "x": 0,
+            "y": 0,
+            "value": 13,
+            "category": 3
+        },
+        {
+            "id": 48,
+            "name": "beam search",
+            "symbolSize": 13,
+            "x": 0,
+            "y": 0,
+            "value": 13,
+            "category": 3
+        },
+        {
+            "id": 49,
+            "name": "BERT",
+            "symbolSize": 12,
+            "x": 0,
+            "y": 0,
+            "value": 12,
+            "category": 3
+        },
+        {
+            "id": 50,
+            "name": "parsing",
+            "symbolSize": 12,
+            "x": 0,
+            "y": 0,
+            "value": 12,
+            "category": 3
+        },
+        {
+            "id": 51,
+            "name": "self-training",
+            "symbolSize": 10,
+            "x": 0,
+            "y": 0,
+            "value": 10,
+            "category": 3
+        },
+        {
+            "id": 52,
+            "name": "HPSG",
+            "symbolSize": 10,
+            "x": 0,
+            "y": 0,
+            "value": 10,
+            "category": 3
+        },
+        {
+            "id": 53,
+            "name": "PCFG",
+            "symbolSize": 9,
+            "x": 0,
+            "y": 0,
+            "value": 9,
+            "category": 3
+        },
+        {
+            "id": 54,
+            "name": "CKY",
+            "symbolSize": 9,
+            "x": 0,
+            "y": 0,
+            "value": 9,
+            "category": 3
+        },
+        {
+            "id": 55,
+            "name": "dependency parser",
+            "symbolSize": 9,
+            "x": 0,
+            "y": 0,
+            "value": 9,
+            "category": 3
+        },
+        {
+            "id": 56,
+            "name": "statistical parser",
+            "symbolSize": 9,
+            "x": 0,
+            "y": 0,
+            "value": 9,
+            "category": 3
+        },
+        {
+            "id": 57,
+            "name": "dependency parsers",
+            "symbolSize": 8,
+            "x": 0,
+            "y": 0,
+            "value": 8,
+            "category": 3
+        },
+        {
+            "id": 58,
+            "name": "POS tagging",
+            "symbolSize": 8,
+            "x": 0,
+            "y": 0,
+            "value": 8,
+            "category": 3
+        },
+        {
+            "id": 59,
+            "name": "dynamic programming",
+            "symbolSize": 8,
+            "x": 0,
+            "y": 0,
+            "value": 8,
+            "category": 3
+        },
+        {
+            "id": 60,
+            "name": "LLMs",
+            "symbolSize": 74,
+            "x": 0,
+            "y": 0,
+            "value": 74,
+            "category": 4
+        },
+        {
+            "id": 61,
+            "name": "GPT-4",
+            "symbolSize": 67,
+            "x": 0,
+            "y": 0,
+            "value": 67,
+            "category": 4
+        },
+        {
+            "id": 62,
+            "name": "BERT",
+            "symbolSize": 35,
+            "x": 0,
+            "y": 0,
+            "value": 35,
+            "category": 4
+        },
+        {
+            "id": 63,
+            "name": "fine-tuning",
+            "symbolSize": 32,
+            "x": 0,
+            "y": 0,
+            "value": 32,
+            "category": 4
+        },
+        {
+            "id": 64,
+            "name": "in-context learning",
+            "symbolSize": 25,
+            "x": 0,
+            "y": 0,
+            "value": 25,
+            "category": 4
+        },
+        {
+            "id": 65,
+            "name": "Transformer",
+            "symbolSize": 19,
+            "x": 0,
+            "y": 0,
+            "value": 19,
+            "category": 4
+        },
+        {
+            "id": 66,
+            "name": "Chain-of-Thought",
+            "symbolSize": 18,
+            "x": 0,
+            "y": 0,
+            "value": 18,
+            "category": 4
+        },
+        {
+            "id": 67,
+            "name": "LoRA",
+            "symbolSize": 16,
+            "x": 0,
+            "y": 0,
+            "value": 16,
+            "category": 4
+        },
+        {
+            "id": 68,
+            "name": "GPT-3.5",
+            "symbolSize": 15,
+            "x": 0,
+            "y": 0,
+            "value": 15,
+            "category": 4
+        },
+        {
+            "id": 69,
+            "name": "GPT-3",
+            "symbolSize": 13,
+            "x": 0,
+            "y": 0,
+            "value": 13,
+            "category": 4
+        },
+        {
+            "id": 70,
+            "name": "ChatGPT",
+            "symbolSize": 12,
+            "x": 0,
+            "y": 0,
+            "value": 12,
+            "category": 4
+        },
+        {
+            "id": 71,
+            "name": "GPT",
+            "symbolSize": 11,
+            "x": 0,
+            "y": 0,
+            "value": 11,
+            "category": 4
+        },
+        {
+            "id": 72,
+            "name": "finetuning",
+            "symbolSize": 11,
+            "x": 0,
+            "y": 0,
+            "value": 11,
+            "category": 4
+        },
+        {
+            "id": 73,
+            "name": "Transformers",
+            "symbolSize": 11,
+            "x": 0,
+            "y": 0,
+            "value": 11,
+            "category": 4
+        },
+        {
+            "id": 74,
+            "name": "instruction tuning",
+            "symbolSize": 9,
+            "x": 0,
+            "y": 0,
+            "value": 9,
+            "category": 4
+        },
+        {
+            "id": 75,
+            "name": "BERT",
+            "symbolSize": 37,
+            "x": 0,
+            "y": 0,
+            "value": 37,
+            "category": 5
+        },
+        {
+            "id": 76,
+            "name": "RoBERTa",
+            "symbolSize": 22,
+            "x": 0,
+            "y": 0,
+            "value": 22,
+            "category": 5
+        },
+        {
+            "id": 77,
+            "name": "sentiment analysis",
+            "symbolSize": 19,
+            "x": 0,
+            "y": 0,
+            "value": 19,
+            "category": 5
+        },
+        {
+            "id": 78,
+            "name": "LSTM",
+            "symbolSize": 16,
+            "x": 0,
+            "y": 0,
+            "value": 16,
+            "category": 5
+        },
+        {
+            "id": 79,
+            "name": "multi-task learning",
+            "symbolSize": 14,
+            "x": 0,
+            "y": 0,
+            "value": 14,
+            "category": 5
+        },
+        {
+            "id": 80,
+            "name": "machine learning",
+            "symbolSize": 13,
+            "x": 0,
+            "y": 0,
+            "value": 13,
+            "category": 5
+        },
+        {
+            "id": 81,
+            "name": "SVM",
+            "symbolSize": 12,
+            "x": 0,
+            "y": 0,
+            "value": 12,
+            "category": 5
+        },
+        {
+            "id": 82,
+            "name": "CNN",
+            "symbolSize": 11,
+            "x": 0,
+            "y": 0,
+            "value": 11,
+            "category": 5
+        },
+        {
+            "id": 83,
+            "name": "word embeddings",
+            "symbolSize": 10,
+            "x": 0,
+            "y": 0,
+            "value": 10,
+            "category": 5
+        },
+        {
+            "id": 84,
+            "name": "fine-tuning",
+            "symbolSize": 7,
+            "x": 0,
+            "y": 0,
+            "value": 7,
+            "category": 5
+        },
+        {
+            "id": 85,
+            "name": "deep learning",
+            "symbolSize": 7,
+            "x": 0,
+            "y": 0,
+            "value": 7,
+            "category": 5
+        },
+        {
+            "id": 86,
+            "name": "classifiers",
+            "symbolSize": 7,
+            "x": 0,
+            "y": 0,
+            "value": 7,
+            "category": 5
+        },
+        {
+            "id": 87,
+            "name": "SentiWordNet",
+            "symbolSize": 7,
+            "x": 0,
+            "y": 0,
+            "value": 7,
+            "category": 5
+        },
+        {
+            "id": 88,
+            "name": "Transformer",
+            "symbolSize": 6,
+            "x": 0,
+            "y": 0,
+            "value": 6,
+            "category": 5
+        },
+        {
+            "id": 89,
+            "name": "Large Language Models",
+            "symbolSize": 6,
+            "x": 0,
+            "y": 0,
+            "value": 6,
+            "category": 5
+        },
+        {
+            "id": 90,
+            "name": "reinforcement learning",
+            "symbolSize": 18,
+            "x": 0,
+            "y": 0,
+            "value": 18,
+            "category": 6
+        },
+        {
+            "id": 91,
+            "name": "Reinforcement Learning",
+            "symbolSize": 17,
+            "x": 0,
+            "y": 0,
+            "value": 17,
+            "category": 6
+        },
+        {
+            "id": 92,
+            "name": "Large Language Models",
+            "symbolSize": 15,
+            "x": 0,
+            "y": 0,
+            "value": 15,
+            "category": 6
+        },
+        {
+            "id": 93,
+            "name": "machine learning",
+            "symbolSize": 13,
+            "x": 0,
+            "y": 0,
+            "value": 13,
+            "category": 6
+        },
+        {
+            "id": 94,
+            "name": "LLMs",
+            "symbolSize": 12,
+            "x": 0,
+            "y": 0,
+            "value": 12,
+            "category": 6
+        },
+        {
+            "id": 95,
+            "name": "GPT-4",
+            "symbolSize": 12,
+            "x": 0,
+            "y": 0,
+            "value": 12,
+            "category": 6
+        },
+        {
+            "id": 96,
+            "name": "fine-tuning",
+            "symbolSize": 10,
+            "x": 0,
+            "y": 0,
+            "value": 10,
+            "category": 6
+        },
+        {
+            "id": 97,
+            "name": "large language models",
+            "symbolSize": 8,
+            "x": 0,
+            "y": 0,
+            "value": 8,
+            "category": 6
+        },
+        {
+            "id": 98,
+            "name": "BERT",
+            "symbolSize": 7,
+            "x": 0,
+            "y": 0,
+            "value": 7,
+            "category": 6
+        },
+        {
+            "id": 99,
+            "name": "Transformer",
+            "symbolSize": 6,
+            "x": 0,
+            "y": 0,
+            "value": 6,
+            "category": 6
+        },
+        {
+            "id": 100,
+            "name": "multi-task learning",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 6
+        },
+        {
+            "id": 101,
+            "name": "neural models",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 6
+        },
+        {
+            "id": 102,
+            "name": "BLEU",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 6
+        },
+        {
+            "id": 103,
+            "name": "ASR",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 6
+        },
+        {
+            "id": 104,
+            "name": "ChatGPT",
+            "symbolSize": 4,
+            "x": 0,
+            "y": 0,
+            "value": 4,
+            "category": 6
+        },
+        {
+            "id": 105,
+            "name": "BERT",
+            "symbolSize": 20,
+            "x": 0,
+            "y": 0,
+            "value": 20,
+            "category": 7
+        },
+        {
+            "id": 106,
+            "name": "RoBERTa",
+            "symbolSize": 13,
+            "x": 0,
+            "y": 0,
+            "value": 13,
+            "category": 7
+        },
+        {
+            "id": 107,
+            "name": "word embeddings",
+            "symbolSize": 9,
+            "x": 0,
+            "y": 0,
+            "value": 9,
+            "category": 7
+        },
+        {
+            "id": 108,
+            "name": "WordNet",
+            "symbolSize": 8,
+            "x": 0,
+            "y": 0,
+            "value": 8,
+            "category": 7
+        },
+        {
+            "id": 109,
+            "name": "SRL",
+            "symbolSize": 7,
+            "x": 0,
+            "y": 0,
+            "value": 7,
+            "category": 7
+        },
+        {
+            "id": 110,
+            "name": "machine learning",
+            "symbolSize": 6,
+            "x": 0,
+            "y": 0,
+            "value": 6,
+            "category": 7
+        },
+        {
+            "id": 111,
+            "name": "PropBank",
+            "symbolSize": 6,
+            "x": 0,
+            "y": 0,
+            "value": 6,
+            "category": 7
+        },
+        {
+            "id": 112,
+            "name": "NLI",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 7
+        },
+        {
+            "id": 113,
+            "name": "Semantic Role Labeling",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 7
+        },
+        {
+            "id": 114,
+            "name": "Natural Language Inference",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 7
+        },
+        {
+            "id": 115,
+            "name": "textual entailment",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 7
+        },
+        {
+            "id": 116,
+            "name": "crowdsourcing",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 7
+        },
+        {
+            "id": 117,
+            "name": "FrameNet",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 7
+        },
+        {
+            "id": 118,
+            "name": "AMR",
+            "symbolSize": 4,
+            "x": 0,
+            "y": 0,
+            "value": 4,
+            "category": 7
+        },
+        {
+            "id": 119,
+            "name": "pre-trained language models",
+            "symbolSize": 4,
+            "x": 0,
+            "y": 0,
+            "value": 4,
+            "category": 7
+        },
+        {
+            "id": 120,
+            "name": "BM25",
+            "symbolSize": 9,
+            "x": 0,
+            "y": 0,
+            "value": 9,
+            "category": 8
+        },
+        {
+            "id": 121,
+            "name": "Large Language Models",
+            "symbolSize": 8,
+            "x": 0,
+            "y": 0,
+            "value": 8,
+            "category": 8
+        },
+        {
+            "id": 122,
+            "name": "LLMs",
+            "symbolSize": 7,
+            "x": 0,
+            "y": 0,
+            "value": 7,
+            "category": 8
+        },
+        {
+            "id": 123,
+            "name": "Transformer",
+            "symbolSize": 6,
+            "x": 0,
+            "y": 0,
+            "value": 6,
+            "category": 8
+        },
+        {
+            "id": 124,
+            "name": "Latent Dirichlet Allocation",
+            "symbolSize": 6,
+            "x": 0,
+            "y": 0,
+            "value": 6,
+            "category": 8
+        },
+        {
+            "id": 125,
+            "name": "BERT",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 8
+        },
+        {
+            "id": 126,
+            "name": "language models",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 8
+        },
+        {
+            "id": 127,
+            "name": "text mining",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 8
+        },
+        {
+            "id": 128,
+            "name": "clustering",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 8
+        },
+        {
+            "id": 129,
+            "name": "UIMA",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 8
+        },
+        {
+            "id": 130,
+            "name": "contrastive learning",
+            "symbolSize": 4,
+            "x": 0,
+            "y": 0,
+            "value": 4,
+            "category": 8
+        },
+        {
+            "id": 131,
+            "name": "learning-to-rank",
+            "symbolSize": 4,
+            "x": 0,
+            "y": 0,
+            "value": 4,
+            "category": 8
+        },
+        {
+            "id": 132,
+            "name": "information retrieval",
+            "symbolSize": 4,
+            "x": 0,
+            "y": 0,
+            "value": 4,
+            "category": 8
+        },
+        {
+            "id": 133,
+            "name": "cosine similarity",
+            "symbolSize": 4,
+            "x": 0,
+            "y": 0,
+            "value": 4,
+            "category": 8
+        },
+        {
+            "id": 134,
+            "name": "SVM",
+            "symbolSize": 4,
+            "x": 0,
+            "y": 0,
+            "value": 4,
+            "category": 8
+        },
+        {
+            "id": 135,
+            "name": "WordNet",
+            "symbolSize": 30,
+            "x": 0,
+            "y": 0,
+            "value": 30,
+            "category": 9
+        },
+        {
+            "id": 136,
+            "name": "word embeddings",
+            "symbolSize": 19,
+            "x": 0,
+            "y": 0,
+            "value": 19,
+            "category": 9
+        },
+        {
+            "id": 137,
+            "name": "supervised learning",
+            "symbolSize": 9,
+            "x": 0,
+            "y": 0,
+            "value": 9,
+            "category": 9
+        },
+        {
+            "id": 138,
+            "name": "word sense disambiguation",
+            "symbolSize": 9,
+            "x": 0,
+            "y": 0,
+            "value": 9,
+            "category": 9
+        },
+        {
+            "id": 139,
+            "name": "Word Sense Disambiguation",
+            "symbolSize": 7,
+            "x": 0,
+            "y": 0,
+            "value": 7,
+            "category": 9
+        },
+        {
+            "id": 140,
+            "name": "distributional models",
+            "symbolSize": 7,
+            "x": 0,
+            "y": 0,
+            "value": 7,
+            "category": 9
+        },
+        {
+            "id": 141,
+            "name": "FrameNet",
+            "symbolSize": 6,
+            "x": 0,
+            "y": 0,
+            "value": 6,
+            "category": 9
+        },
+        {
+            "id": 142,
+            "name": "distributional semantic models",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 9
+        },
+        {
+            "id": 143,
+            "name": "clustering",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 9
+        },
+        {
+            "id": 144,
+            "name": "distributional semantics",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 9
+        },
+        {
+            "id": 145,
+            "name": "heuristics",
+            "symbolSize": 5,
+            "x": 0,
+            "y": 0,
+            "value": 5,
+            "category": 9
+        },
+        {
+            "id": 146,
+            "name": "BabelNet",
+            "symbolSize": 4,
+            "x": 0,
+            "y": 0,
+            "value": 4,
+            "category": 9
+        },
+        {
+            "id": 147,
+            "name": "word2vec",
+            "symbolSize": 4,
+            "x": 0,
+            "y": 0,
+            "value": 4,
+            "category": 9
+        },
+        {
+            "id": 148,
+            "name": "unsupervised method",
+            "symbolSize": 4,
+            "x": 0,
+            "y": 0,
+            "value": 4,
+            "category": 9
+        },
+        {
+            "id": 149,
+            "name": "BERT",
+            "symbolSize": 3,
+            "x": 0,
+            "y": 0,
+            "value": 3,
+            "category": 9
+        }
+    ],
+    "links": [
+        {
+            "source": "0",
+            "target": "32"
+        },
+        {
+            "source": "0",
+            "target": "49"
+        },
+        {
+            "source": "0",
+            "target": "62"
+        },
+        {
+            "source": "0",
+            "target": "75"
+        },
+        {
+            "source": "0",
+            "target": "98"
+        },
+        {
+            "source": "0",
+            "target": "105"
+        },
+        {
+            "source": "0",
+            "target": "125"
+        },
+        {
+            "source": "0",
+            "target": "149"
+        },
+        {
+            "source": "2",
+            "target": "80"
+        },
+        {
+            "source": "2",
+            "target": "93"
+        },
+        {
+            "source": "2",
+            "target": "110"
+        },
+        {
+            "source": "4",
+            "target": "128"
+        },
+        {
+            "source": "4",
+            "target": "143"
+        },
+        {
+            "source": "6",
+            "target": "31"
+        },
+        {
+            "source": "6",
+            "target": "89"
+        },
+        {
+            "source": "6",
+            "target": "92"
+        },
+        {
+            "source": "6",
+            "target": "121"
+        },
+        {
+            "source": "9",
+            "target": "83"
+        },
+        {
+            "source": "9",
+            "target": "107"
+        },
+        {
+            "source": "9",
+            "target": "136"
+        },
+        {
+            "source": "10",
+            "target": "76"
+        },
+        {
+            "source": "10",
+            "target": "106"
+        },
+        {
+            "source": "11",
+            "target": "81"
+        },
+        {
+            "source": "11",
+            "target": "134"
+        },
+        {
+            "source": "12",
+            "target": "79"
+        },
+        {
+            "source": "12",
+            "target": "100"
+        },
+        {
+            "source": "15",
+            "target": "34"
+        },
+        {
+            "source": "15",
+            "target": "102"
+        },
+        {
+            "source": "16",
+            "target": "35"
+        },
+        {
+            "source": "16",
+            "target": "65"
+        },
+        {
+            "source": "16",
+            "target": "88"
+        },
+        {
+            "source": "16",
+            "target": "99"
+        },
+        {
+            "source": "16",
+            "target": "123"
+        },
+        {
+            "source": "30",
+            "target": "60"
+        },
+        {
+            "source": "30",
+            "target": "94"
+        },
+        {
+            "source": "30",
+            "target": "122"
+        },
+        {
+            "source": "31",
+            "target": "89"
+        },
+        {
+            "source": "31",
+            "target": "92"
+        },
+        {
+            "source": "31",
+            "target": "121"
+        },
+        {
+            "source": "32",
+            "target": "49"
+        },
+        {
+            "source": "32",
+            "target": "62"
+        },
+        {
+            "source": "32",
+            "target": "75"
+        },
+        {
+            "source": "32",
+            "target": "98"
+        },
+        {
+            "source": "32",
+            "target": "105"
+        },
+        {
+            "source": "32",
+            "target": "125"
+        },
+        {
+            "source": "32",
+            "target": "149"
+        },
+        {
+            "source": "33",
+            "target": "61"
+        },
+        {
+            "source": "33",
+            "target": "95"
+        },
+        {
+            "source": "34",
+            "target": "102"
+        },
+        {
+            "source": "35",
+            "target": "65"
+        },
+        {
+            "source": "35",
+            "target": "88"
+        },
+        {
+            "source": "35",
+            "target": "99"
+        },
+        {
+            "source": "35",
+            "target": "123"
+        },
+        {
+            "source": "36",
+            "target": "130"
+        },
+        {
+            "source": "37",
+            "target": "97"
+        },
+        {
+            "source": "38",
+            "target": "90"
+        },
+        {
+            "source": "39",
+            "target": "63"
+        },
+        {
+            "source": "39",
+            "target": "84"
+        },
+        {
+            "source": "39",
+            "target": "96"
+        },
+        {
+            "source": "42",
+            "target": "78"
+        },
+        {
+            "source": "43",
+            "target": "70"
+        },
+        {
+            "source": "43",
+            "target": "104"
+        },
+        {
+            "source": "44",
+            "target": "126"
+        },
+        {
+            "source": "49",
+            "target": "62"
+        },
+        {
+            "source": "49",
+            "target": "75"
+        },
+        {
+            "source": "49",
+            "target": "98"
+        },
+        {
+            "source": "49",
+            "target": "105"
+        },
+        {
+            "source": "49",
+            "target": "125"
+        },
+        {
+            "source": "49",
+            "target": "149"
+        },
+        {
+            "source": "60",
+            "target": "94"
+        },
+        {
+            "source": "60",
+            "target": "122"
+        },
+        {
+            "source": "61",
+            "target": "95"
+        },
+        {
+            "source": "62",
+            "target": "75"
+        },
+        {
+            "source": "62",
+            "target": "98"
+        },
+        {
+            "source": "62",
+            "target": "105"
+        },
+        {
+            "source": "62",
+            "target": "125"
+        },
+        {
+            "source": "62",
+            "target": "149"
+        },
+        {
+            "source": "63",
+            "target": "84"
+        },
+        {
+            "source": "63",
+            "target": "96"
+        },
+        {
+            "source": "65",
+            "target": "88"
+        },
+        {
+            "source": "65",
+            "target": "99"
+        },
+        {
+            "source": "65",
+            "target": "123"
+        },
+        {
+            "source": "70",
+            "target": "104"
+        },
+        {
+            "source": "75",
+            "target": "98"
+        },
+        {
+            "source": "75",
+            "target": "105"
+        },
+        {
+            "source": "75",
+            "target": "125"
+        },
+        {
+            "source": "75",
+            "target": "149"
+        },
+        {
+            "source": "76",
+            "target": "106"
+        },
+        {
+            "source": "79",
+            "target": "100"
+        },
+        {
+            "source": "80",
+            "target": "93"
+        },
+        {
+            "source": "80",
+            "target": "110"
+        },
+        {
+            "source": "81",
+            "target": "134"
+        },
+        {
+            "source": "83",
+            "target": "107"
+        },
+        {
+            "source": "83",
+            "target": "136"
+        },
+        {
+            "source": "84",
+            "target": "96"
+        },
+        {
+            "source": "88",
+            "target": "99"
+        },
+        {
+            "source": "88",
+            "target": "123"
+        },
+        {
+            "source": "89",
+            "target": "92"
+        },
+        {
+            "source": "89",
+            "target": "121"
+        },
+        {
+            "source": "92",
+            "target": "121"
+        },
+        {
+            "source": "93",
+            "target": "110"
+        },
+        {
+            "source": "94",
+            "target": "122"
+        },
+        {
+            "source": "98",
+            "target": "105"
+        },
+        {
+            "source": "98",
+            "target": "125"
+        },
+        {
+            "source": "98",
+            "target": "149"
+        },
+        {
+            "source": "99",
+            "target": "123"
+        },
+        {
+            "source": "105",
+            "target": "125"
+        },
+        {
+            "source": "105",
+            "target": "149"
+        },
+        {
+            "source": "107",
+            "target": "136"
+        },
+        {
+            "source": "108",
+            "target": "135"
+        },
+        {
+            "source": "117",
+            "target": "141"
+        },
+        {
+            "source": "125",
+            "target": "149"
+        },
+        {
+            "source": "128",
+            "target": "143"
+        }
+    ],
+    "categories": [
+        {
+            "name": "Information Extraction\n信息抽取"
+        },
+        {
+            "name": "Machine Translation\n机器翻译"
+        },
+        {
+            "name": "Generation\n生成"
+        },
+        {
+            "name": "Syntax: Tagging, Chunking and Parsing\n句法：标注、分块与解析"
+        },
+        {
+            "name": "Large Language Models\n大语言模型"
+        },
+        {
+            "name": "Sentiment Analysis, Stylistic Analysis and Argument Mining\n情感分析、文体分析与论证挖掘"
+        },
+        {
+            "name": "Dialogue and Interactive Systems\n对话与交互系统"
+        },
+        {
+            "name": "Semantics: Sentence-Level Semantics, Textual Inference and Other Areas\n语义：句子级语义、文本推理及其他"
+        },
+        {
+            "name": "Information Retrieval and Text Mining\n信息检索与文本挖掘"
+        },
+        {
+            "name": "Semantics: Lexical\n语义词汇"
+        }
+    ]
+}
