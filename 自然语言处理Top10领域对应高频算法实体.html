@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body style="height: 100%; margin: 0">
+  <h1 style="text-align:center; margin-top:20px; font-family:monospace; font-weight:bold;">自然语言处理Top10领域对应高频算法实体</h1>
+  <div id="container"
+    style="height: calc(100% - 32px); display: flex; align-items: flex-start; justify-content: center;"></div>
+
+
+  <script type="text/javascript" src="echarts.min.js"></script>
+
+
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+
+    var option;
+
+    option = {
+      tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: {c} ({d}%)'
+      },
+
+      series: [
+        {
+          name: '研究领域',
+          type: 'pie',
+          selectedMode: 'single',
+          radius: [0, '25%'],
+          center: ['50%', '45%'],
+          avoidLabelOverlap: true,
+          label: {
+            show: true,
+            position: 'outside',
+            fontSize: 18,
+            formatter: '{b}'
+          },
+          labelLine: {
+            show: true,
+            length: 50,
+            length2: 40
+          },
+          data: [
+            { value: 2106, name: 'Information Extraction' + "\n" + "信息抽取", itemStyle: { color: '#ff994d' } },
+            { value: 1349, name: 'Machine Translation' + "\n" + "机器翻译", itemStyle: { color: '#b6d634' } },
+            { value: 1298, name: 'Generation' + "\n" + "生成", itemStyle: { color: '#ffd10a' } },
+            { value: 897, name: 'Syntax: Tagging, Chunking and Parsing' + "\n" + "句法：标注、分块与解析", itemStyle: { color: '#fb628b' } },
+            { value: 869, name: 'Large Language Models' + "\n" + "大语言模型", itemStyle: { color: '#785db0' } },
+            { value: 724, name: 'Sentiment Analysis, Stylistic Analysis and Argument Mining' + "\n" + "情感分析、文体分析与论证挖掘", itemStyle: { color: '#3fbe95' } },
+            { value: 663, name: 'Dialogue and Interactive Systems' + "\n" + "对话与交互系统", itemStyle: { color: '#5070dd' } },
+            { value: 641, name: 'Semantics: Sentence-Level Semantics, Textual Inference and Other Areas' + "\n" + "语义：句子级语义、文本推理及其他", itemStyle: { color: '#505372' } },
+            { value: 535, name: 'Information Retrieval and Text Mining' + "\n" + "信息检索与文本挖掘", itemStyle: { color: '#16989a' } },
+            { value: 451, name: 'Semantics: Lexical' + "\n" + "语义：词汇", selected: true, itemStyle: { color: '#0ca8df' } }
+          ]
+        },
+        {
+          name: '算法实体-频次',
+          type: 'pie',
+          radius: ['45%', '60%'],
+          center: ['50%', '45%'],
+          avoidLabelOverlap: true,
+          labelLine: {
+            show: true,
+            length: 50,
+            length2: 40
+          },
+          label: {
+            show: true,
+            position: 'outside',
+            fontSize: 12,
+            formatter: '{b}'
+          },
+          data: [
+            { value: 42, name: 'BERT', itemStyle: { color: '#ff994d' } },
+            { value: 34, name: 'Named Entity Recognition', itemStyle: { color: '#ff994d' } },
+            { value: 30, name: 'machine learning', itemStyle: { color: '#ff994d' } },
+            { value: 26, name: 'named entity recognition', itemStyle: { color: '#ff994d' } },
+            { value: 22, name: 'clustering', itemStyle: { color: '#ff994d' } },
+            { value: 19, name: 'CRF', itemStyle: { color: '#ff994d' } },
+            { value: 18, name: 'Large Language Models', itemStyle: { color: '#ff994d' } },
+            { value: 17, name: 'distant supervision', itemStyle: { color: '#ff994d' } },
+            { value: 16, name: 'classifier', itemStyle: { color: '#ff994d' } },
+            { value: 16, name: 'word embeddings', itemStyle: { color: '#ff994d' } },
+            { value: 121, name: 'BLEU', itemStyle: { color: '#b6d634' } },
+            { value: 62, name: 'Transformer', itemStyle: { color: '#b6d634' } },
+            { value: 59, name: 'Neural Machine Translation', itemStyle: { color: '#b6d634' } },
+            { value: 54, name: 'statistical machine translation', itemStyle: { color: '#b6d634' } },
+            { value: 46, name: 'BLEU score', itemStyle: { color: '#b6d634' } },
+            { value: 40, name: 'SMT', itemStyle: { color: '#b6d634' } },
+            { value: 36, name: 'neural machine translation', itemStyle: { color: '#b6d634' } },
+            { value: 31, name: 'Statistical Machine Translation', itemStyle: { color: '#b6d634' } },
+            { value: 30, name: 'NMT', itemStyle: { color: '#b6d634' } },
+            { value: 25, name: 'machine translation', itemStyle: { color: '#b6d634' } },
+            { value: 37, name: 'LLMs', itemStyle: { color: '#ffd10a' } },
+            { value: 36, name: 'Large Language Models', itemStyle: { color: '#ffd10a' } },
+            { value: 33, name: 'BERT', itemStyle: { color: '#ffd10a' } },
+            { value: 33, name: 'GPT-4', itemStyle: { color: '#ffd10a' } },
+            { value: 25, name: 'BLEU', itemStyle: { color: '#ffd10a' } },
+            { value: 23, name: 'Transformer', itemStyle: { color: '#ffd10a' } },
+            { value: 19, name: 'contrastive learning', itemStyle: { color: '#ffd10a' } },
+            { value: 16, name: 'large language models', itemStyle: { color: '#ffd10a' } },
+            { value: 16, name: 'reinforcement learning', itemStyle: { color: '#ffd10a' } },
+            { value: 15, name: 'fine-tuning', itemStyle: { color: '#ffd10a' } },
+            { value: 39, name: 'dependency parsing', itemStyle: { color: '#fb628b' } },
+            { value: 15, name: 'parser', itemStyle: { color: '#fb628b' } },
+            { value: 13, name: 'part-of-speech tagging', itemStyle: { color: '#fb628b' } },
+            { value: 13, name: 'beam search', itemStyle: { color: '#fb628b' } },
+            { value: 12, name: 'BERT', itemStyle: { color: '#fb628b' } },
+            { value: 12, name: 'parsing', itemStyle: { color: '#fb628b' } },
+            { value: 10, name: 'self-training', itemStyle: { color: '#fb628b' } },
+            { value: 10, name: 'HPSG', itemStyle: { color: '#fb628b' } },
+            { value: 9, name: 'PCFG', itemStyle: { color: '#fb628b' } },
+            { value: 9, name: 'CKY', itemStyle: { color: '#fb628b' } },
+            { value: 74, name: 'LLMs', itemStyle: { color: '#785db0' } },
+            { value: 67, name: 'GPT-4', itemStyle: { color: '#785db0' } },
+            { value: 35, name: 'BERT', itemStyle: { color: '#785db0' } },
+            { value: 32, name: 'fine-tuning', itemStyle: { color: '#785db0' } },
+            { value: 25, name: 'in-context learning', itemStyle: { color: '#785db0' } },
+            { value: 19, name: 'Transformer', itemStyle: { color: '#785db0' } },
+            { value: 18, name: 'Chain-of-Thought', itemStyle: { color: '#785db0' } },
+            { value: 16, name: 'LoRA', itemStyle: { color: '#785db0' } },
+            { value: 15, name: 'GPT-3.5', itemStyle: { color: '#785db0' } },
+            { value: 13, name: 'GPT-3', itemStyle: { color: '#785db0' } },
+            { value: 37, name: 'BERT', itemStyle: { color: '3fbe95' } },
+            { value: 22, name: 'RoBERTa', itemStyle: { color: '3fbe95' } },
+            { value: 19, name: 'sentiment analysis', itemStyle: { color: '3fbe95' } },
+            { value: 16, name: 'LSTM', itemStyle: { color: '3fbe95' } },
+            { value: 14, name: 'multi-task learning', itemStyle: { color: '3fbe95' } },
+            { value: 13, name: 'machine learning', itemStyle: { color: '3fbe95' } },
+            { value: 12, name: 'SVM', itemStyle: { color: '3fbe95' } },
+            { value: 11, name: 'CNN', itemStyle: { color: '3fbe95' } },
+            { value: 10, name: 'word embeddings', itemStyle: { color: '3fbe95' } },
+            { value: 7, name: 'fine-tuning', itemStyle: { color: '3fbe95' } },
+            { value: 18, name: 'reinforcement learning', itemStyle: { color: '#5070dd' } },
+            { value: 17, name: 'Reinforcement Learning', itemStyle: { color: '#5070dd' } },
+            { value: 15, name: 'Large Language Models', itemStyle: { color: '#5070dd' } },
+            { value: 13, name: 'machine learning', itemStyle: { color: '#5070dd' } },
+            { value: 12, name: 'LLMs', itemStyle: { color: '#5070dd' } },
+            { value: 12, name: 'GPT-4', itemStyle: { color: '#5070dd' } },
+            { value: 10, name: 'fine-tuning', itemStyle: { color: '#5070dd' } },
+            { value: 8, name: 'large language models', itemStyle: { color: '#5070dd' } },
+            { value: 7, name: 'BERT', itemStyle: { color: '#5070dd' } },
+            { value: 6, name: 'Transformer', itemStyle: { color: '#5070dd' } },
+            { value: 20, name: 'BERT', itemStyle: { color: '#505372' } },
+            { value: 13, name: 'RoBERTa', itemStyle: { color: '#505372' } },
+            { value: 9, name: 'word embeddings', itemStyle: { color: '#505372' } },
+            { value: 8, name: 'WordNet', itemStyle: { color: '#505372' } },
+            { value: 7, name: 'SRL', itemStyle: { color: '#505372' } },
+            { value: 6, name: 'machine learning', itemStyle: { color: '#505372' } },
+            { value: 6, name: 'PropBank', itemStyle: { color: '#505372' } },
+            { value: 5, name: 'NLI', itemStyle: { color: '#505372' } },
+            { value: 5, name: 'Semantic Role Labeling', itemStyle: { color: '#505372' } },
+            { value: 5, name: 'Natural Language Inference', itemStyle: { color: '#505372' } },
+            { value: 9, name: 'BM25', itemStyle: { color: '#16989a' } },
+            { value: 8, name: 'Large Language Models', itemStyle: { color: '#16989a' } },
+            { value: 7, name: 'LLMs', itemStyle: { color: '#16989a' } },
+            { value: 6, name: 'Transformer', itemStyle: { color: '#16989a' } },
+            { value: 6, name: 'Latent Dirichlet Allocation', itemStyle: { color: '#16989a' } },
+            { value: 5, name: 'BERT', itemStyle: { color: '#16989a' } },
+            { value: 5, name: 'language models', itemStyle: { color: '#16989a' } },
+            { value: 5, name: 'text mining', itemStyle: { color: '#16989a' } },
+            { value: 5, name: 'clustering', itemStyle: { color: '#16989a' } },
+            { value: 5, name: 'UIMA', itemStyle: { color: '#16989a' } },
+            { value: 30, name: 'WordNet', itemStyle: { color: '#0ca8df' } },
+            { value: 19, name: 'word embeddings', itemStyle: { color: '#0ca8df' } },
+            { value: 9, name: 'supervised learning', itemStyle: { color: '#0ca8df' } },
+            { value: 9, name: 'word sense disambiguation', itemStyle: { color: '#0ca8df' } },
+            { value: 7, name: 'Word Sense Disambiguation', itemStyle: { color: '#0ca8df' } },
+            { value: 7, name: 'distributional models', itemStyle: { color: '#0ca8df' } },
+            { value: 6, name: 'FrameNet', itemStyle: { color: '#0ca8df' } },
+            { value: 5, name: 'distributional semantic models', itemStyle: { color: '#0ca8df' } },
+            { value: 5, name: 'clustering', itemStyle: { color: '#0ca8df' } },
+            { value: 5, name: 'distributional semantics', itemStyle: { color: '#0ca8df' } }
+          ]
+        }
+      ]
+    };
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body style="height: 100%; margin: 0">
+  <h1 style="text-align:center;margin-top:20px; font-family:monospace; font-weight:bold;">
+    自然语言处理领域动态趋势图（以顶级会议——ACL会议论文数据为例）
+    </h2>
+    <div id="container" style="height: 100%"></div>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="echarts.min.js"></script>
+
+
+
+    <script type="text/javascript">
+      // 英文主题到中文主题的映射
+      const topicMap = {
+        'Information Extraction': '信息抽取',
+        'Machine Translation': '机器翻译',
+        'Generation': '生成',
+        'Syntax: Tagging, Chunking and Parsing': '句法：标注、分块与解析',
+        'Large Language Models': '大语言模型',
+        'Sentiment Analysis, Stylistic Analysis and Argument Mining': '情感分析、文体分析与论证挖掘',
+        'Dialogue and Interactive Systems': '对话与交互系统',
+        'Semantics: Sentence-Level Semantics, Textual Inference and Other Areas': '语义：句子级语义、文本推理及其他',
+        'Information Retrieval and Text Mining': '信息检索与文本挖掘',
+        'Semantics: Lexical': '语义：词汇',
+        'Machine Learning for NLP': 'NLP中的机器学习',
+        'Question Answering': '问答',
+        'Linguistic Theories, Cognitive Modeling and Psycholinguistics': '语言理论、认知建模与心理语言学',
+        'Phonology, Morphology and Word Segmentation': '音系、形态与分词',
+        'Speech and Multimodality': '语音与多模态',
+        'Language Grounding to Vision, Robotics and Beyond': '语言与视觉、机器人等的结合',
+        'Discourse and Pragmatics': '篇章与语用',
+        'Multilingualism and Cross-Lingual NLP': '多语言与跨语言NLP',
+        'Interpretability and Analysis of Models in NLP': 'NLP模型可解释性与分析',
+        'Language Diversity': '语言多样性',
+        'NLP Applications': 'NLP应用',
+        'Computational Social Science and Cultural Analytics': '计算社会科学与文化分析',
+        'Ethics and NLP': '伦理与NLP',
+        'Coreference Resolution': '指代消解',
+        'Language Models': '语言模型',
+        'Summarization': '文本摘要'
+      };
+      var dom = document.getElementById('container');
+      var myChart = echarts.init(dom, null, {
+        renderer: 'canvas',
+        useDirtyRect: false
+      });
+      var app = {};
+
+      var option;
+
+      const updateFrequency = 3000;
+      const dimension = 0;
+      const countryColors = {
+        'Information Extraction': '#00008b',
+        'Machine Translation': '#f00',
+        'Generation': '#ffde00',
+        'Syntax: Tagging, Chunking and Parsing': '#002a8f',
+        'Large Language Models': '#003580',
+        'Sentiment Analysis, Stylistic Analysis and Argument Mining': '#ed2939',
+        'Dialogue and Interactive Systems': '#000',
+        'Semantics: Sentence-Level Semantics, Textual Inference and Other Areas': '#003897',
+        'Information Retrieval and Text Mining': '#f93',
+        'Semantics: Lexical': '#bc002d',
+        'Machine Learning for NLP': '#024fa2',
+        'Question Answering': '#000',
+        'Linguistic Theories, Cognitive Modeling and Psycholinguistics': '#00247d',
+        'Phonology, Morphology and Word Segmentation': '#ef2b2d',
+        'Speech and Multimodality': '#dc143c',
+        'Language Grounding to Vision, Robotics and Beyond': '#d52b1e',
+        'Discourse and Pragmatics': '#e30a17',
+        'Multilingualism and Cross-Lingual NLP': '#00247d',
+        'Interpretability and Analysis of Models in NLP': '#b22234',
+        'Language Diversity': '#b22234',
+        'NLP Applications': '#b22234',
+        'Computational Social Science and Cultural Analytics': '#b22234',
+        'Ethics and NLP': '#b22234',
+        'Coreference Resolution': '#b22234',
+        'Language Models': '#b22234',
+        'Summarization': '#da797b'
+      };
+      $.when(
+        $.getJSON('data.json'),
+        $.getJSON('life-expectancy-table.json')
+      ).done(function (res0, res1) {
+        const flags = res0[0];
+        const data = res1[0];
+        const years = [];
+        for (let i = 0; i < data.length; ++i) {
+          if (years.length === 0 || years[years.length - 1] !== data[i][4]) {
+            years.push(data[i][4]);
+          }
+        }
+        function getFlag(countryName) {
+          if (!countryName) {
+            return '';
+          }
+          return (
+            flags.find(function (item) {
+              return item.name === countryName;
+            }) || {}
+          ).emoji;
+        }
+        let startIndex = 10;
+        let startYear = years[startIndex];
+        option = {
+          grid: {
+            top: 10,
+            bottom: 30,
+            left: 600,
+            right: 80
+          },
+          xAxis: {
+            max: 'dataMax',
+            axisLabel: {
+              formatter: function (n) {
+                return Math.round(n) + '';
+              }
+            }
+          },
+          dataset: {
+            source: data.slice(1).filter(function (d) {
+              return d[4] === startYear;
+            })
+          },
+          yAxis: {
+            type: 'category',
+            inverse: true,
+            max: 10,
+            axisLabel: {
+              show: true,
+              fontSize: 16,
+              formatter: function (value) {
+                if (topicMap[value]) {
+                  return value + '\n' + '(' + topicMap[value] + ')';
+                } else {
+                  return value;
+                }
+              },
+            },
+            animationDuration: 300,
+            animationDurationUpdate: 300
+          },
+          series: [
+            {
+              realtimeSort: true,
+              seriesLayoutBy: 'column',
+              type: 'bar',
+              itemStyle: {
+                color: function (param) {
+                  return countryColors[param.value[3]] || '#5470c6';
+                }
+              },
+              encode: {
+                x: dimension,
+                y: 3
+              },
+              label: {
+                show: true,
+                precision: 1,
+                position: 'right',
+                valueAnimation: true,
+                fontFamily: 'monospace'
+              }
+            }
+          ],
+          // Disable init animation.
+          animationDuration: 0,
+          animationDurationUpdate: updateFrequency,
+          animationEasing: 'linear',
+          animationEasingUpdate: 'linear',
+          graphic: {
+            elements: [
+              {
+                type: 'text',
+                right: 160,
+                bottom: 230,
+                style: {
+                  text: startYear,
+                  font: 'bolder 80px monospace',
+                  fill: 'rgba(100, 100, 100, 0.25)'
+                },
+                z: 100
+              }
+            ]
+          }
+        };
+        // console.log(option);
+        myChart.setOption(option);
+        for (let i = startIndex; i < years.length - 1; ++i) {
+          (function (i) {
+            setTimeout(function () {
+              updateYear(years[i + 1]);
+            }, (i - startIndex) * updateFrequency);
+          })(i);
+        }
+        function updateYear(year) {
+          let source = data.slice(1).filter(function (d) {
+            return d[4] === year;
+          });
+          option.series[0].data = source;
+          option.graphic.elements[0].style.text = year;
+          myChart.setOption(option);
+        }
+      });
+
+      if (option && typeof option === 'object') {
+        myChart.setOption(option);
+      }
+
+      window.addEventListener('resize', myChart.resize);
+    </script>
+</body>
+
+</html>
