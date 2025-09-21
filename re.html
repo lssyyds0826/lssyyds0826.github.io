@@ -3,475 +3,394 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>算法实体-年份分布热力图</title>
+    <title>算法年份分布热力图</title>
+    <!-- 引入ECharts -->
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Microsoft YaHei', 'Segoe UI', Arial, sans-serif;
         }
         body {
-            font-family: 'Microsoft YaHei', sans-serif;
-            background-color: #f0f0f0;
-            padding: 15px;
+            background-color: #f5f7fa;
+            padding: 20px;
+            overflow-x: auto;
         }
         .container {
-            max-width: 1200px;
+            max-width: 100%;
             margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        h1 {
-            color: #333;
+        /* 标题区域 */
+        .header {
             text-align: center;
-            margin-bottom: 20px;
-            font-size: 24px;
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
-        #chart-container {
-            width: 100%;
-            height: 600px;
-            background-color: white;
-            border-radius: 4px;
-            margin: 15px 0;
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 5px;
         }
-        .controls {
-            padding: 10px 15px;
-            background: #f9f9f9;
-            border-radius: 4px;
+        .header p {
+            font-size: 14px;
+            color: #718096;
+        }
+        /* 控制区域 */
+        .control-bar {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
+            justify-content: space-between;
             align-items: center;
-            margin: 10px 0;
-            border: 1px solid #eee;
         }
-        .btn {
-            padding: 8px 16px;
-            background: #2196F3;
-            color: white;
+        .control-bar .desc {
+            font-size: 14px;
+            color: #4a5568;
+        }
+        .control-bar .desc strong {
+            color: #2b6cb0;
+        }
+        #reload-btn {
+            padding: 10px 20px;
+            background: #2b6cb0;
+            color: #fff;
             border: none;
-            border-radius: 4px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
             cursor: pointer;
-            font-size: 14px;
+            transition: background 0.3s;
         }
-        .btn:hover {
-            background: #0b7dda;
+        #reload-btn:hover {
+            background: #2c5282;
         }
-        select {
-            padding: 8px;
-            border-radius: 4px;
-            border: 1px solid #ddd;
-            font-size: 14px;
-            min-width: 150px;
-        }
-        .legend {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 10px 0;
-        }
-        .color-scale {
-            flex-grow: 1;
-            height: 25px;
-            background: linear-gradient(to right, #fff, #ffffcc, #ffeda0, #fed976, #feb24c, #fd8d3c, #fc4e2a, #e31a1c);
-            border-radius: 4px;
-        }
-        .legend-text {
-            font-size: 14px;
-            color: #333;
-            white-space: nowrap;
-        }
+        /* 状态提示 */
         .status {
+            margin-bottom: 25px;
             padding: 10px 15px;
-            border-radius: 4px;
-            margin: 10px 0;
             font-size: 14px;
+            border-radius: 8px;
+            display: none;
         }
-        .loading {
-            background: #e3f2fd;
-            color: #0d47a1;
+        .status.success {
+            background: #edf2ff;
+            color: #2b6cb0;
+            border: 1px solid #dbe4ff;
+            display: block;
         }
-        .success {
-            background: #e8f5e9;
-            color: #2e7d32;
+        .status.error {
+            background: #fff5f5;
+            color: #c53030;
+            border: 1px solid #ffe2e2;
+            display: block;
         }
-        .error {
-            background: #ffebee;
-            color: #c62828;
+        .status.loading {
+            background: #f0f9ff;
+            color: #0284c7;
+            border: 1px solid #e0f2fe;
+            display: block;
         }
-        .file-info {
-            font-size: 13px;
-            color: #666;
-            margin: 5px 0;
+        /* 图表容器 */
+        .chart-box {
+            width: 100%;
+            height: calc(100vh - 240px);
+            min-height: 1000px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 25px;
         }
-        .instruction {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            padding: 10px;
-            background: #f9f9f9;
-            border-radius: 4px;
+        #heatmap {
+            width: 100%;
+            height: 100%;
+        }
+        /* 适配小屏幕 */
+        @media (max-width: 1200px) {
+            .control-bar {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            .chart-box {
+                height: calc(100vh - 280px);
+                min-height: 800px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>算法实体-年份分布热力图</h1>
-        
-        <div class="status loading" id="loadingStatus">
-            <i class="fa fa-spinner fa-spin"></i> 正在加载3data.json数据...
+        <!-- 标题 -->
+        <div class="header">
+            <h1>算法年份分布热力图</h1>
+            <p>鼠标悬浮格子查看详情 | 数据来源：3data.json</p>
         </div>
-        
-        <div class="status error" id="errorStatus" style="display: none;">
-            <i class="fa fa-exclamation-circle"></i> <span id="errorMessage"></span>
-            <div class="file-info">请确保3data.json文件与HTML文件在同一目录，并且通过本地服务器运行</div>
+
+        <!-- 控制栏 -->
+        <div class="control-bar">
+            <div class="desc">
+                自动加载同目录下的 <strong>3data.json</strong> 文件
+            </div>
+            <button id="reload-btn">重新加载数据</button>
         </div>
-        
-        <div class="status success" id="successStatus" style="display: none;">
-            <i class="fa fa-check-circle"></i> 加载成功！
-            <div class="file-info" id="fileInfo">共加载 <span id="totalAlgorithms">0</span> 个算法实体，覆盖 <span id="totalYears">0</span> 个年份</div>
-        </div>
-        
-        <div class="controls">
-            <select id="colorScheme">
-                <option value="red">红黄色系（默认）</option>
-                <option value="blue">蓝色系</option>
-                <option value="green">绿色系</option>
-            </select>
-            
-            <button class="btn" id="sortBtn">按算法名称排序</button>
-            <button class="btn" id="freqBtn">按年份数量排序</button>
-            <button class="btn" id="reloadBtn"><i class="fa fa-refresh"></i> 重新加载</button>
-            <button class="btn" id="resetViewBtn"><i class="fa fa-refresh"></i> 重置视图</button>
-        </div>
-        
-        <div id="chart-container"></div>
-        
-        <div class="legend">
-            <span class="legend-text">颜色越深表示出现频次越高</span>
-            <div class="color-scale"></div>
-        </div>
-        
-        <div class="instruction">
-            <p><strong>操作提示：</strong></p>
-            <p>• 按住鼠标左键拖动可平移图表</p>
-            <p>• 鼠标滚轮可缩放图表</p>
-            <p>• 点击单元格查看详细信息</p>
-            <p>• 可通过上方按钮切换排序方式和颜色方案</p>
+
+        <!-- 状态提示 -->
+        <div id="status" class="status"></div>
+
+        <!-- 图表容器 -->
+        <div class="chart-box">
+            <div id="heatmap"></div>
         </div>
     </div>
 
     <script>
-        // 初始化图表
-        const chartDom = document.getElementById('chart-container');
-        const chart = echarts.init(chartDom, null, {
-            renderer: 'canvas',
-            useDirtyRect: true,
-            devicePixelRatio: 1
-        });
-        
-        let allData = []; // 存储所有算法数据
-        let sortedByName = true; // 按名称排序标志
-        let sortedByYearCount = false; // 按年份数量排序标志
-        const DATA_FILE = './3data.json'; // 固定数据文件名
-        
-        // DOM元素
-        const colorScheme = document.getElementById('colorScheme');
-        const sortBtn = document.getElementById('sortBtn');
-        const freqBtn = document.getElementById('freqBtn');
-        const reloadBtn = document.getElementById('reloadBtn');
-        const resetViewBtn = document.getElementById('resetViewBtn');
-        const loadingStatus = document.getElementById('loadingStatus');
-        const errorStatus = document.getElementById('errorStatus');
-        const successStatus = document.getElementById('successStatus');
-        const errorMessage = document.getElementById('errorMessage');
-        const totalAlgorithms = document.getElementById('totalAlgorithms');
-        const totalYears = document.getElementById('totalYears');
-        
-        // 页面加载完成后自动加载数据
+        // 1. 初始化图表
+        let myChart;
+        try {
+            const chartDom = document.getElementById('heatmap');
+            myChart = echarts.init(chartDom);
+        } catch (err) {
+            showStatus('ECharts加载失败，请检查网络或浏览器版本', 'error');
+            console.error('图表初始化错误:', err);
+        }
+
+        // 2. 绑定事件
+        document.getElementById('reload-btn').addEventListener('click', loadData);
         window.addEventListener('DOMContentLoaded', loadData);
-        
-        // 事件监听
-        colorScheme.addEventListener('change', renderChart);
-        sortBtn.addEventListener('click', () => {
-            sortedByName = !sortedByName;
-            sortedByYearCount = false;
-            sortBtn.textContent = sortedByName ? '按算法名称逆序' : '按算法名称排序';
-            renderChart();
-        });
-        freqBtn.addEventListener('click', () => {
-            sortedByYearCount = !sortedByYearCount;
-            sortedByName = false;
-            freqBtn.textContent = sortedByYearCount ? '按年份数量逆序' : '按年份数量排序';
-            renderChart();
-        });
-        reloadBtn.addEventListener('click', loadData);
-        resetViewBtn.addEventListener('click', () => {
-            chart.dispatchAction({ type: 'restore' });
-        });
-        
-        // 窗口大小变化时重绘图表
         window.addEventListener('resize', () => {
-            chart.resize();
+            if (myChart) myChart.resize();
         });
-        
-        // 加载数据
+
+        // 3. 状态提示函数
+        function showStatus(text, type) {
+            const statusEl = document.getElementById('status');
+            statusEl.className = `status ${type}`;
+            statusEl.innerText = text;
+        }
+
+        // 4. 加载并处理数据
         function loadData() {
-            showLoading(`正在加载${DATA_FILE}数据...`);
-            allData = [];
-            
-            fetch(DATA_FILE)
+            if (!myChart) {
+                showStatus('图表初始化失败，无法加载数据', 'error');
+                return;
+            }
+
+            showStatus('正在加载数据...', 'loading');
+
+            // 加载本地JSON文件
+            fetch('3data.json')
                 .then(response => {
                     if (!response.ok) {
-                        throw new Error(`加载失败，状态码: ${response.status}`);
+                        if (response.status === 404) {
+                            throw new Error('未找到3data.json文件，请确认文件在同目录下');
+                        } else if (response.status === 0) {
+                            throw new Error('浏览器限制本地文件访问，请用Live Server运行');
+                        } else {
+                            throw new Error(`文件加载失败，状态码: ${response.status}`);
+                        }
                     }
                     return response.json();
                 })
-                .then(data => {
-                    if (!Array.isArray(data)) {
-                        throw new Error('数据格式错误，应为JSON数组');
+                .then(rawData => {
+                    try {
+                        const { algorithms, years, heatmapData } = processData(rawData);
+                        renderChart(algorithms, years, heatmapData);
+                        showStatus(`加载成功！共 ${algorithms.length} 个算法，${years.length} 个年份`, 'success');
+                    } catch (dataErr) {
+                        showStatus(`数据处理错误: ${dataErr.message}`, 'error');
+                        console.error('数据处理错误:', dataErr);
                     }
-                    
-                    // 处理数据，去重算法实体
-                    const uniqueAlgorithms = {};
-                    data.forEach(item => {
-                        if (item.algorithm && item.years && Array.isArray(item.years)) {
-                            // 使用算法名称作为唯一键去重
-                            uniqueAlgorithms[item.algorithm] = item;
-                        }
-                    });
-                    
-                    // 转换回数组
-                    allData = Object.values(uniqueAlgorithms);
-                    
-                    // 统计信息
-                    const yearsSet = new Set();
-                    allData.forEach(item => {
-                        item.years.forEach(year => yearsSet.add(year));
-                    });
-                    
-                    // 更新状态
-                    totalAlgorithms.textContent = allData.length;
-                    totalYears.textContent = yearsSet.size;
-                    showSuccess();
-                    
-                    // 渲染图表
-                    renderChart();
                 })
-                .catch(error => {
-                    showError(error.message);
+                .catch(fetchErr => {
+                    showStatus(`加载错误: ${fetchErr.message}`, 'error');
+                    console.error('文件加载错误:', fetchErr);
                 });
         }
-        
-        // 渲染图表
-        function renderChart() {
-            if (allData.length === 0) return;
-            
-            // 准备排序后的数据
-            let sortedData = [...allData];
-            
-            // 按选择的方式排序
-            if (sortedByYearCount) {
-                // 按年份数量排序
-                sortedData.sort((a, b) => {
-                    const countA = a.years ? a.years.length : 0;
-                    const countB = b.years ? b.years.length : 0;
-                    return sortedByYearCount ? countB - countA : countA - countB;
-                });
-            } else {
-                // 按名称排序
-                sortedData.sort((a, b) => {
-                    const nameA = a.algorithm || '';
-                    const nameB = b.algorithm || '';
-                    return sortedByName ? nameA.localeCompare(nameB) : nameB.localeCompare(nameA);
-                });
+
+        // 5. 数据处理
+        function processData(rawData) {
+            if (!Array.isArray(rawData)) {
+                throw new Error('JSON文件内容必须是数组格式');
             }
-            
-            // 提取算法名称列表
-            const algorithms = sortedData.map(item => item.algorithm || '未知算法');
-            
-            // 收集所有年份并排序
-            const yearsSet = new Set();
-            sortedData.forEach(item => {
-                if (item.years && Array.isArray(item.years)) {
-                    item.years.forEach(year => yearsSet.add(year));
-                }
-            });
-            const years = Array.from(yearsSet).sort((a, b) => parseInt(a) - parseInt(b));
-            
-            // 构建频次矩阵
-            const frequencyMap = {};
-            sortedData.forEach((item, algoIndex) => {
-                const algoName = algorithms[algoIndex];
-                frequencyMap[algoName] = {};
-                
-                if (item.years && Array.isArray(item.years)) {
-                    item.years.forEach(year => {
-                        if (years.includes(year)) {
-                            frequencyMap[algoName][year] = (frequencyMap[algoName][year] || 0) + 1;
-                        }
-                    });
-                }
-            });
-            
-            // 准备热力图数据
-            const data = [];
-            let maxFreq = 0;
-            
-            // 找出最大频次
-            algorithms.forEach(algo => {
-                Object.values(frequencyMap[algo] || {}).forEach(freq => {
-                    if (freq > maxFreq) maxFreq = freq;
-                });
-            });
-            
-            // 构建数据矩阵
-            algorithms.forEach((algo, algoIndex) => {
-                years.forEach((year, yearIndex) => {
-                    const freq = frequencyMap[algo]?.[year] || 0;
-                    const value = maxFreq > 0 ? freq / maxFreq : 0;
-                    
-                    data.push([
-                        yearIndex,  // x轴坐标
-                        algoIndex,  // y轴坐标
-                        value,      // 归一化值（用于颜色）
-                        freq        // 实际频次
-                    ]);
-                });
-            });
-            
-            // 获取颜色方案
-            let colorList;
-            switch (colorScheme.value) {
-                case 'blue':
-                    colorList = ['#f0f9e8', '#bae4bc', '#7bccc4', '#43a2ca', '#0868ac'];
-                    break;
-                case 'green':
-                    colorList = ['#edf8e9', '#c7e9c0', '#a1d99b', '#74c476', '#238b45'];
-                    break;
-                default:
-                    colorList = ['#fff', '#ffffcc', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c'];
+            const dataList = rawData.slice(0, 100);
+            if (dataList.length === 0) {
+                throw new Error('JSON数组中没有有效数据');
             }
-            
-            // 图表配置
+
+            const algorithms = [];
+            const yearSet = new Set();
+            const heatmapData = [];
+            const algIndexMap = {};
+
+            dataList.forEach((item, idx) => {
+                const requiredFields = ['algorithm', 'total_count', 'years'];
+                const missingFields = requiredFields.filter(field => !item.hasOwnProperty(field));
+                if (missingFields.length > 0) {
+                    throw new Error(`第${idx+1}条数据缺失字段: ${missingFields.join(',')}`);
+                }
+
+                const algName = (item.algorithm + '').trim();
+                const totalCount = Number(item.total_count);
+                const yearList = Array.isArray(item.years) 
+                    ? item.years.map(y => (y + '').trim()).filter(y => y && !isNaN(y))
+                    : [];
+
+                if (!algName) throw new Error(`第${idx+1}条数据：算法名称不能为空`);
+                if (isNaN(totalCount) || totalCount <= 0) throw new Error(`第${idx+1}条数据：总次数必须是正数`);
+                if (yearList.length === 0) throw new Error(`第${idx+1}条数据：没有有效年份`);
+
+                if (!algIndexMap[algName]) {
+                    algIndexMap[algName] = algorithms.length;
+                    algorithms.push(algName);
+                }
+                const algIdx = algIndexMap[algName];
+
+                yearList.forEach(year => {
+                    yearSet.add(year);
+                    heatmapData.push({ algIdx, year, count: totalCount });
+                });
+            });
+
+            const sortedYears = Array.from(yearSet).sort((a, b) => Number(a) - Number(b));
+            const formattedHeatmap = heatmapData.map(item => {
+                const yearIdx = sortedYears.indexOf(item.year);
+                return [item.algIdx, yearIdx, item.count];
+            });
+
+            return { algorithms, years: sortedYears, heatmapData: formattedHeatmap };
+        }
+
+        // 6. 渲染图表
+        function renderChart(algorithms, years, heatmapData) {
+            const maxCount = heatmapData.length 
+                ? Math.max(...heatmapData.map(item => item[2])) 
+                : 1;
+
+            const colorPalette = [
+                '#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', 
+                '#98D8C8', '#F7DC6F', '#D7BDE2', '#58D68D', 
+                '#85C1E9', '#F1948A', '#BB8FCE', '#F5B041'
+            ];
+
             const option = {
-                title: {
-                    text: '算法实体-年份分布热力图',
-                    left: 'center',
-                    textStyle: {
-                        fontSize: 18
-                    }
-                },
+                title: { show: false },
                 tooltip: {
-                    formatter: function(params) {
-                        if (!params.data || !algorithms[params.data[1]] || !years[params.data[0]]) return '';
+                    trigger: 'item',
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e2e8f0',
+                    borderWidth: 1,
+                    borderRadius: 8,
+                    padding: 12,
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+                    textStyle: { color: '#2d3748', fontSize: 14 },
+                    formatter: (params) => {
+                        const alg = algorithms[params.value[0]];
+                        const year = years[params.value[1]];
+                        const count = params.value[2];
                         return `
-                            <div style="font-size: 14px; padding: 5px;">
-                                <div><strong>算法:</strong> ${algorithms[params.data[1]]}</div>
-                                <div><strong>年份:</strong> ${years[params.data[0]]}</div>
-                                <div><strong>出现次数:</strong> ${params.data[3]}</div>
-                            </div>
+                            <div style="font-weight: bold; margin-bottom: 5px;">${alg}</div>
+                            <div>年份：${year}</div>
+                            <div>总出现次数：${count}</div>
                         `;
                     }
                 },
                 grid: {
-                    left: '20%',   // 左侧留出更多空间显示算法名称
-                    right: '5%',
-                    bottom: '15%', // 底部留出更多空间显示年份
-                    top: '10%',
+                    left: '25%',
+                    right: '15%',
+                    bottom: '25%',
+                    top: '15%',
                     containLabel: true
                 },
                 xAxis: {
                     type: 'category',
                     data: years,
                     axisLabel: {
-                        fontSize: 12,
                         rotate: 45,
-                        interval: 0
+                        interval: 0,
+                        fontSize: 12,
+                        color: '#4a5568',
+                        margin: 20
                     },
-                    splitLine: {
-                        show: false
-                    }
+                    axisLine: {
+                        lineStyle: { color: '#e2e8f0', width: 1 }
+                    },
+                    axisTick: { show: false },
+                    splitLine: { show: false }
                 },
                 yAxis: {
                     type: 'category',
                     data: algorithms,
                     axisLabel: {
                         fontSize: 12,
-                        formatter: function(name) {
-                            // 处理长名称
-                            return name.length > 15 ? name.substring(0, 15) + '...' : name;
-                        }
+                        color: '#4a5568',
+                        width: 180,
+                        overflow: 'truncate',
+                        margin: 15
                     },
-                    splitLine: {
-                        show: false
-                    }
+                    axisLine: {
+                        lineStyle: { color: '#e2e8f0', width: 1 }
+                    },
+                    axisTick: { show: false },
+                    splitLine: { show: false }
                 },
                 visualMap: {
                     min: 0,
-                    max: 1,
+                    max: maxCount,
                     calculable: true,
-                    orient: 'horizontal',
-                    left: 'center',
-                    bottom: '5%',
-                    inRange: {
-                        color: colorList
-                    },
-                    textStyle: {
-                        fontSize: 12
-                    }
+                    orient: 'vertical',
+                    right: 30,
+                    top: 'center',
+                    itemWidth: 30,
+                    itemHeight: 35,
+                    inRange: { color: colorPalette },
+                    text: ['高', '低'],
+                    textStyle: { fontSize: 12, color: '#4a5568' },
+                    backgroundColor: 'rgba(255,255,255,0.8)',
+                    borderColor: '#e2e8f0',
+                    borderWidth: 1,
+                    borderRadius: 4
                 },
                 series: [{
                     type: 'heatmap',
-                    data: data,
-                    roam: true,  // 启用拖拽和缩放
-                    progressive: 2000,
-                    progressiveThreshold: 5000,
+                    data: heatmapData,
+                    symbolSize: [120, 70],
+                    label: {
+                        show: false,
+                        fontSize: 14,
+                        color: '#fff',
+                        fontWeight: 'bold'
+                    },
                     itemStyle: {
-                        borderRadius: 2,
-                        borderWidth: 1,
-                        borderColor: '#eee'
+                        borderWidth: 2,
+                        borderColor: '#fff',
+                        borderRadius: 4,
+                        shadowBlur: 2,
+                        shadowColor: 'rgba(0,0,0,0.05)'
                     },
                     emphasis: {
                         itemStyle: {
+                            borderColor: '#2b6cb0',
                             shadowBlur: 5,
-                            shadowColor: 'rgba(0,0,0,0.3)'
+                            shadowColor: 'rgba(43, 108, 176, 0.2)'
+                        },
+                        label: {
+                            show: true
                         }
                     },
-                    scaleLimit: {
-                        min: 0.5,
-                        max: 3
-                    }
+                    progressive: 0
                 }]
             };
-            
-            // 绘制图表
-            chart.setOption(option);
-        }
-        
-        // 状态显示函数
-        function showLoading(message) {
-            loadingStatus.innerHTML = `<i class="fa fa-spinner fa-spin"></i> ${message}`;
-            loadingStatus.style.display = 'block';
-            errorStatus.style.display = 'none';
-            successStatus.style.display = 'none';
-        }
-        
-        function showSuccess() {
-            loadingStatus.style.display = 'none';
-            errorStatus.style.display = 'none';
-            successStatus.style.display = 'block';
-        }
-        
-        function showError(message) {
-            errorMessage.textContent = message;
-            loadingStatus.style.display = 'none';
-            errorStatus.style.display = 'block';
-            successStatus.style.display = 'none';
+
+            myChart.setOption(option);
         }
     </script>
 </body>
