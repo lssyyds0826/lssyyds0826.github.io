@@ -5,22 +5,21 @@
   <title>NLP领域算法实体分布（基于ACL论文）</title>
 </head>
 <body style="height: 100%; margin: 0; padding: 0;">
-  <!-- 标题区域：主标题+副标题，居中对齐 -->
-  <div style="text-align: center; padding: 20px 0; box-sizing: border-box;">
-    <h1 style="margin: 0; font-family: monospace; font-weight: bold; font-size: 24px;">自然语言处理Top10领域对应高频算法实体</h1>
-    <h2 style="margin: 10px 0 0; font-family: monospace; font-size: 18px; color: #444; font-weight: normal;">——以顶会ACL会议论文为例</h2>
+  <!-- 标题区域：增大字号、减少间距 -->
+  <div style="text-align: center; padding: 10px 0; box-sizing: border-box;">
+    <h1 style="margin: 0; font-family: monospace; font-weight: bold; font-size: 28px;">自然语言处理Top10领域对应高频算法实体—以顶会ACL会议论文为例</h1>
   </div>
-  <!-- 图表容器：适配标题高度，避免重叠 -->
-  <div id="container" style="height: calc(100% - 110px); width: 100%; display: flex; align-items: flex-start; justify-content: center; box-sizing: border-box;"></div>
+  <!-- 图表容器：适配标题高度 -->
+  <div id="container" style="height: calc(100% - 60px); width: 100%; display: flex; align-items: flex-start; justify-content: center; box-sizing: border-box;"></div>
 
-  <!-- 引入ECharts（使用CDN，无需本地文件） -->
+  <!-- 引入ECharts -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
 
   <script type="text/javascript">
     var dom = document.getElementById('container');
     var myChart = echarts.init(dom, null, {
       renderer: 'canvas',
-      useDirtyRect: false // 保证浏览器兼容性
+      useDirtyRect: false 
     });
     var app = {};
 
@@ -29,27 +28,26 @@
     option = {
       tooltip: {
         trigger: 'item',
-        formatter: '{a} <br/>{b}: {c} ({d}%)' // 鼠标悬浮时显示：系列名、名称、频次、占比
+        formatter: '{a} <br/>{b}: {c} ({d}%)' 
       },
       series: [
-        // 内层饼图：NLP Top10研究领域
         {
           name: '研究领域',
           type: 'pie',
-          selectedMode: 'single', // 支持单击选中单个领域
-          radius: [0, '25%'], // 内层饼图半径（环形内径、外径）
-          center: ['50%', '45%'], // 图表居中显示
+          selectedMode: 'single', 
+          radius: [0, '25%'], 
+          center: ['50%', '45%'], 
           avoidLabelOverlap: true,
           label: {
             show: true,
             position: 'outside',
             fontSize: 18,
-            formatter: '{b}' // 仅显示领域名称（中英文）
+            formatter: '{b}' 
           },
           labelLine: {
             show: true,
-            length: 50, // 标签线第一段长度
-            length2: 40 // 标签线第二段长度
+            length: 50, 
+            length2: 40 
           },
           data: [
             { value: 2106, name: 'Information Extraction' + "\n" + "信息抽取", itemStyle: { color: '#ff994d' } },
@@ -64,12 +62,11 @@
             { value: 451, name: 'Semantics: Lexical' + "\n" + "语义：词汇", selected: true, itemStyle: { color: '#0ca8df' } }
           ]
         },
-        // 外层饼图：各领域高频算法实体
         {
           name: '算法实体-频次',
           type: 'pie',
-          radius: ['45%', '60%'], // 外层饼图半径
-          center: ['50%', '45%'], // 与内层图表居中对齐
+          radius: ['45%', '60%'], 
+          center: ['50%', '45%'], 
           avoidLabelOverlap: true,
           labelLine: {
             show: true,
@@ -80,10 +77,9 @@
             show: true,
             position: 'outside',
             fontSize: 12,
-            formatter: '{b}' // 仅显示算法实体名称
+            formatter: '{b}' 
           },
           data: [
-            // 信息抽取领域（橙色：#ff994d）
             { value: 42, name: 'BERT', itemStyle: { color: '#ff994d' } },
             { value: 34, name: 'Named Entity Recognition', itemStyle: { color: '#ff994d' } },
             { value: 30, name: 'machine learning', itemStyle: { color: '#ff994d' } },
@@ -94,7 +90,6 @@
             { value: 17, name: 'distant supervision', itemStyle: { color: '#ff994d' } },
             { value: 16, name: 'classifier', itemStyle: { color: '#ff994d' } },
             { value: 16, name: 'word embeddings', itemStyle: { color: '#ff994d' } },
-            // 机器翻译领域（黄绿色：#b6d634）
             { value: 121, name: 'BLEU', itemStyle: { color: '#b6d634' } },
             { value: 62, name: 'Transformer', itemStyle: { color: '#b6d634' } },
             { value: 59, name: 'Neural Machine Translation', itemStyle: { color: '#b6d634' } },
@@ -105,7 +100,6 @@
             { value: 31, name: 'Statistical Machine Translation', itemStyle: { color: '#b6d634' } },
             { value: 30, name: 'NMT', itemStyle: { color: '#b6d634' } },
             { value: 25, name: 'machine translation', itemStyle: { color: '#b6d634' } },
-            // 生成领域（黄色：#ffd10a）
             { value: 37, name: 'LLMs', itemStyle: { color: '#ffd10a' } },
             { value: 36, name: 'Large Language Models', itemStyle: { color: '#ffd10a' } },
             { value: 33, name: 'BERT', itemStyle: { color: '#ffd10a' } },
@@ -116,7 +110,6 @@
             { value: 16, name: 'large language models', itemStyle: { color: '#ffd10a' } },
             { value: 16, name: 'reinforcement learning', itemStyle: { color: '#ffd10a' } },
             { value: 15, name: 'fine-tuning', itemStyle: { color: '#ffd10a' } },
-            // 句法领域（粉色：#fb628b）
             { value: 39, name: 'dependency parsing', itemStyle: { color: '#fb628b' } },
             { value: 15, name: 'parser', itemStyle: { color: '#fb628b' } },
             { value: 13, name: 'part-of-speech tagging', itemStyle: { color: '#fb628b' } },
@@ -127,7 +120,6 @@
             { value: 10, name: 'HPSG', itemStyle: { color: '#fb628b' } },
             { value: 9, name: 'PCFG', itemStyle: { color: '#fb628b' } },
             { value: 9, name: 'CKY', itemStyle: { color: '#fb628b' } },
-            // 大语言模型领域（紫色：#785db0）
             { value: 74, name: 'LLMs', itemStyle: { color: '#785db0' } },
             { value: 67, name: 'GPT-4', itemStyle: { color: '#785db0' } },
             { value: 35, name: 'BERT', itemStyle: { color: '#785db0' } },
@@ -138,7 +130,6 @@
             { value: 16, name: 'LoRA', itemStyle: { color: '#785db0' } },
             { value: 15, name: 'GPT-3.5', itemStyle: { color: '#785db0' } },
             { value: 13, name: 'GPT-3', itemStyle: { color: '#785db0' } },
-            // 情感分析等领域（青绿色：#3fbe95）
             { value: 37, name: 'BERT', itemStyle: { color: '#3fbe95' } },
             { value: 22, name: 'RoBERTa', itemStyle: { color: '#3fbe95' } },
             { value: 19, name: 'sentiment analysis', itemStyle: { color: '#3fbe95' } },
@@ -149,7 +140,6 @@
             { value: 11, name: 'CNN', itemStyle: { color: '#3fbe95' } },
             { value: 10, name: 'word embeddings', itemStyle: { color: '#3fbe95' } },
             { value: 7, name: 'fine-tuning', itemStyle: { color: '#3fbe95' } },
-            // 对话与交互系统领域（蓝色：#5070dd）
             { value: 18, name: 'reinforcement learning', itemStyle: { color: '#5070dd' } },
             { value: 17, name: 'Reinforcement Learning', itemStyle: { color: '#5070dd' } },
             { value: 15, name: 'Large Language Models', itemStyle: { color: '#5070dd' } },
@@ -160,7 +150,6 @@
             { value: 8, name: 'large language models', itemStyle: { color: '#5070dd' } },
             { value: 7, name: 'BERT', itemStyle: { color: '#5070dd' } },
             { value: 6, name: 'Transformer', itemStyle: { color: '#5070dd' } },
-            // 句子级语义等领域（深灰色：#505372）
             { value: 20, name: 'BERT', itemStyle: { color: '#505372' } },
             { value: 13, name: 'RoBERTa', itemStyle: { color: '#505372' } },
             { value: 9, name: 'word embeddings', itemStyle: { color: '#505372' } },
@@ -171,7 +160,6 @@
             { value: 5, name: 'NLI', itemStyle: { color: '#505372' } },
             { value: 5, name: 'Semantic Role Labeling', itemStyle: { color: '#505372' } },
             { value: 5, name: 'Natural Language Inference', itemStyle: { color: '#505372' } },
-            // 信息检索与文本挖掘领域（青蓝色：#16989a）
             { value: 9, name: 'BM25', itemStyle: { color: '#16989a' } },
             { value: 8, name: 'Large Language Models', itemStyle: { color: '#16989a' } },
             { value: 7, name: 'LLMs', itemStyle: { color: '#16989a' } },
@@ -182,7 +170,6 @@
             { value: 5, name: 'text mining', itemStyle: { color: '#16989a' } },
             { value: 5, name: 'clustering', itemStyle: { color: '#16989a' } },
             { value: 5, name: 'UIMA', itemStyle: { color: '#16989a' } },
-            // 词汇语义领域（天蓝色：#0ca8df）
             { value: 30, name: 'WordNet', itemStyle: { color: '#0ca8df' } },
             { value: 19, name: 'word embeddings', itemStyle: { color: '#0ca8df' } },
             { value: 9, name: 'supervised learning', itemStyle: { color: '#0ca8df' } },
@@ -198,12 +185,10 @@
       ]
     };
 
-    // 渲染图表
     if (option && typeof option === 'object') {
       myChart.setOption(option);
     }
 
-    // 窗口 resize 时自动调整图表大小
     window.addEventListener('resize', function() {
       myChart.resize();
     });
