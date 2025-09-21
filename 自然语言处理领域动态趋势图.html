@@ -109,7 +109,17 @@
         }
         let startIndex = 10;
         let startYear = years[startIndex];
-        option = {
+          option = {
+          title: {
+              text: '鼠标悬停查看数据',  // 标题内容
+              left: 'right',                // 水平居中
+              top: 0,                       // 距离顶部10px（避免与网格重叠）
+              textStyle: {
+                fontSize: 12,                // 字体大小
+                fontWeight: 'bold',          // 字体加粗
+                color: '#333'        
+              }
+          },
           grid: {
             top: 10,
             bottom: 30,

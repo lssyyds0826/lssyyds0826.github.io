@@ -4,733 +4,349 @@
         <title>模型统计</title>
         <style>
             body { overflow-x: auto; padding: 20px; }
+            .chart-description {
+                margin: 10px 0 20px;
+                text-align: center;
+                color: #666;
+                font-size: 16px;
+            }
         </style>
     </head>
     <body>
-        <h1 style="text-align: center; color: #333; margin: 20px 0;">前100的算法提及次数</h1>
-        <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-
-</head>
-<body >
-    <div id="e14cb830a9e9447e8ba40ba59dfe076d" class="chart-container" style="width:2400px; height:800px; "></div>
-    <script>
-        var chart_e14cb830a9e9447e8ba40ba59dfe076d = echarts.init(
-            document.getElementById('e14cb830a9e9447e8ba40ba59dfe076d'), 'white', {renderer: 'canvas'});
-        var option_e14cb830a9e9447e8ba40ba59dfe076d = {
-    "animation": true,
-    "animationThreshold": 2000,
-    "animationDuration": 1000,
-    "animationEasing": "cubicOut",
-    "animationDelay": 0,
-    "animationDurationUpdate": 300,
-    "animationEasingUpdate": "cubicOut",
-    "animationDelayUpdate": 0,
-    "aria": {
-        "enabled": false
-    },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
-    "series": [
-        {
-            "type": "line",
-            "name": "\u51fa\u73b0\u6b21\u6570",
-            "connectNulls": false,
-            "xAxisIndex": 0,
-            "symbolSize": 4,
-            "showSymbol": true,
-            "smooth": false,
-            "clip": true,
-            "step": false,
-            "data": [
-                [
-                    "BERT",
-                    329
-                ],
-                [
-                    "Transformer",
-                    207
-                ],
-                [
-                    "BLEU",
-                    119
-                ],
-                [
-                    "fine-tuning",
-                    96
-                ],
-                [
-                    "GPT-4",
-                    92
-                ],
-                [
-                    "RoBERTa",
-                    81
-                ],
-                [
-                    "NLP",
-                    74
-                ],
-                [
-                    "LSTM",
-                    71
-                ],
-                [
-                    "machine learning",
-                    62
-                ],
-                [
-                    "Large Language Models (LLMs)",
-                    57
-                ],
-                [
-                    "LLMs",
-                    55
-                ],
-                [
-                    "SVM",
-                    53
-                ],
-                [
-                    "multi-task learning",
-                    52
-                ],
-                [
-                    "WordNet",
-                    51
-                ],
-                [
-                    "Named Entity Recognition",
-                    51
-                ],
-                [
-                    "contrastive learning",
-                    48
-                ],
-                [
-                    "machine translation",
-                    46
-                ],
-                [
-                    "Reinforcement Learning",
-                    46
-                ],
-                [
-                    "Neural Machine Translation",
-                    44
-                ],
-                [
-                    "CNN",
-                    44
-                ],
-                [
-                    "Fine-tuning",
-                    43
-                ],
-                [
-                    "word embeddings",
-                    43
-                ],
-                [
-                    "Machine Translation",
-                    43
-                ],
-                [
-                    "classifier",
-                    42
-                ],
-                [
-                    "supervised learning",
-                    40
-                ],
-                [
-                    "RNN",
-                    39
-                ],
-                [
-                    "sentiment analysis",
-                    38
-                ],
-                [
-                    "Neural Network",
-                    38
-                ],
-                [
-                    "dependency parsing",
-                    37
-                ],
-                [
-                    "Transformers",
-                    37
-                ],
-                [
-                    "ROUGE",
-                    35
-                ],
-                [
-                    "reinforcement learning",
-                    35
-                ],
-                [
-                    "GPT-2",
-                    35
-                ],
-                [
-                    "CLIP",
-                    34
-                ],
-                [
-                    "T5",
-                    33
-                ],
-                [
-                    "beam search",
-                    33
-                ],
-                [
-                    "neural network",
-                    33
-                ],
-                [
-                    "GPT-3",
-                    33
-                ],
-                [
-                    "data augmentation",
-                    31
-                ],
-                [
-                    "clustering",
-                    31
-                ],
-                [
-                    "BART",
-                    30
-                ],
-                [
-                    "GPT-3.5",
-                    29
-                ],
-                [
-                    "Natural Language Processing",
-                    28
-                ],
-                [
-                    "statistical machine translation",
-                    28
-                ],
-                [
-                    "Large Language Models",
-                    28
-                ],
-                [
-                    "neural networks",
-                    28
-                ],
-                [
-                    "domain adaptation",
-                    27
-                ],
-                [
-                    "SMT",
-                    27
-                ],
-                [
-                    "back-translation",
-                    27
-                ],
-                [
-                    "Conditional Random Fields",
-                    27
-                ],
-                [
-                    "rule-based",
-                    26
-                ],
-                [
-                    "transfer learning",
-                    25
-                ],
-                [
-                    "Supervised learning",
-                    25
-                ],
-                [
-                    "neural models",
-                    25
-                ],
-                [
-                    "in-context learning",
-                    25
-                ],
-                [
-                    "deep learning",
-                    25
-                ],
-                [
-                    "Machine learning",
-                    25
-                ],
-                [
-                    "CRF",
-                    25
-                ],
-                [
-                    "attention mechanism",
-                    25
-                ],
-                [
-                    "Transfer learning",
-                    24
-                ],
-                [
-                    "large language models",
-                    24
-                ],
-                [
-                    "Contrastive learning",
-                    24
-                ],
-                [
-                    "Support Vector Machines",
-                    24
-                ],
-                [
-                    "crowdsourcing",
-                    23
-                ],
-                [
-                    "NMT",
-                    23
-                ],
-                [
-                    "Knowledge Distillation",
-                    23
-                ],
-                [
-                    "Machine Learning",
-                    23
-                ],
-                [
-                    "LLM",
-                    22
-                ],
-                [
-                    "knowledge distillation",
-                    22
-                ],
-                [
-                    "Neural Machine Translation (NMT)",
-                    22
-                ],
-                [
-                    "classification",
-                    21
-                ],
-                [
-                    "Recurrent Neural Networks",
-                    21
-                ],
-                [
-                    "Knowledge distillation",
-                    21
-                ],
-                [
-                    "probabilistic model",
-                    21
-                ],
-                [
-                    "large language models (LLMs)",
-                    21
-                ],
-                [
-                    "Word Sense Disambiguation",
-                    20
-                ],
-                [
-                    "HPSG",
-                    20
-                ],
-                [
-                    "BiLSTM",
-                    20
-                ],
-                [
-                    "Word embeddings",
-                    20
-                ],
-                [
-                    "Attention Mechanism",
-                    20
-                ],
-                [
-                    "EM algorithm",
-                    20
-                ],
-                [
-                    "Transformer-based models",
-                    20
-                ],
-                [
-                    "semi-supervised learning",
-                    20
-                ],
-                [
-                    "sequence-to-sequence",
-                    20
-                ],
-                [
-                    "Latent Dirichlet Allocation (LDA)",
-                    19
-                ],
-                [
-                    "LDA",
-                    19
-                ],
-                [
-                    "LoRA",
-                    19
-                ],
-                [
-                    "language model",
-                    19
-                ],
-                [
-                    "active learning",
-                    19
-                ],
-                [
-                    "natural language processing",
-                    18
-                ],
-                [
-                    "parser",
-                    18
-                ],
-                [
-                    "Hidden Markov Model",
-                    18
-                ],
-                [
-                    "ChatGPT",
-                    18
-                ],
-                [
-                    "encoder-decoder",
-                    18
-                ],
-                [
-                    "dynamic programming",
-                    18
-                ],
-                [
-                    "instruction tuning",
-                    18
-                ],
-                [
-                    "topic models",
-                    17
-                ],
-                [
-                    "part-of-speech tagging",
-                    17
-                ],
-                [
-                    "Recurrent Neural Network",
-                    17
-                ]
-            ],
-            "hoverAnimation": true,
-            "label": {
+        <h1 style="text-align: center; color: #333; margin: 20px 0;">自然处理领域top100</h1>
+        <p class="chart-description">鼠标悬停查看详情</p>
+        
+        <div id="e14cb830a9e9447e8ba40ba59dfe076d" class="chart-container" style="width:2400px; height:800px; "></div>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+        <script>
+            var chart_e14cb830a9e9447e8ba40ba59dfe076d = echarts.init(
+                document.getElementById('e14cb830a9e9447e8ba40ba59dfe076d'), 'white', {renderer: 'canvas'});
+            var option_e14cb830a9e9447e8ba40ba59dfe076d = {
+        "animation": true,
+        "animationThreshold": 2000,
+        "animationDuration": 1000,
+        "animationEasing": "cubicOut",
+        "animationDelay": 0,
+        "animationDurationUpdate": 300,
+        "animationEasingUpdate": "cubicOut",
+        "animationDelayUpdate": 0,
+        "aria": {
+            "enabled": false
+        },
+        "color": [
+            "#5470c6",
+            "#91cc75",
+            "#fac858",
+            "#ee6666",
+            "#73c0de",
+            "#3ba272",
+            "#fc8452",
+            "#9a60b4",
+            "#ea7ccc"
+        ],
+        "series": [
+            {
+                "type": "line",
+                "name": "出现次数",
+                "connectNulls": false,
+                "xAxisIndex": 0,
+                "symbolSize": 4,
+                "showSymbol": true,
+                "smooth": false,
+                "clip": true,
+                "step": false,
+                "data": [
+                    ["BERT", 329],
+                    ["Transformer", 207],
+                    ["BLEU", 119],
+                    ["fine-tuning", 96],
+                    ["GPT-4", 92],
+                    ["RoBERTa", 81],
+                    ["NLP", 74],
+                    ["LSTM", 71],
+                    ["machine learning", 62],
+                    ["Large Language Models (LLMs)", 57],
+                    ["LLMs", 55],
+                    ["SVM", 53],
+                    ["multi-task learning", 52],
+                    ["WordNet", 51],
+                    ["Named Entity Recognition", 51],
+                    ["contrastive learning", 48],
+                    ["machine translation", 46],
+                    ["Reinforcement Learning", 46],
+                    ["Neural Machine Translation", 44],
+                    ["CNN", 44],
+                    ["Fine-tuning", 43],
+                    ["word embeddings", 43],
+                    ["Machine Translation", 43],
+                    ["classifier", 42],
+                    ["supervised learning", 40],
+                    ["RNN", 39],
+                    ["sentiment analysis", 38],
+                    ["Neural Network", 38],
+                    ["dependency parsing", 37],
+                    ["Transformers", 37],
+                    ["ROUGE", 35],
+                    ["reinforcement learning", 35],
+                    ["GPT-2", 35],
+                    ["CLIP", 34],
+                    ["T5", 33],
+                    ["beam search", 33],
+                    ["neural network", 33],
+                    ["GPT-3", 33],
+                    ["data augmentation", 31],
+                    ["clustering", 31],
+                    ["BART", 30],
+                    ["GPT-3.5", 29],
+                    ["Natural Language Processing", 28],
+                    ["statistical machine translation", 28],
+                    ["Large Language Models", 28],
+                    ["neural networks", 28],
+                    ["domain adaptation", 27],
+                    ["SMT", 27],
+                    ["back-translation", 27],
+                    ["Conditional Random Fields", 27],
+                    ["rule-based", 26],
+                    ["transfer learning", 25],
+                    ["Supervised learning", 25],
+                    ["neural models", 25],
+                    ["in-context learning", 25],
+                    ["deep learning", 25],
+                    ["Machine learning", 25],
+                    ["CRF", 25],
+                    ["attention mechanism", 25],
+                    ["Transfer learning", 24],
+                    ["large language models", 24],
+                    ["Contrastive learning", 24],
+                    ["Support Vector Machines", 24],
+                    ["crowdsourcing", 23],
+                    ["NMT", 23],
+                    ["Knowledge Distillation", 23],
+                    ["Machine Learning", 23],
+                    ["LLM", 22],
+                    ["knowledge distillation", 22],
+                    ["Neural Machine Translation (NMT)", 22],
+                    ["classification", 21],
+                    ["Recurrent Neural Networks", 21],
+                    ["Knowledge distillation", 21],
+                    ["probabilistic model", 21],
+                    ["large language models (LLMs)", 21],
+                    ["Word Sense Disambiguation", 20],
+                    ["HPSG", 20],
+                    ["BiLSTM", 20],
+                    ["Word embeddings", 20],
+                    ["Attention Mechanism", 20],
+                    ["EM algorithm", 20],
+                    ["Transformer-based models", 20],
+                    ["semi-supervised learning", 20],
+                    ["sequence-to-sequence", 20],
+                    ["Latent Dirichlet Allocation (LDA)", 19],
+                    ["LDA", 19],
+                    ["LoRA", 19],
+                    ["language model", 19],
+                    ["active learning", 19],
+                    ["natural language processing", 18],
+                    ["parser", 18],
+                    ["Hidden Markov Model", 18],
+                    ["ChatGPT", 18],
+                    ["encoder-decoder", 18],
+                    ["dynamic programming", 18],
+                    ["instruction tuning", 18],
+                    ["topic models", 17],
+                    ["part-of-speech tagging", 17],
+                    ["Recurrent Neural Network", 17]
+                ],
+                "hoverAnimation": true,
+                "label": {
+                    "show": true,
+                    "margin": 8
+                },
+                "logBase": 10,
+                "seriesLayoutBy": "column",
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                },
+                "areaStyle": {
+                    "opacity": 0
+                },
+                "zlevel": 0,
+                "z": 0
+            }
+        ],
+        "legend": [
+            {
+                "data": ["出现次数"],
+                "selected": {},
                 "show": true,
-                "margin": 8
-            },
-            "logBase": 10,
-            "seriesLayoutBy": "column",
-            "lineStyle": {
-                "show": true,
-                "width": 1,
-                "opacity": 1,
-                "curveness": 0,
-                "type": "solid"
-            },
-            "areaStyle": {
-                "opacity": 0
-            },
-            "zlevel": 0,
-            "z": 0
-        }
-    ],
-    "legend": [
-        {
-            "data": [
-                "\u51fa\u73b0\u6b21\u6570"
-            ],
-            "selected": {},
+                "padding": 5,
+                "itemGap": 10,
+                "itemWidth": 25,
+                "itemHeight": 14,
+                "backgroundColor": "transparent",
+                "borderColor": "#ccc",
+                "borderWidth": 1,
+                "borderRadius": 0,
+                "pageButtonItemGap": 5,
+                "pageButtonPosition": "end",
+                "pageFormatter": "{current}/{total}",
+                "pageIconColor": "#2f4554",
+                "pageIconInactiveColor": "#aaa",
+                "pageIconSize": 15,
+                "animationDurationUpdate": 800,
+                "selector": false,
+                "selectorPosition": "auto",
+                "selectorItemGap": 7,
+                "selectorButtonGap": 10
+            }
+        ],
+        "tooltip": {
             "show": true,
+            "trigger": "item",
+            "triggerOn": "mousemove|click",
+            "axisPointer": {
+                "type": "line"
+            },
+            "showContent": true,
+            "alwaysShowContent": false,
+            "showDelay": 0,
+            "hideDelay": 100,
+            "enterable": false,
+            "confine": false,
+            "appendToBody": false,
+            "transitionDuration": 0.4,
+            "textStyle": {
+                "fontSize": 14
+            },
+            "borderWidth": 0,
             "padding": 5,
-            "itemGap": 10,
-            "itemWidth": 25,
-            "itemHeight": 14,
-            "backgroundColor": "transparent",
-            "borderColor": "#ccc",
-            "borderWidth": 1,
-            "borderRadius": 0,
-            "pageButtonItemGap": 5,
-            "pageButtonPosition": "end",
-            "pageFormatter": "{current}/{total}",
-            "pageIconColor": "#2f4554",
-            "pageIconInactiveColor": "#aaa",
-            "pageIconSize": 15,
-            "animationDurationUpdate": 800,
-            "selector": false,
-            "selectorPosition": "auto",
-            "selectorItemGap": 7,
-            "selectorButtonGap": 10
-        }
-    ],
-    "tooltip": {
-        "show": true,
-        "trigger": "item",
-        "triggerOn": "mousemove|click",
-        "axisPointer": {
-            "type": "line"
+            "order": "seriesAsc",
+            "formatter": function(params) {
+                return `
+                    <div style="text-align: left;">
+                        <p>点击查看：${params.name}</p>
+                        <p>技术/模型名称：${params.name}</p>
+                        <p>在ACL会议论文中出现次数：${params.value[1]}次</p>
+                    </div>
+                `;
+            }
         },
-        "showContent": true,
-        "alwaysShowContent": false,
-        "showDelay": 0,
-        "hideDelay": 100,
-        "enterable": false,
-        "confine": false,
-        "appendToBody": false,
-        "transitionDuration": 0.4,
-        "textStyle": {
-            "fontSize": 14
-        },
-        "borderWidth": 0,
-        "padding": 5,
-        "order": "seriesAsc"
-    },
-    "xAxis": [
-        {
-            "name": "\u7b97\u6cd5\u5b9e\u4f53",
-            "show": true,
-            "scale": false,
-            "nameLocation": "middle",
-            "nameGap": 30,
-            "nameTextStyle": {
-                "fontWeight": "bold",
-                "fontSize": 14
-            },
-            "gridIndex": 0,
-            "axisLabel": {
+        "xAxis": [
+            {
+                "name": "算法实体",
                 "show": true,
-                "rotate": 60,
-                "margin": 8,
-                "interval": 0,
-                "fontSize": 12
-            },
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "boundaryGap": true,
-            "minInterval": 0,
-            "splitLine": {
-                "show": true,
-                "lineStyle": {
+                "scale": false,
+                "nameLocation": "middle",
+                "nameGap": 30,
+                "nameTextStyle": {
+                    "fontWeight": "bold",
+                    "fontSize": 14
+                },
+                "gridIndex": 0,
+                "axisLabel": {
                     "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "data": [
-                "BERT",
-                "Transformer",
-                "BLEU",
-                "fine-tuning",
-                "GPT-4",
-                "RoBERTa",
-                "NLP",
-                "LSTM",
-                "machine learning",
-                "Large Language Models (LLMs)",
-                "LLMs",
-                "SVM",
-                "multi-task learning",
-                "WordNet",
-                "Named Entity Recognition",
-                "contrastive learning",
-                "machine translation",
-                "Reinforcement Learning",
-                "Neural Machine Translation",
-                "CNN",
-                "Fine-tuning",
-                "word embeddings",
-                "Machine Translation",
-                "classifier",
-                "supervised learning",
-                "RNN",
-                "sentiment analysis",
-                "Neural Network",
-                "dependency parsing",
-                "Transformers",
-                "ROUGE",
-                "reinforcement learning",
-                "GPT-2",
-                "CLIP",
-                "T5",
-                "beam search",
-                "neural network",
-                "GPT-3",
-                "data augmentation",
-                "clustering",
-                "BART",
-                "GPT-3.5",
-                "Natural Language Processing",
-                "statistical machine translation",
-                "Large Language Models",
-                "neural networks",
-                "domain adaptation",
-                "SMT",
-                "back-translation",
-                "Conditional Random Fields",
-                "rule-based",
-                "transfer learning",
-                "Supervised learning",
-                "neural models",
-                "in-context learning",
-                "deep learning",
-                "Machine learning",
-                "CRF",
-                "attention mechanism",
-                "Transfer learning",
-                "large language models",
-                "Contrastive learning",
-                "Support Vector Machines",
-                "crowdsourcing",
-                "NMT",
-                "Knowledge Distillation",
-                "Machine Learning",
-                "LLM",
-                "knowledge distillation",
-                "Neural Machine Translation (NMT)",
-                "classification",
-                "Recurrent Neural Networks",
-                "Knowledge distillation",
-                "probabilistic model",
-                "large language models (LLMs)",
-                "Word Sense Disambiguation",
-                "HPSG",
-                "BiLSTM",
-                "Word embeddings",
-                "Attention Mechanism",
-                "EM algorithm",
-                "Transformer-based models",
-                "semi-supervised learning",
-                "sequence-to-sequence",
-                "Latent Dirichlet Allocation (LDA)",
-                "LDA",
-                "LoRA",
-                "language model",
-                "active learning",
-                "natural language processing",
-                "parser",
-                "Hidden Markov Model",
-                "ChatGPT",
-                "encoder-decoder",
-                "dynamic programming",
-                "instruction tuning",
-                "topic models",
-                "part-of-speech tagging",
-                "Recurrent Neural Network"
-            ]
-        }
-    ],
-    "yAxis": [
-        {
-            "name": "\u9891\u6570",
-            "show": true,
-            "scale": false,
-            "nameLocation": "middle",
-            "nameGap": 50,
-            "nameTextStyle": {
-                "fontWeight": "bold",
-                "fontSize": 14
-            },
-            "gridIndex": 0,
-            "axisLabel": {
-                "show": true,
-                "margin": 8,
-                "fontSize": 12
-            },
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": true,
-                "lineStyle": {
+                    "rotate": 60,
+                    "margin": 8,
+                    "interval": 0,
+                    "fontSize": 12
+                },
+                "inverse": false,
+                "offset": 0,
+                "splitNumber": 5,
+                "boundaryGap": true,
+                "minInterval": 0,
+                "splitLine": {
                     "show": true,
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 1,
+                        "curveness": 0,
+                        "type": "solid"
+                    }
+                },
+                "data": [
+                    "BERT", "Transformer", "BLEU", "fine-tuning", "GPT-4", "RoBERTa", "NLP", "LSTM", "machine learning", "Large Language Models (LLMs)", "LLMs", "SVM", "multi-task learning", "WordNet", "Named Entity Recognition", "contrastive learning", "machine translation", "Reinforcement Learning", "Neural Machine Translation", "CNN", "Fine-tuning", "word embeddings", "Machine Translation", "classifier", "supervised learning", "RNN", "sentiment analysis", "Neural Network", "dependency parsing", "Transformers", "ROUGE", "reinforcement learning", "GPT-2", "CLIP", "T5", "beam search", "neural network", "GPT-3", "data augmentation", "clustering", "BART", "GPT-3.5", "Natural Language Processing", "statistical machine translation", "Large Language Models", "neural networks", "domain adaptation", "SMT", "back-translation", "Conditional Random Fields", "rule-based", "transfer learning", "Supervised learning", "neural models", "in-context learning", "deep learning", "Machine learning", "CRF", "attention mechanism", "Transfer learning", "large language models", "Contrastive learning", "Support Vector Machines", "crowdsourcing", "NMT", "Knowledge Distillation", "Machine Learning", "LLM", "knowledge distillation", "Neural Machine Translation (NMT)", "classification", "Recurrent Neural Networks", "Knowledge distillation", "probabilistic model", "large language models (LLMs)", "Word Sense Disambiguation", "HPSG", "BiLSTM", "Word embeddings", "Attention Mechanism", "EM algorithm", "Transformer-based models", "semi-supervised learning", "sequence-to-sequence", "Latent Dirichlet Allocation (LDA)", "LDA", "LoRA", "language model", "active learning", "natural language processing", "parser", "Hidden Markov Model", "ChatGPT", "encoder-decoder", "dynamic programming", "instruction tuning", "topic models", "part-of-speech tagging", "Recurrent Neural Network"
+                ]
+            }
+        ],
+        "yAxis": [
+            {
+                "name": "频次",
+                "show": true,
+                "scale": false,
+                "nameLocation": "middle",
+                "nameGap": 20,
+                "nameTextStyle": {
+                    "fontWeight": "bold",
+                    "fontSize": 14,
+                    "align": "right"
+                },
+                "gridIndex": 0,
+                "axisLabel": {
+                    "show": true,
+                    "margin": 8,
+                    "fontSize": 12
+                },
+                "inverse": false,
+                "offset": 0,
+                "splitNumber": 5,
+                "minInterval": 0,
+                "splitLine": {
+                    "show": true,
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 1,
+                        "curveness": 0,
+                        "type": "solid"
+                    }
                 }
             }
-        }
-    ],
-    "title": [
-        {
+        ],
+        "title": [
+            {
+                "show": true,
+                "text": "NLP领域模型/算法年度总出现次数分布",
+                "subtext": "以顶会ACL会议论文为例",
+                "target": "blank",
+                "subtarget": "blank",
+                "padding": 5,
+                "itemGap": 10,
+                "textAlign": "center",
+                "textVerticalAlign": "auto",
+                "triggerEvent": false,
+                "textStyle": {
+                    "fontSize": 20,
+                    "fontWeight": "bold",
+                    "color": "#333"
+                }
+            }
+        ],
+        "toolbox": {
             "show": true,
-            "text": "\u6a21\u578b\u9891\u6b21\u7edf\u8ba1",
-            "subtext": "\u4ee5\u9876\u4f1aACL\u4f1a\u8bae\u8bba\u6587\u4e3a\u4f8b",
-            "target": "blank",
-            "subtarget": "blank",
-            "padding": 5,
+            "orient": "horizontal",
+            "itemSize": 15,
             "itemGap": 10,
-            "textAlign": "auto",
-            "textVerticalAlign": "auto",
-            "triggerEvent": false
+            "left": "80%",
+            "feature": {
+                "saveAsImage": {}
+            }
         }
-    ],
-    "toolbox": {
-        "show": true,
-        "orient": "horizontal",
-        "itemSize": 15,
-        "itemGap": 10,
-        "left": "80%",
-        "feature": {
-            "saveAsImage": {}
-        }
-    }
-};
-        chart_e14cb830a9e9447e8ba40ba59dfe076d.setOption(option_e14cb830a9e9447e8ba40ba59dfe076d);
-    </script>
-</body>
-</html>
-
+    };
+            chart_e14cb830a9e9447e8ba40ba59dfe076d.setOption(option_e14cb830a9e9447e8ba40ba59dfe076d);
             
-<p style="margin-top: 30px; font-size: 14px; line-height: 1.6; color: #555; max-width: 2400px;">
-本图精心筛选并呈现了发表于ACL（国际计算语言学协会年会）的学术论文摘要中所涉猎的关键算法。
-图中清晰展现了各算法在实际应用中的频次差异——部分算法应用较少，而另一些则备受青睐。
-通过此可视化图表，同学们能够一目了然地识别出当前自然语言处理领域中使用最为频繁的算法，
-进而在学习过程中有的放矢，聚焦重点研究方向。
-</p>
-
-        </body>
-    </html>
+            // 窗口大小变化时重绘图表
+            window.addEventListener('resize', function() {
+                chart_e14cb830a9e9447e8ba40ba59dfe076d.resize();
+            });
+        </script>
+        
+        <p style="margin-top: 30px; font-size: 14px; line-height: 1.6; color: #555; max-width: 2400px;">
+            注：图表展示了自然语言处理领域top100模型及算法在ACL顶会论文中的出现频次统计，可通过鼠标悬停查看详细数据，点击图例可控制数据显示/隐藏。
+        </p>
+    </body>
+</html>
