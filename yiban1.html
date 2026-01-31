@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>平滑MPC控制 - 文化遗产机器人</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Microsoft YaHei', sans-serif; 
+            background: #1a1a2e;
+            color: white;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+        
+        #scene-container {
+            flex: 3;
+            position: relative;
+            background: #0f3460;
+        }
+        
+        #control-panel {
+            flex: 1;
+            background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+            padding: 20px;
+            max-width: 450px;
+            border-left: 4px solid #00b4d8;
+        }
+        
+        .smooth-control {
+            background: rgba(0, 180, 216, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid rgba(0, 180, 216, 0.3);
+        }
+        
+        .control-btn {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            background: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .control-btn:hover {
+            background: #0096c7;
+            transform: translateY(-2px);
+        }
+        
+        .smoothness-indicator {
+            height: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 10px 0;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .smoothness-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #e63946, #f4a261, #2a9d8f);
+            width: 0%;
+            transition: width 0.5s;
+            border-radius: 10px;
+        }
+        
+        .physics-params {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .param-item {
+            background: rgba(42, 157, 143, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .param-value {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2a9d8f;
+        }
+        
+        .log-entry {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-size: 12px;
+            border-left: 3px solid #00b4d8;
+        }
+    </style>
+    <script src="https://unpkg.com/three@0.132.2/build/three.min.js"></script>
+</head>
+<body>
+    <div id="scene-container"></div>
+    
+    <div id="control-panel">
+        <h2 style="color: #00b4d8;">🤖 平滑MPC控制系统</h2>
+        
+        <div class="smooth-control">
+            <h3>🎯 平滑度控制</h3>
+            <div>运动平滑度: <span id="smoothnessValue">75%</span></div>
+            <div class="smoothness-indicator">
+                <div class="smoothness-fill" id="smoothnessFill"></div>
+            </div>
+            
+            <div class="physics-params">
+                <div class="param-item">
+                    <div>最大速度</div>
+                    <div class="param-value" id="maxSpeed">2.0 m/s</div>
+                </div>
+                <div class="param-item">
+                    <div>最大加速度</div>
+                    <div class="param-value" id="maxAccel">1.0 m/s²</div>
+                </div>
+                <div class="param-item">
+                    <div>阻尼系数</div>
+                    <div class="param-value" id="damping">0.8</div>
+                </div>
+                <div class="param-item">
+                    <div>运动误差</div>
+                    <div class="param-value" id="positionError">0.0 m</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="smooth-control">
+            <h3>🚀 平滑演示</h3>
+            <button class="control-btn" onclick="runSmoothDemo('straight')">
+                直线平滑运动
+            </button>
+            <button class="control-btn" onclick="runSmoothDemo('curve')">
+                曲线平滑运动
+            </button>
+            <button class="control-btn" onclick="runSmoothDemo('pickup')">
+                平滑抓取演示
+            </button>
+            <button class="control-btn" onclick="toggleOscillation()" style="background: #e63946;">
+                <span id="oscillationToggle">🔴 关闭震荡</span>
+            </button>
+        </div>
+        
+        <div class="smooth-control">
+            <h3>📊 运动分析</h3>
+            <div id="motionLog" style="height: 200px; overflow-y: auto;">
+                <!-- 运动日志 -->
+            </div>
+        </div>
+        
+        <div style="margin-top: 20px; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 8px;">
+            <h4>🎯 平滑控制原理</h4>
+            <p>1. <strong>速度限制</strong>：限制最大运动速度</p>
+            <p>2. <strong>加速度限制</strong>：平滑启停，避免急动</p>
+            <p>3. <strong>阻尼系统</strong>：吸收多余能量，防止振荡</p>
+            <p>4. <strong>预测修正</strong>：提前减速，精确到位</p>
+        </div>
+    </div>
+
+    <script>
+        // ==================== 平滑MPC控制系统 ====================
+        console.log("启动平滑MPC控制系统...");
+        
+        // 全局变量
+        let scene, camera, renderer;
+        let robot, base, arm, endEffector;
+        let clock = new THREE.Clock();
+        
+        // 平滑控制参数
+        let motionController = {
+            // 物理参数
+            maxSpeed: 2.0,          // 最大速度 (m/s)
+            maxAcceleration: 1.0,   // 最大加速度 (m/s²)
+            damping: 0.8,          // 阻尼系数 (0-1)
+            arrivalRadius: 0.1,    // 到达半径 (m)
+            
+            // 当前状态
+            targetPosition: new THREE.Vector3(0, 0, 0),
+            currentVelocity: new THREE.Vector3(0, 0, 0),
+            currentAcceleration: new THREE.Vector3(0, 0, 0),
+            
+            // 运动记录
+            isMoving: false,
+            oscillationEnabled: false,  // 震荡模式开关
+            
+            // 平滑移动到目标位置
+            moveTo: function(targetX, targetZ) {
+                this.targetPosition.set(targetX, 0, targetZ);
+                this.isMoving = true;
+                logMotion(`开始移动到 (${targetX.toFixed(1)}, ${targetZ.toFixed(1)})`);
+            },
+            
+            // 更新物理状态 (在动画循环中调用)
+            update: function(deltaTime) {
+                if (!this.isMoving) return;
+                
+                const currentPos = new THREE.Vector3(
+                    robot.position.x,
+                    0,
+                    robot.position.z
+                );
+                
+                // 计算到目标的向量
+                const toTarget = new THREE.Vector3().subVectors(
+                    this.targetPosition, 
+                    currentPos
+                );
+                
+                const distance = toTarget.length();
+                
+                // 如果已经到达目标
+                if (distance < this.arrivalRadius) {
+                    this.isMoving = false;
+                    this.currentVelocity.set(0, 0, 0);
+                    this.currentAcceleration.set(0, 0, 0);
+                    logMotion(`到达目标位置，误差: ${distance.toFixed(3)}m`);
+                    updateSmoothness(95);
+                    return;
+                }
+                
+                // 计算期望速度方向
+                toTarget.normalize();
+                
+                // 计算期望速度 (根据距离调整)
+                let desiredSpeed = this.maxSpeed;
+                
+                // 距离目标越近，速度越慢 (平滑停止)
+                const slowDownRadius = 3.0; // 开始减速的距离
+                if (distance < slowDownRadius) {
+                    desiredSpeed = this.maxSpeed * (distance / slowDownRadius);
+                }
+                
+                const desiredVelocity = toTarget.multiplyScalar(desiredSpeed);
+                
+                // 计算需要的加速度 (PD控制器)
+                const velocityError = new THREE.Vector3().subVectors(
+                    desiredVelocity, 
+                    this.currentVelocity
+                );
+                
+                // 基础加速度 (P项)
+                this.currentAcceleration.copy(velocityError).multiplyScalar(5.0);
+                
+                // 添加阻尼 (D项)
+                const dampingForce = this.currentVelocity.clone()
+                    .multiplyScalar(-this.damping);
+                this.currentAcceleration.add(dampingForce);
+                
+                // 限制最大加速度
+                const currentAccelMag = this.currentAcceleration.length();
+                if (currentAccelMag > this.maxAcceleration) {
+                    this.currentAcceleration.multiplyScalar(this.maxAcceleration / currentAccelMag);
+                }
+                
+                // 更新速度 (积分加速度)
+                this.currentVelocity.add(
+                    this.currentAcceleration.clone().multiplyScalar(deltaTime)
+                );
+                
+                // 限制最大速度
+                const currentSpeed = this.currentVelocity.length();
+                if (currentSpeed > this.maxSpeed) {
+                    this.currentVelocity.multiplyScalar(this.maxSpeed / currentSpeed);
+                }
+                
+                // 更新位置 (积分速度)
+                const positionDelta = this.currentVelocity.clone()
+                    .multiplyScalar(deltaTime);
+                robot.position.add(positionDelta);
+                
+                // 如果启用震荡模式，添加人为震荡
+                if (this.oscillationEnabled) {
+                    const oscillation = Math.sin(performance.now() * 0.01) * 0.1;
+                    robot.position.x += oscillation;
+                    robot.position.z += oscillation * 0.5;
+                }
+                
+                // 使机器人面向运动方向
+                if (this.currentVelocity.length() > 0.1) {
+                    const targetRotation = Math.atan2(
+                        this.currentVelocity.x,
+                        this.currentVelocity.z
+                    );
+                    
+                    // 平滑旋转 (使用Slerp)
+                    const rotationSpeed = 5.0;
+                    base.rotation.y += (targetRotation - base.rotation.y) 
+                        * rotationSpeed * deltaTime;
+                }
+                
+                // 根据速度调整手臂姿态
+                const speedRatio = currentSpeed / this.maxSpeed;
+                arm.rotation.x = Math.sin(performance.now() * 0.005) 
+                    * 0.2 * speedRatio;
+                
+                // 更新UI显示
+                updateMotionUI(distance, currentSpeed);
+                
+                // 计算平滑度 (基于加速度变化)
+                const smoothness = Math.max(0, 100 - currentAccelMag * 20);
+                updateSmoothness(smoothness);
+            },
+            
+            // 急停
+            stop: function() {
+                this.isMoving = false;
+                this.currentVelocity.set(0, 0, 0);
+                this.currentAcceleration.set(0, 0, 0);
+                logMotion("运动停止");
+            },
+            
+            // 设置控制参数
+            setParameters: function(params) {
+                if (params.maxSpeed) this.maxSpeed = params.maxSpeed;
+                if (params.maxAcceleration) this.maxAcceleration = params.maxAcceleration;
+                if (params.damping) this.damping = params.damping;
+                
+                updatePhysicsUI();
+            }
+        };
+        
+        // 初始化
+        function init() {
+            console.log("初始化平滑控制系统...");
+            
+            // 创建场景
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x0f3460);
+            
+            // 相机
+            const container = document.getElementById('scene-container');
+            camera = new THREE.PerspectiveCamera(
+                60,
+                container.clientWidth / container.clientHeight,
+                0.1,
+                1000
+            );
+            camera.position.set(15, 12, 18);
+            camera.lookAt(0, 2, 0);
+            
+            // 渲染器
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(container.clientWidth, container.clientHeight);
+            container.appendChild(renderer.domElement);
+            
+            // 灯光
+            const light = new THREE.DirectionalLight(0xffffff, 1);
+            light.position.set(10, 20, 10);
+            scene.add(light);
+            scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+            
+            // 创建环境
+            createEnvironment();
+            
+            // 创建机器人
+            createRobot();
+            
+            // 设置鼠标控制
+            setupMouseControls();
+            
+            // 开始动画循环
+            animate();
+            
+            logMotion("平滑控制系统就绪");
+            updatePhysicsUI();
+        }
+        
+        function createEnvironment() {
+            // 地面
+            const ground = new THREE.Mesh(
+                new THREE.PlaneGeometry(40, 40),
+                new THREE.MeshPhongMaterial({ color: 0x1a3a5f })
+            );
+            ground.rotation.x = -Math.PI / 2;
+            scene.add(ground);
+            
+            // 网格
+            const grid = new THREE.GridHelper(40, 40, 0x2a4d7a, 0x1a3a5f);
+            grid.position.y = 0.01;
+            scene.add(grid);
+            
+            // 路径标记点
+            createPathMarkers();
+        }
+        
+        function createRobot() {
+            robot = new THREE.Group();
+            
+            // 底座
+            const baseGeometry = new THREE.CylinderGeometry(1.0, 1.2, 0.8, 16);
+            const baseMaterial = new THREE.MeshPhongMaterial({ color: 0x4a5568 });
+            base = new THREE.Mesh(baseGeometry, baseMaterial);
+            base.position.y = 0.4;
+            robot.add(base);
+            
+            // 机械臂
+            const armGeometry = new THREE.CylinderGeometry(0.25, 0.2, 3, 8);
+            const armMaterial = new THREE.MeshPhongMaterial({ color: 0x2d3748 });
+            arm = new THREE.Mesh(armGeometry, armMaterial);
+            arm.position.y = 2.0;
+            base.add(arm);
+            
+            // 末端执行器
+            const endGeometry = new THREE.SphereGeometry(0.3, 16, 16);
+            const endMaterial = new THREE.MeshPhongMaterial({ 
+                color: 0x00b4d8,
+                emissive: 0x003049
+            });
+            endEffector = new THREE.Mesh(endGeometry, endMaterial);
+            endEffector.position.y = 1.8;
+            arm.add(endEffector);
+            
+            // 添加运动轨迹线
+            const lineMaterial = new THREE.LineBasicMaterial({ 
+                color: 0x00b4d8,
+                transparent: true,
+                opacity: 0.5
+            });
+            const lineGeometry = new THREE.BufferGeometry();
+            const line = new THREE.Line(lineGeometry, lineMaterial);
+            robot.add(line);
+            
+            scene.add(robot);
+        }
+        
+        function createPathMarkers() {
+            // 创建平滑路径的标记点
+            const markerPositions = [
+                { x: -8, z: -8, color: 0x2a9d8f },
+                { x: -4, z: -4, color: 0xf4a261 },
+                { x: 0, z: 0, color: 0xe63946 },
+                { x: 4, z: 4, color: 0xf4a261 },
+                { x: 8, z: 8, color: 0x2a9d8f }
+            ];
+            
+            markerPositions.forEach((pos, index) => {
+                const geometry = new THREE.SphereGeometry(0.3, 16, 16);
+                const material = new THREE.MeshPhongMaterial({ 
+                    color: pos.color,
+                    emissive: pos.color,
+                    emissiveIntensity: 0.3
+                });
+                const marker = new THREE.Mesh(geometry, material);
+                marker.position.set(pos.x, 0.3, pos.z);
+                scene.add(marker);
+                
+                // 添加标签
+                const text = document.createElement('div');
+                text.style.cssText = `
+                    position: absolute;
+                    color: white;
+                    background: rgba(0,0,0,0.5);
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                    font-size: 12px;
+                    pointer-events: none;
+                `;
+                text.textContent = `点${index + 1}`;
+                document.getElementById('scene-container').appendChild(text);
+            });
+        }
+        
+        // ==================== 平滑演示函数 ====================
+        
+        async function runSmoothDemo(type) {
+            logMotion(`开始${type}平滑演示`);
+            
+            // 重置机器人位置
+            robot.position.set(-8, 0, -8);
+            motionController.stop();
+            
+            switch(type) {
+                case 'straight':
+                    await smoothStraightPath();
+                    break;
+                case 'curve':
+                    await smoothCurvedPath();
+                    break;
+                case 'pickup':
+                    await smoothPickupDemo();
+                    break;
+            }
+            
+            logMotion(`${type}演示完成`);
+        }
+        
+        async function smoothStraightPath() {
+            // 直线平滑路径
+            const pathPoints = [
+                { x: -8, z: -8 },
+                { x: -4, z: -4 },
+                { x: 0, z: 0 },
+                { x: 4, z: 4 },
+                { x: 8, z: 8 }
+            ];
+            
+            for (const point of pathPoints) {
+                motionController.moveTo(point.x, point.z);
+                
+                // 等待到达目标
+                await waitUntilArrived();
+                await delay(500); // 短暂停留
+            }
+        }
+        
+        async function smoothCurvedPath() {
+            // 贝塞尔曲线路径 (更复杂的运动)
+            const steps = 20;
+            
+            for (let i = 0; i <= steps; i++) {
+                const t = i / steps;
+                
+                // 二次贝塞尔曲线
+                const p0 = { x: -8, z: -8 };
+                const p1 = { x: 0, z: -4 };   // 控制点
+                const p2 = { x: 8, z: 8 };
+                
+                const x = Math.pow(1-t, 2)*p0.x + 2*(1-t)*t*p1.x + Math.pow(t, 2)*p2.x;
+                const z = Math.pow(1-t, 2)*p0.z + 2*(1-t)*t*p1.z + Math.pow(t, 2)*p2.z;
+                
+                motionController.moveTo(x, z);
+                
+                // 更密集的控制点，形成平滑曲线
+                await delay(300);
+            }
+        }
+        
+        async function smoothPickupDemo() {
+            logMotion("开始平滑抓取演示");
+            
+            // 1. 移动到物料位置
+            const materialPos = { x: 6, z: 6 };
+            motionController.moveTo(materialPos.x, materialPos.z);
+            await waitUntilArrived();
+            
+            logMotion("到达物料位置，模拟抓取");
+            await delay(1000);
+            
+            // 2. 搬运到平台
+            const platformPos = { x: -6, z: -6 };
+            
+            // 先调整控制参数为"精细模式"
+            motionController.setParameters({
+                maxSpeed: 1.0,
+                maxAcceleration: 0.5,
+                damping: 0.9
+            });
+            
+            motionController.moveTo(platformPos.x, platformPos.z);
+            await waitUntilArrived();
+            
+            logMotion("到达平台位置，模拟放置");
+            await delay(1000);
+            
+            // 3. 返回起点
+            motionController.setParameters({
+                maxSpeed: 2.0,
+                maxAcceleration: 1.0,
+                damping: 0.8
+            });
+            
+            motionController.moveTo(-8, -8);
+            await waitUntilArrived();
+            
+            logMotion("平滑抓取演示完成");
+        }
+        
+        function toggleOscillation() {
+            motionController.oscillationEnabled = !motionController.oscillationEnabled;
+            
+            const button = document.getElementById('oscillationToggle');
+            if (motionController.oscillationEnabled) {
+                button.innerHTML = "🟢 开启震荡";
+                button.parentElement.style.background = '#e63946';
+                logMotion("⚠️ 震荡模式已开启 - 模拟控制不当的情况");
+            } else {
+                button.innerHTML = "🔴 关闭震荡";
+                button.parentElement.style.background = '#0077b6';
+                logMotion("✅ 震荡模式已关闭 - 平滑控制");
+            }
+        }
+        
+        // ==================== 工具函数 ====================
+        
+        function waitUntilArrived() {
+            return new Promise((resolve) => {
+                const checkInterval = setInterval(() => {
+                    if (!motionController.isMoving) {
+                        clearInterval(checkInterval);
+                        resolve();
+                    }
+                }, 100);
+            });
+        }
+        
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        
+        function logMotion(message) {
+            const logContainer = document.getElementById('motionLog');
+            const logEntry = document.createElement('div');
+            logEntry.className = 'log-entry';
+            logEntry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            
+            logContainer.appendChild(logEntry);
+            logContainer.scrollTop = logContainer.scrollHeight;
+            
+            console.log(`Motion: ${message}`);
+        }
+        
+        function updateMotionUI(distance, speed) {
+            document.getElementById('positionError').textContent = 
+                `${distance.toFixed(3)} m`;
+            
+            // 更新平滑度显示
+            const smoothness = Math.max(0, 100 - Math.abs(speed - 1) * 20);
+            updateSmoothness(smoothness);
+        }
+        
+        function updateSmoothness(value) {
+            const clampedValue = Math.max(0, Math.min(100, value));
+            document.getElementById('smoothnessValue').textContent = 
+                `${Math.round(clampedValue)}%`;
+            document.getElementById('smoothnessFill').style.width = 
+                `${clampedValue}%`;
+            
+            // 根据平滑度改变颜色
+            const fill = document.getElementById('smoothnessFill');
+            if (clampedValue > 80) {
+                fill.style.background = 'linear-gradient(90deg, #2a9d8f, #4cc9f0)';
+            } else if (clampedValue > 60) {
+                fill.style.background = 'linear-gradient(90deg, #f4a261, #f9c74f)';
+            } else {
+                fill.style.background = 'linear-gradient(90deg, #e63946, #f4a261)';
+            }
+        }
+        
+        function updatePhysicsUI() {
+            document.getElementById('maxSpeed').textContent = 
+                `${motionController.maxSpeed.toFixed(1)} m/s`;
+            document.getElementById('maxAccel').textContent = 
+                `${motionController.maxAcceleration.toFixed(1)} m/s²`;
+            document.getElementById('damping').textContent = 
+                motionController.damping.toFixed(2);
+        }
+        
+        function setupMouseControls() {
+            const canvas = renderer.domElement;
+            let isDragging = false;
+            let lastX = 0, lastY = 0;
+            
+            canvas.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                lastX = e.clientX;
+                lastY = e.clientY;
+                canvas.style.cursor = 'grabbing';
+            });
+            
+            canvas.addEventListener('mouseup', () => {
+                isDragging = false;
+                canvas.style.cursor = 'grab';
+            });
+            
+            canvas.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                
+                const deltaX = e.clientX - lastX;
+                const deltaY = e.clientY - lastY;
+                
+                const theta = deltaX * 0.01;
+                const phi = deltaY * 0.01;
+                
+                const spherical = new THREE.Spherical();
+                spherical.setFromVector3(camera.position);
+                
+                spherical.theta -= theta;
+                spherical.phi = THREE.MathUtils.clamp(spherical.phi - phi, 0.1, Math.PI - 0.1);
+                
+                camera.position.setFromSpherical(spherical);
+                camera.lookAt(0, 2, 0);
+                
+                lastX = e.clientX;
+                lastY = e.clientY;
+            });
+            
+            canvas.style.cursor = 'grab';
+        }
+        
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            const deltaTime = Math.min(clock.getDelta(), 0.033); // 限制最大deltaTime
+            
+            // 更新物理控制器
+            motionController.update(deltaTime);
+            
+            renderer.render(scene, camera);
+        }
+        
+        // 初始化
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
